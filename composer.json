@@ -1,0 +1,30 @@
+{
+  "name": "microweber/template-dream",
+  "type": "microweber-template",
+  "description": "Dream",
+  "keywords": [
+    "microweber",
+    "ecommerce",
+    "dream"
+  ],
+  "homepage": "https://microweber.com/",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "MW Team",
+      "email": "contacts@microweber.com"
+    }
+  ],
+  "support": [
+    {
+      "email": "support@microweber.com",
+      "forum": "https://microweber.com/forum",
+      "irc": "https://webchat.freenode.net/?embed=1&channels=#microweber",
+      "docs": "http://docs.microweber.com"
+    }
+  ],
+  "target-dir": "dream",
+  "extra": {
+    "preview_url": "https://dream-template.microweber.com/"
+  }
+}
