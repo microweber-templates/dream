@@ -57,7 +57,8 @@ description: Login default
             <div class="row text-center">
                 <a href="<?php print register_url(); ?>"><?php _lang("Create an account", "templates/dream"); ?></a>
             </div>
-            <div class="row text-center">
+
+            <div class="row text-center m-b-10">
                 <p class="type--fine-print">
                     <?php _lang("Forgot Password ?", "templates/dream"); ?>
                     <a href="<?php print forgot_password_url(); ?>"><?php _lang("Start password recovery", "templates/dream"); ?></a>
@@ -65,7 +66,6 @@ description: Login default
             </div>
         </form>
 
-        <hr/>
 
         <?php
         # Login Providers
@@ -87,7 +87,7 @@ description: Login default
 
 
             <div class="text-center">
-                <div class="margin-bottom-20">&ndash; <?php _e("OR"); ?> &ndash;</div>
+                <div class="m-b-20">&ndash; <?php _e("OR"); ?> &ndash;</div>
 
                 <?php if ($facebook): ?>
                     <a href="<?php print api_link('user_social_login?provider=facebook') ?>" class="btn btn--primary m-t-10">

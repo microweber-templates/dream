@@ -273,11 +273,11 @@
             <label for="select" class="mw-ui-label">Shop Inner 2 Header Style</label>
             <div class="">
                 <select name="shop2-header-style" id="shop2-header-style" class="mw_option_field mw-ui-field" data-option-group="mw-template-dream">
-                    <option value="clean" <?php if ($shop2_header_style == 'clean') {
+                    <option value="clean" <?php if ($shop2_header_style == '' OR $shop2_header_style == 'clean') {
                         echo 'selected';
                     } ?>>Clean
                     </option>
-                    <option value="background"<?php if ($shop2_header_style == '' OR $shop2_header_style == 'background') {
+                    <option value="background"<?php if ($shop2_header_style == 'background') {
                         echo 'selected';
                     } ?>><?php _lang("Poster With Background", "templates/dream"); ?>
                     </option>

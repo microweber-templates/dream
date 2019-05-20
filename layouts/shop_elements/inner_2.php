@@ -55,18 +55,18 @@
                     <module type="shop/cart_add"/>
 
                     <div class="item__description">
-                        <h6><?php _e('Description'); ?>:</h6>
-
                         <div class="edit" field="content_body" rel="content">
+                            <h6><?php _e('Description'); ?>:</h6>
+
                             <p>
                                 <?php _lang("A sturdy, handwoven fabric makes this American Apparel indigo-T a dependable addition to your casual wardrobe. This is a no bullshit plain ol’ t-shirt.", "templates/dream"); ?>
                             </p>
                         </div>
                     </div>
                     <div class="item__description">
-                        <h6><?php _e('Information'); ?>:</h6>
-
                         <div class="edit safe-mode" field="product_sheets" rel="content">
+                            <h6><?php _e('Information'); ?>:</h6>
+
                             <div class="item__subinfo cloneable">
                                 <span class="safe-element"><?php _lang("Fabric", "templates/dream"); ?></span>
                                 <span class="safe-element">100% Cotton</span>
