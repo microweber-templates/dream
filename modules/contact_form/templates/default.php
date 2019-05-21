@@ -26,7 +26,8 @@
             <h3 class="element contact-form-title"><?php _e("Leave a Message"); ?></h3>
         </div>
         <form class="mw_form" data-form-id="<?php print $form_id ?>" name="<?php print $form_id ?>" method="post">
-
+            <input type="hidden" name="for" value="contact_form"/>
+            <input type="hidden" name="for_id" value="<?php print $params['id']; ?>"/>
 
             <module type="custom_fields" for-id="<?php print $params['id'] ?>" data-for="module" default-fields="name,email,message"/>
 
