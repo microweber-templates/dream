@@ -52,6 +52,6 @@
 .mw-live-edit .hover-element .hover-element__reveal .boxed span{
     pointer-events: all;
 }
-.mw-live-edit .hover-element .hover-element__reveal{
-    pointer-events: none;
-}
+/*.mw-live-edit .hover-element .hover-element__reveal{*/
+    /*pointer-events: none;*/
+/*}*/
