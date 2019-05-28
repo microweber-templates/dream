@@ -69,8 +69,8 @@ description: Checkout
                     <?php endif; ?>
 
                     <div class="row">
-                        <div class="col-xs-12">
-                            <a href="?step=2" class="btn"><?php _e("PROCEED TO SHIPMENT"); ?></a>
+                        <div class="col-xs-12 text-right">
+                            <a href="?step=2" class="btn btn-primary"><?php _e("PROCEED TO SHIPMENT"); ?></a>
                         </div>
                     </div>
                 </div>
