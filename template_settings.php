@@ -1,22 +1,20 @@
 <script>
 
-
     $(document).ready(function () {
         mw.options.form("#settings-holder", function () {
             mw.notification.success("<?php _e("Template settings are saved"); ?>.");
 
-            parent.$("link[href*='api/template/compile_css']").each(function(){
+			parent.$("#theme-style").attr('href', '<?php print mw()->template->get_stylesheet('assets/less/theme.less','mw-template-dream-style-vars', false); ?>'); 
+            
+            /* parent.$("#theme-style").each(function(){
                 mw.tools.refresh(this)
-            })
+            }); */
 
-          //  mw.tools.refresh(window.parent.getElementById('theme-style'))
-
-
-
+            mw.tools.refresh(window.parent.getElementById('theme-style'))
+			
         });
     });
 </script>
-
 
 <div id="settings-holder">
     <div>
