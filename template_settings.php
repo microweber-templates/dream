@@ -2,18 +2,23 @@
 
     $(document).ready(function () {
         mw.options.form("#settings-holder", function () {
-            mw.notification.success("<?php _e("Template settings are saved"); ?>.");
-
-            parent.$("#theme-style").attr('href', '<?php print mw()->template->get_stylesheet('assets/less/theme.less', 'mw-template-dream-style-vars', false); ?>');
-
-            /* parent.$("#theme-style").each(function(){
-             mw.tools.refresh(this)
-             }); */
-
-            mw.tools.refresh(window.parent.getElementById('theme-style'))
-
+          reloadTemplate();
         });
     });
+
+    function reloadTemplate() {
+
+        mw.notification.success("<?php _e("Template settings are saved"); ?>.");
+
+        parent.$("#theme-style").attr('href', '<?php print mw()->template->get_stylesheet('assets/less/theme.less', 'mw-template-dream-style-vars', false); ?>');
+
+        /* parent.$("#theme-style").each(function(){
+         mw.tools.refresh(this)
+         }); */
+
+        mw.tools.refresh(window.parent.getElementById('theme-style'));
+    }
+
 </script>
 
 <div id="settings-holder">
@@ -163,6 +168,12 @@
                 window.top.$("nav .nav-bar")[this.checked ? 'removeClass' : 'addClass']('nav--absolute nav--transparent')
             });
         });
+        function deleteCompiledCSS() {
+            $.get(mw.settings.api_url + "template/delete_compiled_css?path=assets/less/theme.less&option_group=mw-template-dream-style-vars" , function() {
+                // Delete
+                reloadTemplate();
+            });
+        }
     </script>
 
     <div class="bootstrap3ns">
@@ -427,6 +438,10 @@
             </div>
         </div>
 
+
+        <div class="form-group">
+            <span class="mw-ui-btn mw-ui-btn-medium right" onclick="deleteCompiledCSS();" style="margin-top: 4px;"><?php _e("Reset"); ?></span>
+        </div>
 
         <?php
         $bg_white = get_option('bg-white', 'mw-template-dream-style-vars');
@@ -733,6 +748,7 @@
             <label class="mw-ui-label">Inputs Border Width</label>
             <input class="mw-ui-field mw_option_field" name="border-width" value="<?php print $border_width ?>" data-option-group="mw-template-dream-style-vars" placeholder="2px">
         </div>
+
     </div>
 </div>
 <!-- /#settings-holder -->
