@@ -2,12 +2,11 @@
 
     $(document).ready(function () {
         mw.options.form("#settings-holder", function () {
-          reloadTemplate();
+            reloadTemplate();
         });
     });
 
     function reloadTemplate() {
-
         mw.notification.success("<?php _e("Template settings are saved"); ?>.");
 
         parent.$("#theme-style").attr('href', '<?php print mw()->template->get_stylesheet('assets/less/theme.less', 'mw-template-dream-style-vars', false); ?>');
@@ -16,7 +15,7 @@
          mw.tools.refresh(this)
          }); */
 
-        mw.tools.refresh(window.parent.getElementById('theme-style'));
+        mw.tools.refresh(parent.$("#theme-style"));
     }
 
 </script>
@@ -169,9 +168,11 @@
             });
         });
         function deleteCompiledCSS() {
-            $.get(mw.settings.api_url + "template/delete_compiled_css?path=assets/less/theme.less&option_group=mw-template-dream-style-vars" , function() {
+            $.get(mw.settings.api_url + "template/delete_compiled_css?path=assets/less/theme.less&option_group=mw-template-dream-style-vars", function () {
                 // Delete
                 reloadTemplate();
+                window.parent.mw.drag.save();
+                window.parent.location.reload(false);
             });
         }
     </script>
@@ -436,11 +437,6 @@
                 </label>
 
             </div>
-        </div>
-
-
-        <div class="form-group">
-            <span class="mw-ui-btn mw-ui-btn-medium right" onclick="deleteCompiledCSS();" style="margin-top: 4px;"><?php _e("Reset"); ?></span>
         </div>
 
         <?php
@@ -749,6 +745,10 @@
             <input class="mw-ui-field mw_option_field" name="border-width" value="<?php print $border_width ?>" data-option-group="mw-template-dream-style-vars" placeholder="2px">
         </div>
 
+
+        <div class="form-group">
+            <span class="mw-ui-btn mw-ui-btn-medium right" onclick="deleteCompiledCSS();" style="margin-top: 4px;"><?php _e("Reset Template Settings"); ?></span>
+        </div>
     </div>
 </div>
 <!-- /#settings-holder -->
