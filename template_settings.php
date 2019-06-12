@@ -429,6 +429,11 @@
 
 
         <?php
+        $bg_white = get_option('bg-white', 'mw-template-dream-style-vars');
+        if ($bg_white == '') {
+            $bg_white = '#fff';
+        }
+
         $color_bg_site = get_option('color-bg-site', 'mw-template-dream-style-vars');
         if ($color_bg_site == '') {
             $color_bg_site = '#F8F8F8';
@@ -583,12 +588,27 @@
                         $('input[name="color-heading"]').trigger('change');
                     }
                 });
+
+                mw.colorPicker({
+                    element: '#bg_white',
+                    position: 'bottom-left',
+                    onchange: function (color) {
+                        $('#bg_white').css('background', color);
+                        $('input[name="bg-white"]').val(color);
+                        $('input[name="bg-white"]').trigger('change');
+                    }
+                });
             });
         </script>
 
         <div class="form-group">
             <label for="select" class="mw-ui-label">Color scheme</label>
             <div>
+                <div class="theme-color-selector">
+                    <button style="background: <?php print  $bg_white ?>;" id="bg_white"></button>
+                    <input class="mw-ui-field mw_option_field hidden" name="bg-white" value="<?php print $bg_white ?>" data-option-group="mw-template-dream-style-vars" placeholder="Eneter color..">
+                    White Background
+                </div>
                 <div class="theme-color-selector">
                     <button style="background: <?php print  $color_bg_site ?>;" id="color_bg_site"></button>
                     <input class="mw-ui-field mw_option_field hidden" name="color-bg-site" value="<?php print $color_bg_site ?>" data-option-group="mw-template-dream-style-vars" placeholder="Eneter color..">
