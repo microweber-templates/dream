@@ -9,14 +9,9 @@
   ],
   "homepage": "https://microweber.com/",
   "license": "MIT",
-  "authors": [
-    {
-      "name": "MW Team",
-      "email": "contacts@microweber.com"
-    }
-  ],
+  
   "target-dir": "dream",
   "extra": {
-    "preview_url": "https://dream-template.microweber.com/"
+    "preview_url": "https://templates.microweber.com/dream/"
   }
 }

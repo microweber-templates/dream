@@ -23,7 +23,7 @@ a{
 }
 
 .color--white{
-	color: #fff;
+	color: @bg-white;
 }
 
 .color--dark{
@@ -38,7 +38,7 @@ a{
 		}
 		color: @color-on-dark;
 		a:not(.btn){
-			color: #fff;
+			color: @color-on-dark;
 		}
 	}
 }
@@ -62,7 +62,7 @@ a{
 }
 
 .bg--white{
-	background: #fff;
+	background: @bg-white;
 	p,span,ul,a:not(.btn){
 		color: @color-body;
 	}
