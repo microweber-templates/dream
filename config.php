@@ -9,6 +9,18 @@ $config['standalone_module_skins'] = true;
 $config['is_default'] = 1; //if you set this parameter the template will be selected on the install screen
 $config['bootstrap'] = 3;
 
+$config['data-fields-product'] = array();
+$config['data-fields-product'][] = array(
+	'title' => 'Label',
+	'name' => 'label',
+	'type' => 'text'
+);
+$config['data-fields-product'][] = array(
+	'title' => 'Label Color',
+	'name' => 'label-color',
+	'type' => 'color'
+);
+
 /*//Layouts Padding Top & Bottom classes definiton
 $config['layouts_css_classes'] = [];
 $config['layouts_css_classes']['padding-top'][0] = 'unpad--top';
