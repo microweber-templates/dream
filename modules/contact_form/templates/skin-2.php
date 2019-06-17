@@ -58,6 +58,7 @@ description: Skin-2
     <div class="col-sm-12">
         <textarea name="message" placeholder="<?php _lang("Your Message", "templates/dream"); ?>" rows="8" required></textarea>
     </div>
+
     <?php if (get_option('disable_captcha', $params['id']) != 'y'): ?>
         <div class="col-sm-12">
             <module type="captcha"/>
