@@ -1,5 +1,4 @@
 <script>
-
     $(document).ready(function () {
         mw.options.form("#settings-holder", function () {
             reloadTemplate();
@@ -7,9 +6,11 @@
     });
 
     function reloadTemplate() {
-        mw.notification.success("<?php _e("Template settings are saved"); ?>.");
+        parent.mw.notification.success("<?php _e("Template settings are saved"); ?>.");
 
-        parent.$("#theme-style").attr('href', '<?php print mw()->template->get_stylesheet('assets/less/theme.less', false, false); ?>');
+        parent.$("#theme-style").attr('href', '<?php print mw()->template->get_stylesheet('assets/less/theme.less', false, false); ?>&t='+mw.random());
+
+	//lert('<?php print mw()->template->get_stylesheet('assets/less/theme.less', false, false); ?>');
 
         /* parent.$("#theme-style").each(function(){
          mw.tools.refresh(this)
@@ -168,7 +169,7 @@
             });
         });
         function deleteCompiledCSS() {
-            $.get(mw.settings.api_url + "template/delete_compiled_css?path=assets/less/theme.less&option_group=mw-template-dream-style-vars", function () {
+            $.get(mw.settings.api_url + "template/delete_compiled_css?path=assets/less/theme.less&option_group=mw-template-dream", function () {
                 // Delete
                 reloadTemplate();
                 window.parent.mw.drag.save();
@@ -440,59 +441,59 @@
         </div>
 
         <?php
-        $bg_white = get_option('bg-white', 'mw-template-dream-style-vars');
+        $bg_white = get_option('bg-white', 'mw-template-dream');
         if ($bg_white == '') {
             $bg_white = '#fff';
         }
 
-        $color_bg_site = get_option('color-bg-site', 'mw-template-dream-style-vars');
+        $color_bg_site = get_option('color-bg-site', 'mw-template-dream');
         if ($color_bg_site == '') {
             $color_bg_site = '#F8F8F8';
         }
 
-        $color_primary = get_option('color-primary', 'mw-template-dream-style-vars');
+        $color_primary = get_option('color-primary', 'mw-template-dream');
         if ($color_primary == '') {
             $color_primary = '#425cbb';
         }
 
-        $color_primary_1 = get_option('color-primary-1', 'mw-template-dream-style-vars');
+        $color_primary_1 = get_option('color-primary-1', 'mw-template-dream');
         if ($color_primary_1 == '') {
             $color_primary_1 = '#7cc36a';
         }
-        $color_primary_2 = get_option('color-primary-2', 'mw-template-dream-style-vars');
+        $color_primary_2 = get_option('color-primary-2', 'mw-template-dream');
         if ($color_primary_2 == '') {
             $color_primary_2 = '#d14b4b';
         }
-        $color_primary_3 = get_option('color-primary-3', 'mw-template-dream-style-vars');
+        $color_primary_3 = get_option('color-primary-3', 'mw-template-dream');
         if ($color_primary_3 == '') {
             $color_primary_3 = '#6c9a81';
         }
-        $color_dark = get_option('color-dark', 'mw-template-dream-style-vars');
+        $color_dark = get_option('color-dark', 'mw-template-dream');
         if ($color_dark == '') {
             $color_dark = '#232323';
         }
 
-        $color_bg_secondary = get_option('color-bg-secondary', 'mw-template-dream-style-vars');
+        $color_bg_secondary = get_option('color-bg-secondary', 'mw-template-dream');
         if ($color_bg_secondary == '') {
             $color_bg_secondary = '#F4F4F4';
         }
 
-        $color_bg_secondary = get_option('color-bg-secondary', 'mw-template-dream-style-vars');
+        $color_bg_secondary = get_option('color-bg-secondary', 'mw-template-dream');
         if ($color_bg_secondary == '') {
             $color_bg_secondary = '#F4F4F4';
         }
 
-        $color_on_dark = get_option('color-on-dark', 'mw-template-dream-style-vars');
+        $color_on_dark = get_option('color-on-dark', 'mw-template-dream');
         if ($color_on_dark == '') {
             $color_on_dark = '#F4F4F4';
         }
 
-        $color_body = get_option('color-body', 'mw-template-dream-style-vars');
+        $color_body = get_option('color-body', 'mw-template-dream');
         if ($color_body == '') {
             $color_body = '#767676';
         }
 
-        $color_heading = get_option('color-heading', 'mw-template-dream-style-vars');
+        $color_heading = get_option('color-heading', 'mw-template-dream');
         if ($color_heading == '') {
             $color_heading = '#343434';
         }
@@ -615,101 +616,103 @@
         <div class="form-group">
             <label for="select" class="mw-ui-label">Color scheme</label>
             <div>
-                <div class="theme-color-selector">
-                    <button style="background: <?php print  $bg_white ?>;" id="bg_white"></button>
-                    <input class="mw-ui-field mw_option_field hidden" name="bg-white" value="<?php print $bg_white ?>" data-option-group="mw-template-dream-style-vars" placeholder="Eneter color..">
-                    White Background
-                </div>
+                
                 <div class="theme-color-selector">
                     <button style="background: <?php print  $color_bg_site ?>;" id="color_bg_site"></button>
-                    <input class="mw-ui-field mw_option_field hidden" name="color-bg-site" value="<?php print $color_bg_site ?>" data-option-group="mw-template-dream-style-vars" placeholder="Eneter color..">
+                    <input class="mw-ui-field mw_option_field hidden" name="color-bg-site" value="<?php print $color_bg_site ?>" data-option-group="mw-template-dream" placeholder="Eneter color..">
                     Site Background Color
                 </div>
 
                 <div class="theme-color-selector">
                     <button style="background: <?php print  $color_bg_secondary ?>;" id="color_bg_secondary"></button>
-                    <input class="mw-ui-field mw_option_field hidden" name="color-bg-secondary" value="<?php print $color_bg_secondary ?>" data-option-group="mw-template-dream-style-vars" placeholder="Eneter color..">
+                    <input class="mw-ui-field mw_option_field hidden" name="color-bg-secondary" value="<?php print $color_bg_secondary ?>" data-option-group="mw-template-dream" placeholder="Eneter color..">
                     Secondary Site Background Color
                 </div>
 
                 <div class="theme-color-selector">
                     <button style="background: <?php print  $color_primary ?>;" id="color_primary"></button>
-                    <input class="mw-ui-field mw_option_field hidden" name="color-primary" value="<?php print $color_primary ?>" data-option-group="mw-template-dream-style-vars" placeholder="Eneter color..">
+                    <input class="mw-ui-field mw_option_field hidden" name="color-primary" value="<?php print $color_primary ?>" data-option-group="mw-template-dream" placeholder="Eneter color..">
                     Primary Color
                 </div>
 
                 <div class="theme-color-selector">
                     <button style="background: <?php print  $color_primary_1 ?>;" id="color_primary_1"></button>
-                    <input class="mw-ui-field mw_option_field hidden" name="color-primary-1" value="<?php print $color_primary_1 ?>" data-option-group="mw-template-dream-style-vars" placeholder="Eneter color..">
+                    <input class="mw-ui-field mw_option_field hidden" name="color-primary-1" value="<?php print $color_primary_1 ?>" data-option-group="mw-template-dream" placeholder="Eneter color..">
                     Primary Color 1
                 </div>
 
                 <div class="theme-color-selector">
                     <button style="background: <?php print  $color_primary_2 ?>;" id="color_primary_2"></button>
-                    <input class="mw-ui-field mw_option_field hidden" name="color-primary-2" value="<?php print $color_primary_2 ?>" data-option-group="mw-template-dream-style-vars" placeholder="Eneter color..">
+                    <input class="mw-ui-field mw_option_field hidden" name="color-primary-2" value="<?php print $color_primary_2 ?>" data-option-group="mw-template-dream" placeholder="Eneter color..">
                     Primary Color 2
                 </div>
 
                 <div class="theme-color-selector">
                     <button style="background: <?php print  $color_primary_3 ?>;" id="color_primary_3"></button>
-                    <input class="mw-ui-field mw_option_field hidden" name="color-primary-3" value="<?php print $color_primary_3 ?>" data-option-group="mw-template-dream-style-vars" placeholder="Eneter color..">
+                    <input class="mw-ui-field mw_option_field hidden" name="color-primary-3" value="<?php print $color_primary_3 ?>" data-option-group="mw-template-dream" placeholder="Eneter color..">
                     Primary Color 3
                 </div>
 
                 <div class="theme-color-selector">
                     <button style="background: <?php print  $color_dark ?>;" id="color_dark"></button>
-                    <input class="mw-ui-field mw_option_field hidden" name="color-dark" value="<?php print $color_dark ?>" data-option-group="mw-template-dream-style-vars" placeholder="Eneter color..">
+                    <input class="mw-ui-field mw_option_field hidden" name="color-dark" value="<?php print $color_dark ?>" data-option-group="mw-template-dream" placeholder="Eneter color..">
                     Dark Color
                 </div>
 
                 <div class="theme-color-selector">
                     <button style="background: <?php print  $color_on_dark ?>;" id="color_on_dark"></button>
-                    <input class="mw-ui-field mw_option_field hidden" name="color-on-dark" value="<?php print $color_on_dark ?>" data-option-group="mw-template-dream-style-vars" placeholder="Eneter color..">
+                    <input class="mw-ui-field mw_option_field hidden" name="color-on-dark" value="<?php print $color_on_dark ?>" data-option-group="mw-template-dream" placeholder="Eneter color..">
                     Color On Dark
                 </div>
 
                 <div class="theme-color-selector">
                     <button style="background: <?php print  $color_body ?>;" id="color_body"></button>
-                    <input class="mw-ui-field mw_option_field hidden" name="color-body" value="<?php print $color_body ?>" data-option-group="mw-template-dream-style-vars" placeholder="Eneter color..">
+                    <input class="mw-ui-field mw_option_field hidden" name="color-body" value="<?php print $color_body ?>" data-option-group="mw-template-dream" placeholder="Eneter color..">
                     Body Color
                 </div>
 
                 <div class="theme-color-selector">
                     <button style="background: <?php print  $color_heading ?>;" id="color_heading"></button>
-                    <input class="mw-ui-field mw_option_field hidden" name="color-heading" value="<?php print $color_heading ?>" data-option-group="mw-template-dream-style-vars" placeholder="Eneter color..">
+                    <input class="mw-ui-field mw_option_field hidden" name="color-heading" value="<?php print $color_heading ?>" data-option-group="mw-template-dream" placeholder="Eneter color..">
                     Heading Color
+                </div>
+				
+				<div class="theme-color-selector">
+                    <button style="background: <?php print  $bg_white ?>;" id="bg_white"></button>
+                    <input class="mw-ui-field mw_option_field hidden" name="bg-white" value="<?php print $bg_white ?>" data-option-group="mw-template-dream" placeholder="Eneter color..">
+                    White Background
                 </div>
             </div>
         </div>
 
         <?php
-        $base_font_size_px = get_option('base-font-size-px', 'mw-template-dream-style-vars');
+        $base_font_size_px = get_option('base-font-size-px', 'mw-template-dream');
         if ($base_font_size_px == '') {
             $base_font_size_px = '16px';
         }
 
-        $base_font_size_mobile_px = get_option('base-font-size-mobile-px', 'mw-template-dream-style-vars');
+        $base_font_size_mobile_px = get_option('base-font-size-mobile-px', 'mw-template-dream');
         if ($base_font_size_mobile_px == '') {
             $base_font_size_mobile_px = '14px';
         }
 
 
-        $nav_item_font_size = get_option('nav-item-font-size', 'mw-template-dream-style-vars');
+        $nav_item_font_size = get_option('nav-item-font-size', 'mw-template-dream');
         if ($nav_item_font_size == '') {
             $nav_item_font_size = '10px';
         }
 
-        $button_radius = get_option('button-radius', 'mw-template-dream-style-vars');
+        $button_radius = get_option('button-radius', 'mw-template-dream');
         if ($button_radius == '') {
             $button_radius = '100px';
         }
 
-        $input_border_radius = get_option('input-border-radius', 'mw-template-dream-style-vars');
+        $input_border_radius = get_option('input-border-radius', 'mw-template-dream');
         if ($input_border_radius == '') {
             $input_border_radius = '50px';
         }
 
-        $border_width = get_option('border-width', 'mw-template-dream-style-vars');
+        $border_width = get_option('border-width', 'mw-template-dream');
         if ($border_width == '') {
             $border_width = '2px';
         }
@@ -717,32 +720,32 @@
 
         <div class="form-group">
             <label class="mw-ui-label">Base Font Size in pixels</label>
-            <input class="mw-ui-field mw_option_field" name="base-font-size-px" value="<?php print $base_font_size_px ?>" data-option-group="mw-template-dream-style-vars" placeholder="16px">
+            <input class="mw-ui-field mw_option_field" name="base-font-size-px" value="<?php print $base_font_size_px ?>" data-option-group="mw-template-dream" placeholder="16px">
         </div>
 
         <div class="form-group">
             <label class="mw-ui-label">Base Font Size in Mobile</label>
-            <input class="mw-ui-field mw_option_field" name="base-font-size-mobile-px" value="<?php print $base_font_size_mobile_px ?>" data-option-group="mw-template-dream-style-vars" placeholder="14px">
+            <input class="mw-ui-field mw_option_field" name="base-font-size-mobile-px" value="<?php print $base_font_size_mobile_px ?>" data-option-group="mw-template-dream" placeholder="14px">
         </div>
 
         <div class="form-group">
             <label class="mw-ui-label">Navigation Elements Font Size</label>
-            <input class="mw-ui-field mw_option_field" name="nav-item-font-size" value="<?php print $nav_item_font_size ?>" data-option-group="mw-template-dream-style-vars" placeholder="10px">
+            <input class="mw-ui-field mw_option_field" name="nav-item-font-size" value="<?php print $nav_item_font_size ?>" data-option-group="mw-template-dream" placeholder="10px">
         </div>
 
         <div class="form-group">
             <label class="mw-ui-label">Buttons Border Radius</label>
-            <input class="mw-ui-field mw_option_field" name="button-radius" value="<?php print $button_radius ?>" data-option-group="mw-template-dream-style-vars" placeholder="100px">
+            <input class="mw-ui-field mw_option_field" name="button-radius" value="<?php print $button_radius ?>" data-option-group="mw-template-dream" placeholder="100px">
         </div>
 
         <div class="form-group">
             <label class="mw-ui-label">Inputs Border Radius</label>
-            <input class="mw-ui-field mw_option_field" name="input-border-radius" value="<?php print $input_border_radius ?>" data-option-group="mw-template-dream-style-vars" placeholder="50px">
+            <input class="mw-ui-field mw_option_field" name="input-border-radius" value="<?php print $input_border_radius ?>" data-option-group="mw-template-dream" placeholder="50px">
         </div>
 
         <div class="form-group">
             <label class="mw-ui-label">Inputs Border Width</label>
-            <input class="mw-ui-field mw_option_field" name="border-width" value="<?php print $border_width ?>" data-option-group="mw-template-dream-style-vars" placeholder="2px">
+            <input class="mw-ui-field mw_option_field" name="border-width" value="<?php print $border_width ?>" data-option-group="mw-template-dream" placeholder="2px">
         </div>
 
 
