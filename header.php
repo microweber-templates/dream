@@ -80,7 +80,7 @@
     <link href="{TEMPLATE_URL}assets/css/theme<?php /*print $color_scheme; */?>.css" id="theme-color" rel="stylesheet" type="text/css" media="all"/>
 -->
 
-    <link href="<?php print mw()->template->get_stylesheet('assets/less/theme.less', 'mw-template-dream-style-vars',true, 'assets/dist/main.min.css'); ?>" id="theme-style" rel="stylesheet" type="text/css" media="all"/>
+    <link href="<?php print mw()->template->get_stylesheet('assets/less/theme.less', 'assets/dist/main.min.css', true); ?>" id="theme-style" rel="stylesheet" type="text/css" media="all"/>
 
     <link href="{TEMPLATE_URL}assets/css/mw-dream.css" rel="stylesheet" type="text/css" media="all"/>
     <link href='https://fonts.googleapis.com/css?family=Lora:400,400italic,700%7CMontserrat:400,700' rel='stylesheet' type='text/css'>

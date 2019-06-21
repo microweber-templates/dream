@@ -9,7 +9,7 @@
     function reloadTemplate() {
         mw.notification.success("<?php _e("Template settings are saved"); ?>.");
 
-        parent.$("#theme-style").attr('href', '<?php print mw()->template->get_stylesheet('assets/less/theme.less', 'mw-template-dream-style-vars', false); ?>');
+        parent.$("#theme-style").attr('href', '<?php print mw()->template->get_stylesheet('assets/less/theme.less', false, false); ?>');
 
         /* parent.$("#theme-style").each(function(){
          mw.tools.refresh(this)
