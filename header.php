@@ -77,9 +77,10 @@
     </script>
 
 
-    <link href="{TEMPLATE_URL}assets/css/main.min.css" rel="stylesheet" type="text/css" media="all"/>
-    <link href="<?php print mw()->template->get_stylesheet('assets/less/theme.less', 'assets/dist/theme.css', true); ?>" id="theme-style" rel="stylesheet" type="text/css" media="all"/>
-
+    
+    
+<link href="{TEMPLATE_URL}assets/css/main.min.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="<?php print mw()->template->get_stylesheet('assets/less/theme.less', 'assets/dist/theme.css', true); ?>" id="theme-style" rel="stylesheet" type="text/css" media="all"/>
     <link href="{TEMPLATE_URL}assets/css/mw-dream.css" rel="stylesheet" type="text/css" media="all"/>
     <link href='https://fonts.googleapis.com/css?family=Lora:400,400italic,700%7CMontserrat:400,700' rel='stylesheet' type='text/css'>
 
