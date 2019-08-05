@@ -76,7 +76,8 @@
     </script>
 
 
-    <link href="{TEMPLATE_URL}assets/css/theme.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="{TEMPLATE_URL}assets/dist/main.min.css" rel="stylesheet" type="text/css" media="all"/>
+<!--    <link href="{TEMPLATE_URL}assets/css/theme.css" rel="stylesheet" type="text/css" media="all"/>-->
     <link href="<?php print mw()->template->get_stylesheet('assets/less/theme.less', 'assets/dist/theme.css', true); ?>" id="theme-style" rel="stylesheet" type="text/css" media="all"/>
 
     <link href="{TEMPLATE_URL}assets/css/mw-dream.css" rel="stylesheet" type="text/css" media="all"/>
