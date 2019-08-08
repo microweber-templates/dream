@@ -26,6 +26,14 @@
         mw.templateTopFixed = '.nav-bar.nav--fixed';
 
         AddToCartModalContent = window.AddToCartModalContent || function (title) {
+
+
+               var title_display = null
+                if(typeof(title) == 'undefined'){
+                    title = '<?php _e("Product"); ?>'
+                }
+
+
                 var html = ''
                     + '<section style="text-align: center;">'
                     + '<h5>' + title + '</h5>'
@@ -36,9 +44,19 @@
             }
 
         mw.on('mw.cart.add', function () {
+
+
             var notification = $('body').find('.notification[data-notification-link="cart-overview"]');
-            notification.removeClass('notification--dismissed');
-            mr.notifications.showNotification(notification, 0);
+              if(notification.length > 0){
+
+                    notification.removeClass('notification--dismissed');
+                    mr.notifications.showNotification(notification, 0);
+              } else {
+                  mw.modal({
+                      id: 'AddToCartModal',
+                      content:AddToCartModalContent()
+                  })
+              }
             return false;
         });
         mw.on('mw.cart.remove', function () {
