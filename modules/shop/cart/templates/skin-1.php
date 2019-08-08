@@ -40,7 +40,9 @@ description: Full width cart template
 
                             <div class="card__body boxed  bg--white text-center">
                                 <div class="card__title">
+                                    <a href="<?php print $item['url'] ?>">
                                     <h5><?php print $item['title'] ?></h5>
+                                    </a>
                                 </div>
                                 <div class="card__price">
                                     <span><?php print currency_format($item['price']); ?></span>
