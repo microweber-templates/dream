@@ -144,7 +144,11 @@ if (!isset($tn[1])) {
                                     <?php $i++;
                                     break; endforeach; ?>
                             <?php endif; ?>
-
+                            
+                            <?php $content_data = content_data($item['id']); ?>
+                             <?php if(isset($content_data['label-color'])): ?>
+			            		<div class="badge badge-success pull-right" style="background:<?php echo $content_data['label-color']; ?>;"><?php echo $content_data['label']; ?></div>
+			            	<?php endif; ?>
 
                         </div>
                     </div>

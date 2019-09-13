@@ -1,6 +1,5 @@
 @import "theme-variables.less";
 
-
 .logo-text span {
   font-size: 136px;
   line-height: 1.2;
@@ -22,20 +21,6 @@
   color: @color-on-dark;
 }
 
-/*
-@media screen and (max-width: 480px) {
-    .logo-text span {
-        font-size: 136px;
-        line-height: 136px;
-    }
-}
-
-@media screen and (min-width: 1200px ) and (max-width: 1365px) {
-    .logo-text span {
-        font-size: 110px;
-        line-height: 110px;
-    }
-}*/
 
 .nav-bar .phone-header {
   margin-right: 10px;
@@ -361,8 +346,12 @@ nav .nav-module.search-module {
 }
 
 .btn__text i {
-  font-size: 18px;
+  font-size: 22px;
   margin-right: 10px;
+  float: left;
+  display: block;
+  line-height: 1;
+  margin-top: 2px;
 }
 
 .card-1 .card__icon i {
@@ -430,6 +419,10 @@ section.blog-post .container .container {
 
 .accordion li.active .accordion__content {
   max-height: auto !important;
+}
+
+.accordion li.active .accordion__content .allow-drop {
+  display: block;
 }
 
 .gateway-selector .mw-ui-check input[type=radio] + span:before {
@@ -596,7 +589,7 @@ body.mw-live-edit {
 .masonry__container {
   overflow: hidden;
 }
-
+/*
 .height-10,
 .height-20,
 .height-30,
@@ -624,17 +617,17 @@ body.mw-live-edit {
 .height-80 .pos-vertical-center,
 .height-90 .pos-vertical-center,
 .height-100 .pos-vertical-center {
-  /*display: flex;*/
-  /*align-items: center;*/
-  /*align-content: center;*/
+  display: flex;
+  align-items: center;
+  align-content: center;
   top: auto;
   transform: none;
   -webkit-transform: none;
 
   display: block;
-  /*top: 50%;*/
-  /*transform: translateY(100%);*/
-}
+  top: 50%;
+  transform: translateY(100%);
+}*/
 
 @media all and (min-height: 600px) and (min-width: 767px) {
   .height-10 {
@@ -676,4 +669,16 @@ body.mw-live-edit {
   .height-100 {
     min-height: 100vh;
   }
+}
+
+.imagebg.cover-1 .background-image-holder {
+  height: 100%;
+  display: flex;
+}
+
+.tabs .voh .tab__title i {
+  font-size: 18px;
+  display: inline-block;
+  margin-right: 10px;
+  line-height: 1.3;
 }

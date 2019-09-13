@@ -26,6 +26,14 @@
         mw.templateTopFixed = '.nav-bar.nav--fixed';
 
         AddToCartModalContent = window.AddToCartModalContent || function (title) {
+
+
+               var title_display = null
+                if(typeof(title) == 'undefined'){
+                    title = '<?php _e("Product"); ?>'
+                }
+
+
                 var html = ''
                     + '<section style="text-align: center;">'
                     + '<h5>' + title + '</h5>'
@@ -36,9 +44,19 @@
             }
 
         mw.on('mw.cart.add', function () {
+
+
             var notification = $('body').find('.notification[data-notification-link="cart-overview"]');
-            notification.removeClass('notification--dismissed');
-            mr.notifications.showNotification(notification, 0);
+              if(notification.length > 0){
+
+                    notification.removeClass('notification--dismissed');
+                    mr.notifications.showNotification(notification, 0);
+              } else {
+                  mw.modal({
+                      id: 'AddToCartModal',
+                      content:AddToCartModalContent()
+                  })
+              }
             return false;
         });
         mw.on('mw.cart.remove', function () {
@@ -76,17 +94,10 @@
     </script>
 
 
+    <link href="{TEMPLATE_URL}assets/dist/main.min.css" rel="stylesheet" type="text/css" media="all"/>
 
+    <?php print get_template_stylesheet(); ?>
 
-<!--
-  <link href="{TEMPLATE_URL}assets/dist/main.min.css" rel="stylesheet" type="text/css" media="all"/>
-    <link href="{TEMPLATE_URL}assets/css/theme<?php print $color_scheme; ?>.css" id="theme-color" rel="stylesheet" type="text/css" media="all"/>
--->
-
-
-    <link href="<?php print mw()->template->get_stylesheet('assets/less/theme.less','mw-template-dream-style-vars'); ?>" id="theme-style" rel="stylesheet" type="text/css" media="all"/>
-
-<!--    <link href="{TEMPLATE_URL}assets/css/custom.css" rel="stylesheet" type="text/css" media="all"/>-->
     <link href="{TEMPLATE_URL}assets/css/mw-dream.css" rel="stylesheet" type="text/css" media="all"/>
     <link href='https://fonts.googleapis.com/css?family=Lora:400,400italic,700%7CMontserrat:400,700' rel='stylesheet' type='text/css'>
 

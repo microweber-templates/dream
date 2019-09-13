@@ -30,8 +30,14 @@ if (isset($json) == false or count($json) == 0) {
         <ul class="tabs">
             <?php
             $count = 0;
-            foreach ($json as $slide) {
+            foreach ($json as $key=>$slide) {
                 $count++;
+
+                $edit_field_key = $key;
+                if(isset($slide['id'])){
+                    $edit_field_key = $slide['id'];
+                }
+
                 ?>
                 <li class="<?php if ($count == 1): ?>active<?php endif; ?> voh vnn">
                     <div class="tab__title">
@@ -39,7 +45,7 @@ if (isset($json) == false or count($json) == 0) {
                     </div>
                     <div class="tab__content">
                         <div class="edit allow-drop"
-                             field="tab-item-<?php print $count ?>"
+                             field="tab-item-<?php print $edit_field_key ?>"
                              rel="module-<?php print $params['id'] ?>">
                             <div class="element"> <?php print isset($slide['content']) ? $slide['content'] : 'Tab content ' . $count ?></div>
                         </div>
