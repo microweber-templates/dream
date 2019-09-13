@@ -15,7 +15,7 @@
 
     </style>
     <script>
-        $(mwd).ready(function () {
+        mw.$(mwd).ready(function () {
             mw.tabs({
                 nav: '.mw-ui-btn-nav-tabs a',
                 tabs: '.tab'
@@ -106,37 +106,37 @@
         setprior = function (v, t) {
             var t = t || false;
             mwd.getElementById('prior').value = v;
-            $(mwd.getElementById('prior')).trigger('change');
+            mw.$(mwd.getElementById('prior')).trigger('change');
             if (!!t) {
                 setTimeout(function () {
-                    $(t).trigger('change');
+                    mw.$(t).trigger('change');
                 }, 70);
             }
         }
 
-        $(document).ready(function () {
+        mw.$(document).ready(function () {
 
             var up = mw.files.uploader({
                 multiple: false,
                 filetypes: 'videos'
             });
 
-            $(up).bind("error", function () {
+            mw.$(up).bind("error", function () {
                 mw.notification.warning("<?php _e("Unsupported format"); ?>.")
             });
 
-            $(up).bind("FileUploaded", function (a, b) {
+            mw.$(up).bind("FileUploaded", function (a, b) {
                 mw.notification.success("<?php _e("File Uploaded"); ?>");
                 mwd.getElementById('upload_field').value = b.src;
-                $(mwd.getElementById('upload_field')).trigger("change");
+                mw.$(mwd.getElementById('upload_field')).trigger("change");
                 setprior(2);
-                $(status).hide();
+                mw.$(status).hide();
             });
 
             var status = mwd.getElementById('upload_status');
 
-            $(up).bind("progress", function (a, b) {
-                $(status).show();
+            mw.$(up).bind("progress", function (a, b) {
+                mw.$(status).show();
                 status.querySelector('.mw-ui-progress-bar').style.width = b.percent + '%';
                 status.querySelector('.mw-ui-progress-percent').innerHTML = b.percent + '%';
             });
@@ -144,7 +144,7 @@
 
             var btn = mwd.getElementById('upload_btn');
 
-            $(btn).append(up);
+            mw.$(btn).append(up);
 
             mw.$("#emebed_video_field").focus();
         })

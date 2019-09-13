@@ -41,7 +41,7 @@ description: Skin 1
                 <?php foreach($data  as $item): ?>{image: "<?php print ($item['filename']); ?>", description: "<?php print $item['title']; ?>"},
             <?php endforeach;  ?>
         ];
-        $(document).ready(function () {
+        mw.$(document).ready(function () {
             mr.sliders.documentReady($)
         })
     </script>

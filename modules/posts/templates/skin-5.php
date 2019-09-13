@@ -51,7 +51,7 @@ description: Skin 5
 
 
 <script>
-    $(document).ready(function () {
+    mw.$(document).ready(function () {
         mr.sliders.documentReady($)
     })
 </script>

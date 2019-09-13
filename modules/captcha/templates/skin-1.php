@@ -14,8 +14,8 @@ description: Default comments template
 ?>
 
 <script>
-    $(document).ready(function () {
-        $('[data-toggle="tooltip"]').tooltip();
+    mw.$(document).ready(function () {
+        mw.$('[data-toggle="tooltip"]').tooltip();
     });
 </script>
 

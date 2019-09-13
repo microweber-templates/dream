@@ -183,49 +183,49 @@ description: Dictionary
 
 </style>
 <script>
-    $(function () {
+    mw.$(function () {
         initGlossaryFilter();
     });
 
     // Filter Glossary items
     function initGlossaryFilter() {
         // Filter using search box
-        $("#glossarySearchInput").bind("keyup", function () {
-            var inputValue = $(this).val();
+        mw.$("#glossarySearchInput").bind("keyup", function () {
+            var inputValue = mw.$(this).val();
 
             // Hide all the results & Cards
-            $(".glossary__results__row").addClass("inactive");
-            $(".glossary__results__item").hide();
+            mw.$(".glossary__results__row").addClass("inactive");
+            mw.$(".glossary__results__item").hide();
 
-            $(".glossary__results__row").each(function () {
-                $(".glossary__results__item").each(function () {
-                    var item = $(this).attr("data-item");
+            mw.$(".glossary__results__row").each(function () {
+                mw.$(".glossary__results__item").each(function () {
+                    var item = mw.$(this).attr("data-item");
 
                     if (item.toUpperCase().indexOf(inputValue.toUpperCase()) != -1) {
-                        $(this).parents(".glossary__results__row").removeClass("inactive");
-                        $(this).show();
+                        mw.$(this).parents(".glossary__results__row").removeClass("inactive");
+                        mw.$(this).show();
                     }
                 });
             });
         });
 
         // Filter using navigation
-        $(".glossary__nav a").click(function () {
-            var nav = $(this).attr("data-nav");
+        mw.$(".glossary__nav a").click(function () {
+            var nav = mw.$(this).attr("data-nav");
 
             // Remove & Add active class
-            $(".glossary__nav__item").removeClass("active");
-            $(this).parent().toggleClass("active");
+            mw.$(".glossary__nav__item").removeClass("active");
+            mw.$(this).parent().toggleClass("active");
 
             // Hide all the results
-            $(".glossary__results__row").addClass("inactive");
+            mw.$(".glossary__results__row").addClass("inactive");
 
             // Loop through the row
-            $(".glossary__results__row").each(function () {
-                var term = $(this).attr("data-term");
+            mw.$(".glossary__results__row").each(function () {
+                var term = mw.$(this).attr("data-term");
 
                 if (nav == term) {
-                    $(this).removeClass("inactive");
+                    mw.$(this).removeClass("inactive");
                 }
             });
 
@@ -235,10 +235,10 @@ description: Dictionary
             }
         });
 
-        $(".glossary__nav a.all").click(function () {
+        mw.$(".glossary__nav a.all").click(function () {
             // Loop through the row
-            $(".glossary__results__row").each(function () {
-                $(this).removeClass("inactive");
+            mw.$(".glossary__results__row").each(function () {
+                mw.$(this).removeClass("inactive");
             });
 
             // Only return false if data-toggle is glossary

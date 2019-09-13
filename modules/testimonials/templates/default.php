@@ -18,12 +18,12 @@ description: Testimonials Default
 
 <script>
 
-    $(window).on('load resize', function () {
-        var root = $("#<?php print $params['id']; ?>"), max = 0;
-        $('.mw-testimonials-item', root)
+    mw.$(window).on('load resize', function () {
+        var root = mw.$("#<?php print $params['id']; ?>"), max = 0;
+        mw.$('.mw-testimonials-item', root)
             .height('auto')
             .each(function () {
-                var height = $(this).height();
+                var height = mw.$(this).height();
                 if (height > max) max = height;
             })
             .height(max)

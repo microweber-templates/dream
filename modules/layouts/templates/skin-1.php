@@ -27,29 +27,29 @@ if ($overlay === null OR $overlay === false) {
 </script>
 <script>
 
-    $(document).ready(function () {
+    mw.$(document).ready(function () {
         var el = document.getElementById('fitty-<?php print $params['id'] ?>');
-        $('#fitty-<?php print $params['id'] ?>').removeAttr('style');
+        mw.$('#fitty-<?php print $params['id'] ?>').removeAttr('style');
         if (el) {
             fitty(el);
         }
     });
 
-    $(document).ready(function () {
-        var $window = $(window);
+    mw.$(document).ready(function () {
+        var $window = mw.$(window);
         var windowWidth = $window.width();
         var windowHeight = $window.height();
-        var navHeight = $('nav').outerHeight(true);
+        var navHeight = mw.$('nav').outerHeight(true);
 
         // Disable parallax on mobile
 
         if ((/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)) {
-            $('section').removeClass('parallax');
+            mw.$('section').removeClass('parallax');
         }
 
         if (windowWidth > 768) {
-            var parallaxHero = $('.parallax:nth-of-type(1)'),
-                parallaxHeroImage = $('.parallax:nth-of-type(1) .background-image-holder');
+            var parallaxHero = mw.$('.parallax:nth-of-type(1)'),
+                parallaxHeroImage = mw.$('.parallax:nth-of-type(1) .background-image-holder');
 
             parallaxHeroImage.css('top', -(navHeight));
             if (parallaxHero.outerHeight(true) == windowHeight) {

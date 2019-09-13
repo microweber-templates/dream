@@ -16,7 +16,7 @@ description: Default register template
         mw.moduleCSS("<?php print modules_url(); ?>users/users_modules.css");
         mw.require('forms.js', true);
         mw.require('url.js', true);
-        $(document).ready(function () {
+        mw.$(document).ready(function () {
             mw.$('#user_registration_form_holder').submit(function () {
                 mw.form.post(mw.$('#user_registration_form_holder'), '<?php print site_url('api') ?>/user_register', function () {
                     mw.response('#register_form_holder', this);

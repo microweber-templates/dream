@@ -13,9 +13,9 @@ description: Default template
 ?>
 
 <script>
-    $(document).ready(function () {
-        $(".mw-shopping-cart-big-layout-1 .mw-qty-field .cartDecreaseProductsNumber").click(function () {
-            var thisQty = $(this).parent().find('input');
+    mw.$(document).ready(function () {
+        mw.$(".mw-shopping-cart-big-layout-1 .mw-qty-field .cartDecreaseProductsNumber").click(function () {
+            var thisQty = mw.$(this).parent().find('input');
             var inputVal = thisQty.val();
 
             if (inputVal < 2) {
@@ -28,8 +28,8 @@ description: Default template
             thisQty.trigger('change');
         });
 
-        $(".mw-shopping-cart-big-layout-1 .mw-qty-field .cartIncreaseProductsNumber").click(function () {
-            var thisQty = $(this).parent().find('input');
+        mw.$(".mw-shopping-cart-big-layout-1 .mw-qty-field .cartIncreaseProductsNumber").click(function () {
+            var thisQty = mw.$(this).parent().find('input');
             var inputVal = thisQty.val();
             inputVal = parseInt(inputVal) + (1);
             thisQty.val(inputVal);

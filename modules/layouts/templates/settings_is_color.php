@@ -7,7 +7,7 @@ if ($is_color === null OR $is_color === false OR $is_color == '') {
 
 <script>
 
-    $(window).load(function(){
+    mw.$(window).load(function(){
 
         var timer_color_pick;
 
@@ -22,13 +22,13 @@ if ($is_color === null OR $is_color === false OR $is_color == '') {
 
                      window.clearTimeout(timer_color_pick);
 
-                    $('#color_change_val').val(color);
+                    mw.$('#color_change_val').val(color);
 
 
                      timer_color_pick = window.setTimeout(function(){
 
-                         $('#color_change_val').trigger('change');
-                       //  $('.color_picker_for_sidebar_settings').trigger('change');
+                         mw.$('#color_change_val').trigger('change');
+                       //  mw.$('.color_picker_for_sidebar_settings').trigger('change');
 
 
 

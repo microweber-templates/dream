@@ -8,7 +8,7 @@
             },
             <?php endforeach;  ?>
         ];
-        $(document).ready(function () {
+        mw.$(document).ready(function () {
             mr.sliders.documentReady($)
         })
     </script>

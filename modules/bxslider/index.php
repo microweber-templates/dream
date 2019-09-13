@@ -162,7 +162,7 @@ if (isset($params['pager_custom'])) {
 
     <script>
 
-        $(document).ready(function () {
+        mw.$(document).ready(function () {
             mw.tplDream.slider($)
         })
 

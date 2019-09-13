@@ -76,7 +76,7 @@ description: Skin 3
 <?php endif; ?>
 
 <script>
-    $(document).ready(function () {
+    mw.$(document).ready(function () {
         mr.sliders.documentReady($)
     })
 </script>

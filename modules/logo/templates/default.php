@@ -35,7 +35,7 @@ $size = $size . 'px';
         <script>
             mw.lib.require('fitty');
 
-            $(document).ready(function () {
+            mw.$(document).ready(function () {
                 //fitty(document.getElementById('fitty-<?php print $params['id'] ?>-1'));
                 //fitty(document.getElementById('fitty-<?php print $params['id'] ?>-2'));
             });
