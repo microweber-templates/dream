@@ -112,7 +112,7 @@ html {
   }
 }
 body {
-  font-size: 1em;
+  font-size: 1rem;
   line-height: 1.625em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -141,56 +141,56 @@ h6,
 }
 h1,
 .h1 {
-  font-size: 4em;
+  font-size: 4rem;
   line-height: 1.015625em;
 }
 h2,
 .h2 {
-  font-size: 2.8125em;
+  font-size: 2.8125rem;
   line-height: 1.15555556em;
 }
 h3,
 .h3 {
-  font-size: 2em;
+  font-size: 2rem;
   line-height: 1.421875em;
 }
 h4,
 .h4 {
-  font-size: 1.4375em;
+  font-size: 1.4375rem;
   line-height: 1.41304348em;
 }
 h5,
 .h5 {
-  font-size: 1em;
+  font-size: 1rem;
   line-height: 1.625em;
 }
 h6,
 .h6 {
-  font-size: 0.625em;
+  font-size: 0.625rem;
   line-height: 2.6em;
 }
 .lead {
-  font-size: 1.4375em;
+  font-size: 1.4375rem;
   line-height: 1.69565217em;
 }
 @media all and (max-width: 767px) {
   h1,
   .h1 {
-    font-size: 2.8125em;
+    font-size: 2.8125rem;
     line-height: 1.15555556em;
   }
   h2,
   .h2 {
-    font-size: 2em;
+    font-size: 2rem;
     line-height: 1.421875em;
   }
   h3,
   .h3 {
-    font-size: 1.4375em;
+    font-size: 1.4375rem;
     line-height: 1.625em;
   }
   .lead {
-    font-size: 1.4375em;
+    font-size: 1.4375rem;
     line-height: 1.41304348em;
   }
 }
@@ -218,7 +218,7 @@ ol {
   list-style-position: inside;
 }
 blockquote {
-  font-size: 2em;
+  font-size: 2rem;
   line-height: 1.421875em;
   padding: 0;
   margin: 0;
@@ -1079,7 +1079,7 @@ a {
   color: #343434;
   border-color: #343434;
   font-weight: 400;
-  font-size: 0.625em;
+  font-size: 0.625rem;
 }
 .btn[class*='col-'] {
   margin-left: 0;
@@ -1255,16 +1255,16 @@ a {
 /**! 9. Icons **/
 .icon {
   line-height: 1em;
-  font-size: 2.8125em;
+  font-size: 2.8125rem;
 }
 .icon--xs {
-  font-size: 1em;
+  font-size: 1rem;
 }
 .icon--sm {
-  font-size: 2em;
+  font-size: 2rem;
 }
 .icon--lg {
-  font-size: 4em;
+  font-size: 4rem;
 }
 /**! 10. Lists **/
 ul:last-child {
@@ -1619,7 +1619,7 @@ form:after {
 }
 label {
   margin: 0;
-  font-size: 1em;
+  font-size: 1rem;
   font-weight: 400;
 }
 input[type],
@@ -1645,27 +1645,27 @@ input[type]::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder,
 select::-webkit-input-placeholder {
   color: #c3c3c3;
-  font-size: 1em;
+  font-size: 1rem;
 }
 input[type]:-moz-placeholder,
 textarea:-moz-placeholder,
 select:-moz-placeholder {
   /* Firefox 18- */
   color: #c3c3c3;
-  font-size: 1em;
+  font-size: 1rem;
 }
 input[type]::-moz-placeholder,
 textarea::-moz-placeholder,
 select::-moz-placeholder {
   /* Firefox 19+ */
   color: #c3c3c3;
-  font-size: 1em;
+  font-size: 1rem;
 }
 input[type]:-ms-input-placeholder,
 textarea:-ms-input-placeholder,
 select:-ms-input-placeholder {
   color: #c3c3c3;
-  font-size: 1em;
+  font-size: 1rem;
 }
 textarea {
   display: block;
@@ -1886,7 +1886,7 @@ button:focus {
   display: inline-block;
 }
 .breadcrumb li {
-  font-size: 1em;
+  font-size: 1rem;
   text-transform: uppercase;
 }
 .breadcrumb li + li:before {
@@ -2197,7 +2197,7 @@ section.slider .owl-theme .owl-controls .owl-nav div.owl-next {
 }
 .owl-theme .owl-controls .owl-nav div:before {
   font-family: 'pillar-interface';
-  font-size: 2em;
+  font-size: 2rem;
   text-align: center;
 }
 .owl-theme .owl-controls .owl-nav div.owl-next {
@@ -3018,7 +3018,7 @@ form[action*='list-manage.com'] h2 {
   font-weight: 600;
   font-variant-ligatures: common-ligatures;
   margin-bottom: 0;
-  font-size: 1.4375em;
+  font-size: 1.4375rem;
   line-height: 1.41304348em;
   margin-top: 0;
   margin-bottom: 1.1304347826087em;
@@ -3687,7 +3687,7 @@ h6,
 @media all and (max-width: 767px) {
   h1,
   .h1 {
-    font-size: 2em;
+    font-size: 2rem;
     line-height: 1.421875em;
   }
 }
@@ -3754,7 +3754,7 @@ hr,
   border-color: #e7e7e7;
 }
 blockquote {
-  font-size: 1.4375em;
+  font-size: 1.4375rem;
   line-height: 1.69565217391304em;
   font-style: italic;
   margin-bottom: 1.1304347826087em;
@@ -3806,7 +3806,7 @@ span.label {
   font-weight: 600;
   font-variant-ligatures: common-ligatures;
   margin-bottom: 0;
-  font-size: 0.625em;
+  font-size: 0.625rem;
   line-height: 2.6em;
   margin-top: 0;
   text-transform: uppercase;
@@ -4450,21 +4450,21 @@ form.attempted-submit .field-error {
 }
 form.attempted-submit .field-error::-webkit-input-placeholder {
   color: #e34747;
-  font-size: 1em;
+  font-size: 1rem;
 }
 form.attempted-submit .field-error:-moz-placeholder {
   /* Firefox 18- */
   color: #e34747;
-  font-size: 1em;
+  font-size: 1rem;
 }
 form.attempted-submit .field-error::-moz-placeholder {
   /* Firefox 19+ */
   color: #e34747;
-  font-size: 1em;
+  font-size: 1rem;
 }
 form.attempted-submit .field-error:-ms-input-placeholder {
   color: #e34747;
-  font-size: 1em;
+  font-size: 1rem;
 }
 @media all and (max-width: 1024px) {
   form.form--labels .row button[type="submit"] {
@@ -4519,7 +4519,7 @@ textarea {
 }
 .input-with-icon i {
   position: absolute;
-  font-size: 1.4375em;
+  font-size: 1.4375rem;
   margin-left: 1.1304347826087em;
   top: 13px;
   left: 0;
@@ -4561,7 +4561,7 @@ textarea {
 .imagebg:not(.image--light):not(.form--dark) input[type='email']::-webkit-input-placeholder,
 .imagebg:not(.image--light):not(.form--dark) input[type="search"]::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.75);
-  font-size: 1em;
+  font-size: 1rem;
 }
 .imagebg:not(.image--light):not(.form--dark) input[type='text']:-moz-placeholder,
 .imagebg:not(.image--light):not(.form--dark) input[type='address']:-moz-placeholder,
@@ -4571,7 +4571,7 @@ textarea {
 .imagebg:not(.image--light):not(.form--dark) input[type="search"]:-moz-placeholder {
   /* Firefox 18- */
   color: rgba(255, 255, 255, 0.75);
-  font-size: 1em;
+  font-size: 1rem;
 }
 .imagebg:not(.image--light):not(.form--dark) input[type='text']::-moz-placeholder,
 .imagebg:not(.image--light):not(.form--dark) input[type='address']::-moz-placeholder,
@@ -4581,7 +4581,7 @@ textarea {
 .imagebg:not(.image--light):not(.form--dark) input[type="search"]::-moz-placeholder {
   /* Firefox 19+ */
   color: rgba(255, 255, 255, 0.75);
-  font-size: 1em;
+  font-size: 1rem;
 }
 .imagebg:not(.image--light):not(.form--dark) input[type='text']:-ms-input-placeholder,
 .imagebg:not(.image--light):not(.form--dark) input[type='address']:-ms-input-placeholder,
@@ -4590,7 +4590,7 @@ textarea {
 .imagebg:not(.image--light):not(.form--dark) input[type='email']:-ms-input-placeholder,
 .imagebg:not(.image--light):not(.form--dark) input[type="search"]:-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.75);
-  font-size: 1em;
+  font-size: 1rem;
 }
 .imagebg:not(.image--light):not(.form--dark) .input-with-icon i {
   color: #fff;
@@ -4615,7 +4615,7 @@ label {
   font-weight: 600;
   font-variant-ligatures: common-ligatures;
   margin-bottom: 0;
-  font-size: 0.625em;
+  font-size: 0.625rem;
   line-height: 2.6em;
   margin-top: 0;
   text-transform: uppercase;
@@ -5024,7 +5024,7 @@ li + li .input-checkbox {
   margin-right: 3.25em;
 }
 .cover .social-list li a {
-  font-size: 1.4375em;
+  font-size: 1.4375rem;
 }
 .cover .pos-bottom .social-list {
   margin-bottom: 3.25em;
@@ -5034,7 +5034,7 @@ li + li .input-checkbox {
     margin-right: 1.625em;
   }
   .cover .social-list li a {
-    font-size: 1em;
+    font-size: 1rem;
   }
   .cover .pos-bottom {
     position: relative;
@@ -5589,7 +5589,7 @@ li + li .input-checkbox {
   font-weight: 600;
   font-variant-ligatures: common-ligatures;
   margin-bottom: 0;
-  font-size: 0.625em;
+  font-size: 0.625rem;
   line-height: 2.6em;
   margin-top: 0;
   text-transform: uppercase;
@@ -5603,7 +5603,7 @@ i + .twitter-feed {
   margin-top: 1.625em;
 }
 .twitter-feed-1 p {
-  font-size: 1.4375em;
+  font-size: 1.4375rem;
   line-height: 1.69565217em;
   margin-bottom: 1.1304347826087em;
   font-weight: 400;
@@ -6033,7 +6033,7 @@ section.features .feature-2 {
   box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
 }
 .piechart-3 i {
-  font-size: 2.8125em;
+  font-size: 2.8125rem;
   color: #425cbb;
 }
 .piechart-3 + h5 {
@@ -6118,7 +6118,7 @@ section.features .feature-2 {
   font-weight: 600;
   font-variant-ligatures: common-ligatures;
   margin-bottom: 0;
-  font-size: 0.625em;
+  font-size: 0.625rem;
   line-height: 2.6em;
   margin-top: 0;
   text-transform: uppercase;
@@ -6140,7 +6140,7 @@ section.features .feature-2 {
   font-weight: 600;
   font-variant-ligatures: common-ligatures;
   margin-bottom: 0;
-  font-size: 0.625em;
+  font-size: 0.625rem;
   line-height: 2.6em;
   margin-top: 0;
   text-transform: uppercase;
@@ -6402,7 +6402,7 @@ section.features .feature-2 {
   margin-bottom: 0;
 }
 .card .card__lower span:not(.h6) {
-  font-size: 0.625em;
+  font-size: 0.625rem;
   font-style: italic;
   display: inline-block;
   color: #767676;
@@ -6655,7 +6655,7 @@ a:active .card {
   right: 4.875em;
 }
 .card-8 .card__price span {
-  font-size: 1.4375em;
+  font-size: 1.4375rem;
 }
 .card-8 .card__price span.type--strikethrough {
   margin-right: 1.1304347826087em;
@@ -7427,7 +7427,7 @@ section:first-of-type.imagebg + .masonry-contained {
   font-weight: 600;
   font-variant-ligatures: common-ligatures;
   margin-bottom: 0;
-  font-size: 0.625em;
+  font-size: 0.625rem;
   line-height: 2.6em;
   margin-top: 0;
   text-transform: uppercase;
@@ -7507,7 +7507,7 @@ section:first-of-type.imagebg + .masonry-contained {
   margin-top: 3.25em;
 }
 .blog-post .blog-post__author span:not(.h6) {
-  font-size: 0.625em;
+  font-size: 0.625rem;
 }
 .blog-post .blog-post__hero {
   margin-bottom: 3.25em;
@@ -7910,7 +7910,7 @@ section:first-of-type.imagebg + .masonry-contained {
 }
 .shop-item-detail .item__price span {
   display: inline-block;
-  font-size: 1.4375em;
+  font-size: 1.4375rem;
 }
 .shop-item-detail .item__price span.type--strikethrough {
   margin-right: 1.625em;
@@ -8043,7 +8043,7 @@ section:first-of-type.imagebg + .masonry-contained {
   border-radius: 50%;
 }
 .notification .notification-close-cross:before {
-  font-size: 1em;
+  font-size: 1rem;
   color: #fff;
   line-height: 2.4375em;
 }
@@ -8118,7 +8118,7 @@ footer .logo {
   font-weight: 600;
   font-variant-ligatures: common-ligatures;
   margin-bottom: 0;
-  font-size: 0.625em;
+  font-size: 0.625rem;
   line-height: 2.6em;
   margin-top: 0;
   text-transform: uppercase;
@@ -8152,7 +8152,7 @@ footer .logo {
   color: #343434;
   font-weight: 600;
   font-variant-ligatures: common-ligatures;
-  font-size: 1em;
+  font-size: 1rem;
   line-height: 1.625em;
   margin-top: 0;
   margin-bottom: 1.625em;
@@ -8202,7 +8202,7 @@ footer .logo {
   font-weight: 600;
   font-variant-ligatures: common-ligatures;
   margin-bottom: 0;
-  font-size: 0.625em;
+  font-size: 0.625rem;
   line-height: 2.6em;
   margin-top: 0;
   text-transform: uppercase;
@@ -8255,7 +8255,7 @@ footer .logo {
   font-weight: 600;
   font-variant-ligatures: common-ligatures;
   margin-bottom: 0;
-  font-size: 0.625em;
+  font-size: 0.625rem;
   line-height: 2.6em;
   margin-top: 0;
   text-transform: uppercase;
@@ -8814,7 +8814,7 @@ nav .nav-module.search-module {
   margin-top: 2px;
 }
 .card-1 .card__icon i {
-  font-size: 4em;
+  font-size: 4rem;
 }
 .newsletter * {
   opacity: 1 !important;

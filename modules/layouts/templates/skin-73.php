@@ -71,7 +71,7 @@ if ($overlay === null OR $overlay === false) {
         <div class="row">
             <div class="col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-3 text-center">
                 <div class="allow-drop">
-                    <p class="logo-text"><span id="fitty-<?php print $params['id'] ?>" class="safe-element"><?php _lang("Dream", "templates/dream"); ?>.</span></p>
+                    <p class="logo-text"><span id="fitty-<?php print $params['id'] ?>" class="safe-element safe-mode"><?php _lang("Dream", "templates/dream"); ?>.</span></p>
                 </div>
             </div>
             <div class="col-xs-12 text-center">

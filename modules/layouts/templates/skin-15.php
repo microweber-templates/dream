@@ -20,19 +20,19 @@ position: 15
             <div class="col-sm-4 allow-drop cloneable">
                 <h6><?php _lang("Your Site, Your Way", "templates/dream"); ?></h6>
                 <p>
-                    <?php lang("Responsive intuitive user story engaging quantitative vs. qualitative SpaceTeam pitch deck co-working engaging pair programming fund integrate. Physical computing innovate pivot integrate fund disrupt latte driven", "templates/dream"); ?>.
+                    <?php _lang("Responsive intuitive user story engaging quantitative vs. qualitative SpaceTeam pitch deck co-working engaging pair programming fund integrate. Physical computing innovate pivot integrate fund disrupt latte driven", "templates/dream"); ?>.
                 </p>
             </div>
             <div class="col-sm-4 allow-drop cloneable">
                 <h6>Developer Friendly</h6>
                 <p>
-                    <?php lang("Responsive intuitive user story engaging quantitative vs. qualitative SpaceTeam pitch deck co-working engaging pair programming fund integrate. Physical computing innovate pivot integrate fund disrupt latte driven", "templates/dream"); ?>.
+                    <?php _lang("Responsive intuitive user story engaging quantitative vs. qualitative SpaceTeam pitch deck co-working engaging pair programming fund integrate. Physical computing innovate pivot integrate fund disrupt latte driven", "templates/dream"); ?>.
                 </p>
             </div>
             <div class="col-sm-4 allow-drop cloneable">
                 <h6>Modular & Reusable</h6>
                 <p>
-                    <?php lang("Responsive intuitive user story engaging quantitative vs. qualitative SpaceTeam pitch deck co-working engaging pair programming fund integrate. Physical computing innovate pivot integrate fund disrupt latte driven", "templates/dream"); ?>.
+                    <?php _lang("Responsive intuitive user story engaging quantitative vs. qualitative SpaceTeam pitch deck co-working engaging pair programming fund integrate. Physical computing innovate pivot integrate fund disrupt latte driven", "templates/dream"); ?>.
                 </p>
             </div>
         </div>

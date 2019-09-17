@@ -9,16 +9,27 @@ var mr = (function ($, window, document) {
         components = {documentReady: [], documentReadyDeferred: [], windowLoad: [], windowLoadDeferred: []};
 
 
+
+
+
     mw.$(document).ready(documentReady);
     mw.$(window).load(windowLoad);
 
     function documentReady(context) {
-
-        context = typeof context == typeof undefined ? $ : context;
+        context = typeof context === typeof undefined ? mw.$ : context;
         components.documentReady.concat(components.documentReadyDeferred).forEach(function (component) {
             component(context);
         });
     }
+
+    mw.$(window).on('load', function () {
+       setTimeout(function(){
+           mw.on('moduleLoaded', function () {
+               documentReady(mw.$)
+           });
+       }, 999)
+    });
+
 
     function windowLoad(context) {
 
