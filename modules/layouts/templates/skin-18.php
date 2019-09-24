@@ -21,7 +21,7 @@ position: 18
 
     <div class="container">
         <div class="row">
-            <div class="col-md-5 col-sm-8 allow-drop">
+            <div class="col-md-5 col-sm-8 allow-drop regular-mode">
                 <h4><?php _lang("Full service &mdash; No compromise.", "templates/dream"); ?></h4>
                 <p>
                     <?php _lang("Strategy gamification alpha startup angel investor channels customer direct mailing burn rate churn rate bandwidth innovator seed round. Ramen disruptive graphical user interface.", "templates/dream"); ?>

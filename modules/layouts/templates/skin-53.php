@@ -21,7 +21,7 @@ position: 53
 
     <div class="col-md-6 col-md-push-6 col-sm-8 col-sm-push-4">
         <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
-            <div class="feature feature-1 service-1 text-center allow-drop">
+            <div class="feature feature-1 service-1 text-center allow-drop regular-mode">
                 <i class="icon icon--lg icon-Sidebar-Window safe-element"></i>
                 <h4><?php _lang("Interface Design", "templates/dream"); ?></h4>
                 <p><?php _lang("Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500.", "templates/dream"); ?></p>

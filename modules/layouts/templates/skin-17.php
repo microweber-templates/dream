@@ -22,7 +22,7 @@ position: 17
 
     <div class="container">
         <div class="row">
-            <div class="col-md-5 col-md-push-7 col-sm-8 col-sm-push-4 allow-drop">
+            <div class="col-md-5 col-md-push-7 col-sm-8 col-sm-push-4 allow-drop regular-mode">
                 <div>
                     <h4><?php _lang("Expertise is just the beginning&hellip;", "templates/dream"); ?></h4>
                     <p>

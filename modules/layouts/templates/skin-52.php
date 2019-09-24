@@ -19,7 +19,7 @@ position: 52
     <div class="container">
         <div class="row">
             <div class="col-sm-8 col-sm-offset-2">
-                <div class="allow-drop">
+                <div class="allow-drop regular-mode">
                     <h5><?php _lang("Scope and application", "templates/dream"); ?></h5>
                     <p>
                         Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
