@@ -37,7 +37,7 @@ position: 55
                     <div class="card__icon">
                         <i class="icon icon--lg icon-RGB safe-element"></i>
                     </div>
-                    <div class="card__body boxed bg--white allow-drop">
+                  abre   <div class="card__body boxed bg--white allow-drop">
                         <div class="card__title">
                             <h5><?php _lang("User Experience", "templates/dream"); ?></h5>
                         </div>

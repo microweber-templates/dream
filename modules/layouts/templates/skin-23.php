@@ -28,7 +28,7 @@ position: 23
             <module type="btn" template="default" text="<?php _lang("Purchase Dream", "templates/dream"); ?>"/>
         </div>
 
-        <div class="col-sm-12 text-center pos-absolute pos-bottom">
+        <div class="col-sm-12 text-center  ">
             <module type="social_links"/>
         </div>
     </div>

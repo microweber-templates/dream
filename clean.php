@@ -15,7 +15,7 @@ description: Clean layout
 ?>
 <?php include template_dir() . "header.php"; ?>
 
-<div class="edit" rel="content" field="dream_content">
+<div class="edit" rel="content" field="content">
     <!-- Do not delete this comment! It is for PHP Parser -->
 </div>
 
