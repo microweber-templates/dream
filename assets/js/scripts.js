@@ -780,7 +780,8 @@ mr = (function (mr, $, window, document) {
 
     var documentReady = function ($) {
 
-        mw.$('.masonry').each(function () {
+        mw.$('.masonry').not('.dr-masonry-ready').each(function () {
+            $(this).addClass('dr-masonry-ready')
             var masonry = mw.$(this);
             var masonryContainer = masonry.find('.masonry__container'),
                 filters = masonry.find('.masonry__filters'),
