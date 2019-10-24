@@ -18,21 +18,28 @@ description: Testimonials Default
 
 <script>
 
-    mw.$(window).on('load resize', function () {
+    mw.$(document).ready(function (e) {
+        mw.$(".testimonial-bordered .owl-carousel").show()
+    })
+    mw.$(window).on('load resize', function (e) {
         var root = mw.$("#<?php print $params['id']; ?>"), max = 0;
         mw.$('.mw-testimonials-item', root)
+            .show()
             .height('auto')
             .each(function () {
                 var height = mw.$(this).height();
                 if (height > max) max = height;
             })
             .height(max)
+        if(e.type === 'load') {
+            //mr(mw.$)
+        }
     })
 </script>
 
 
 <div class="testimonial-bordered">
-    <div class="owl-carousel text-center owl-testimonial nomargin"
+    <div class="owl-carousel slider text-center owl-testimonial nomargin"
          data-plugin-options='{"singleItem": true, "autoPlay": 4000, "navigation": false, "pagination": true, "transitionStyle":"fade"}'>
         <?php $data = get_testimonials(); ?>
 
