@@ -21,7 +21,7 @@ description: Default
 
 <a id="<?php print $btn_id ?>" href="<?php print $url; ?>" <?php if ($blank) {
     print ' target="_blank" ';
-} ?> class="btn <?php print $style . ' ' . $size; ?>">
+} ?> class="btn <?php print $style . ' ' . $size; ?>" <?php print $attributes ?>>
  <span class="btn__text">
         <?php print $text; ?>
     </span>
