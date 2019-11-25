@@ -16,7 +16,7 @@ description: Default
     mw.require('ui.css', true);
 </script>
 
-<a class="btn btn--primary <?php print $style . ' ' . $size; ?>" id="<?php print $btn_id ?>" href="<?php print $url; ?>" <?php if ($blank) { print ' target="_blank" '; } ?>>
+<a class="btn btn--primary <?php print $style . ' ' . $size; ?>" id="<?php print $btn_id ?>" href="<?php print $url; ?>" <?php if ($blank) { print ' target="_blank" '; } ?> <?php print $attributes ?>>
     <span class="btn__text">
         <?php print $text; ?>
     </span>
