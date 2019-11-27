@@ -130,18 +130,14 @@ description: Checkout
                         </div>
 
 
-                        <div class="col-xs-12">
-                            <a href="?step=1" class="btn pull-left">
-                                <?php _e("Go back to cart"); ?>
-                            </a>
-
-                            <button class="btn pull-right"
-                                    onclick="mw.cart.checkout('#checkout_form_<?php print $params['id'] ?>');"
-                                    type="button"
-                                    id="complete_order_button" <?php if ($tems): ?> disabled="disabled"   <?php endif; ?>>
-                                <?php _e("Complete order"); ?>
-                            </button>
+                        <div class="col-xs-9">
+                            <module type="btn" button_text="<?php _e("Go back to cart"); ?>" url="?step=1" />
                         </div>
+                        
+                        <div class="col-xs-3 text-right">
+                            <module type="btn" button_id="complete_order_button" <?php if ($tems): ?>button_disabled="disabled"<?php endif; ?> button_text="<?php _e("Complete order"); ?>" button_onclick="mw.cart.checkout('#checkout_form_<?php print $params['id']; ?>');" />
+                        </div>
+                        
                     </div>
                 </div>
                 <div class="mw-checkout-responce"></div>
