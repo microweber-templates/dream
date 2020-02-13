@@ -5,48 +5,7 @@ if ($is_color === null OR $is_color === false OR $is_color == '') {
 }
 ?>
 
-<script>
 
-    mw.$(window).load(function(){
-
-        var timer_color_pick;
-
-
-        mw.colorPicker({
-            element:'.color_picker_for_sidebar_settings',
-            position:'bottom-left',
-            value:'<?php print $is_color; ?>',
-
-            onchange:function(color){
-
-
-                     window.clearTimeout(timer_color_pick);
-
-                    mw.$('#color_change_val').val(color);
-
-
-                     timer_color_pick = window.setTimeout(function(){
-
-                         mw.$('#color_change_val').trigger('change');
-                       //  mw.$('.color_picker_for_sidebar_settings').trigger('change');
-
-
-
-
-                     },500);
-
-
-
-
-
-
-            },
-            method: 'inline'
-        });
-
-    });
-
-</script>
 
 <div class="is-color-select" style="padding-top: 15px;">
     <label class="mw-ui-label"><?php _lang("Color as overlay", "templates/dream"); ?> ?</label>
@@ -62,3 +21,46 @@ if ($is_color === null OR $is_color === false OR $is_color == '') {
 
  */ ?>
 </div>
+
+<script>
+
+    mw.$(document).ready(function(){
+
+        var timer_color_pick;
+
+
+        mw.colorPicker({
+            element:'.color_picker_for_sidebar_settings',
+            position:'bottom-left',
+            value:'<?php print $is_color; ?>',
+
+            onchange:function(color){
+
+
+                window.clearTimeout(timer_color_pick);
+
+                mw.$('#color_change_val').val(color);
+
+
+                timer_color_pick = window.setTimeout(function(){
+
+                    mw.$('#color_change_val').trigger('change');
+                    //  mw.$('.color_picker_for_sidebar_settings').trigger('change');
+
+
+
+
+                },500);
+
+
+
+
+
+
+            },
+            method: 'inline'
+        });
+
+    });
+
+</script>
