@@ -16,22 +16,22 @@
     <script>
         $(document).ready(function () {
             $("#footer").on('change', function () {
-                window.top.$(".mwjs-dream-footer").stop()[this.checked ? 'slideUp' : 'slideDown']()
+                mw.top().$(".mwjs-dream-footer").stop()[this.checked ? 'slideUp' : 'slideDown']()
             });
             $("#profile-link").on('change', function () {
-                window.top.$(".dream-profile-link").css({
+                mw.top().$(".dream-profile-link").css({
                     display: this.checked ? 'inline-block' : 'none'
                 })
             });
 
             $("#search-field").on('change', function () {
-                window.top.$(".dream-search-link").css({
+                mw.top().$(".dream-search-link").css({
                     display: this.checked ? 'inline-block' : 'none'
                 })
             });
 
             $("#stop_transparent_nav").on('change', function () {
-                window.top.$("nav .nav-bar")[this.checked ? 'removeClass' : 'addClass']('nav--absolute nav--transparent')
+                mw.top().$("nav .nav-bar")[this.checked ? 'removeClass' : 'addClass']('nav--absolute nav--transparent')
             });
         });
 

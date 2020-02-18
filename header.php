@@ -14,12 +14,12 @@
     <meta property="og:description" content="{og_description}"/>
     <meta property="og:site_name" content="{og_site_name}"/>
     <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0"/>
-    <link rel="stylesheet" href="<?php print modules_url() ?>microweber/css/fonts/mw-icons-mind/line/style.css">
-    <link rel="stylesheet" href="<?php print modules_url() ?>microweber/css/fonts/mw-icons-mind/solid/style.css">
+
     <script>
         mw.require("fonts.js");
         mw.lib.require('bootstrap3');
         mw.lib.require('material_icons');
+        mw.lib.require('mw_icons_mind');
     </script>
     <script>
         mw.templateFont = mw.templateFont || new mw.font();
@@ -43,10 +43,9 @@
                     + '<a href="javascript:;" onclick="mw.tools.modal.remove(\'#AddToCartModal\')" class="btn btn-default"><?php _e("Continue shopping"); ?></a> &nbsp;'
                     + '<a href="<?php print checkout_url(); ?>" class="btn btn-warning"><?php _e("Checkout"); ?></a></section>';
                 return html;
-            }
+            };
 
         mw.on('mw.cart.add', function () {
-
 
             var notification = $('body').find('.notification[data-notification-link="cart-overview"]');
               if(notification.length > 0){
@@ -63,6 +62,18 @@
         });
         mw.on('mw.cart.remove', function () {
             mw.reload_module('shop/cart');
+        });
+
+
+        $(document).ready(function () {
+            mw.$('[class*=" icon-"]').each(function () { this.className = this.className.replace(/icon-/g, 'mw-micon-'); });
+            function icons() {
+                mw.$('.edit [class*=" icon-"]').each(function () { this.className = this.className.replace(/icon-/g, 'mw-micon-'); });
+            }
+            icons();
+            mw.on('editChanged', function () {
+                icons();
+            });
         });
     </script>
 
@@ -96,10 +107,10 @@
     </script>
 
 
-    <link href="{TEMPLATE_URL}assets/dist/main.min.css" rel="stylesheet" type="text/css" media="all"/>
 
     <?php print get_template_stylesheet(); ?>
 
+    <link href="{TEMPLATE_URL}assets/css/owl.carousel.css" rel="stylesheet" type="text/css" media="all"/>
     <link href="{TEMPLATE_URL}assets/css/mw-dream.css" rel="stylesheet" type="text/css" media="all"/>
     <link href='https://fonts.googleapis.com/css?family=Lora:400,400italic,700%7CMontserrat:400,700' rel='stylesheet' type='text/css'>
 
