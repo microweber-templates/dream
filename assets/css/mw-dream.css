@@ -55,3 +55,8 @@
 /*.mw-live-edit .hover-element .hover-element__reveal{*/
     /*pointer-events: none;*/
 /*}*/
+
+
+[data-overlay]:before{
+    pointer-events: none !important;
+}
