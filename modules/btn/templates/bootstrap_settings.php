@@ -14,27 +14,27 @@
     <div class="mw-ui-col">
       <div class="mw-ui-col-container">
         <label class="mw-ui-label">
-          <?php _e("Color"); ?>
+          <?php _lang("Color", 'templates/dream'); ?>); ?>
         </label>
         <select  class="mw-ui-field mw_option_field"  name="button_style">
-          <option <?php if($style==''){ print 'selected'; } ?> value="btn-primary"><?php _e("Default"); ?></option>
+          <option <?php if($style==''){ print 'selected'; } ?> value="btn-primary"><?php _lang("Default", 'templates/dream'); ?>); ?></option>
           <option <?php if($style=='btn-primary'){ print 'selected'; } ?> value="btn-primary">
-          <?php _e("Primary"); ?>
+          <?php _lang("Primary", 'templates/dream'); ?>); ?>
           </option>
           <option <?php if($style=='btn-info'){ print 'selected'; } ?> value="btn-info">
-          <?php _e("Info"); ?>
+          <?php _lang("Info", 'templates/dream'); ?>); ?>
           </option>
           <option <?php if($style=='btn-success'){ print 'selected'; } ?> value="btn-success">
-          <?php _e("Success"); ?>
+          <?php _lang("Success", 'templates/dream'); ?>); ?>
           </option>
           <option <?php if($style=='btn-warning'){ print 'selected'; } ?> value="btn-warning">
-          <?php _e("Warning"); ?>
+          <?php _lang("Warning", 'templates/dream'); ?>); ?>
           </option>
           <option <?php if($style=='btn-danger'){ print 'selected'; } ?> value="btn-danger">
-          <?php _e("Danger"); ?>
+          <?php _lang("Danger", 'templates/dream'); ?>); ?>
           </option>
           <option <?php if($style=='btn-simple'){ print 'selected'; } ?> value="btn-simple">
-          <?php _e("Simple"); ?>
+          <?php _lang("Simple", 'templates/dream'); ?>); ?>
           </option>
         </select>
       </div>
@@ -42,20 +42,20 @@
     <div class="mw-ui-col">
       <div class="mw-ui-col-container">
         <label class="mw-ui-label">
-          <?php _e("Size"); ?>
+          <?php _lang("Size", 'templates/dream'); ?>); ?>
         </label>
         <select  class="mw-ui-field mw_option_field"  name="button_size">
           <option <?php if($size==''){ print 'selected'; } ?> value="">
-          <?php _e("Default"); ?>
+          <?php _lang("Default", 'templates/dream'); ?>); ?>
           </option>
           <option <?php if($size=='btn-default-large btn--lg'){ print 'selected'; } ?> value="btn-default-large btn--lg">
-          <?php _e("Large"); ?>
+          <?php _lang("Large", 'templates/dream'); ?>); ?>
           </option>
           <option <?php if($size=='btn-default-small btn--sm'){ print 'selected'; } ?> value="btn-default-small btn--sm">
-          <?php _e("Small"); ?>
+          <?php _lang("Small", 'templates/dream'); ?>); ?>
           </option>
           <option <?php if($size=='btn-default-mini btn--xs'){ print 'selected'; } ?> value="btn-default-mini btn--xs">
-          <?php _e("Mini"); ?>
+          <?php _lang("Mini", 'templates/dream'); ?>); ?>
           </option>
         </select>
       </div>

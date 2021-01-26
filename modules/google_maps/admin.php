@@ -16,7 +16,7 @@
 <div class="module-live-edit-settings">
   <div class="mw-ui-field-holder">
     <label class="mw-ui-label">
-      <?php _e("Address"); ?>
+      <?php _lang("Address", "templates/dream"); ?>
     </label>
     <input
       name="data-address"
@@ -27,7 +27,7 @@
   </div>
   <div class="mw-ui-field-holder">
     <label class="mw-ui-label" style="padding-bottom: 20px;">
-      <?php _e("Zoom Level"); ?>
+      <?php _lang("Zoom Level", "templates/dream"); ?>
     </label>
     <?php /* <div
     data-type=""

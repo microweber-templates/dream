@@ -26,7 +26,7 @@ description: Default comments template
                 <a href="javascript:;" class="tip" data-tip="Refresh captcha" data-tipposition="top-center"><img onclick="mw.tools.refresh_image(this);" class="img-responsive" id="captcha-<?php print $form_id; ?>" src="<?php print api_link('captcha') ?>?w=70&h=48"/></a>
             </div>
             <div class="col-xs-8" style="margin-top: 0;">
-                <input name="captcha" type="text" required class="mw-captcha-input form-control" placeholder="<?php _e("Security code"); ?>"/>
+                <input name="captcha" type="text" required class="mw-captcha-input form-control" placeholder="<?php _lang("Security code", "templates/dream"); ?>"/>
             </div>
         </div>
     </div>

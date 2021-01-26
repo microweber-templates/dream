@@ -26,13 +26,13 @@
 
 
     <div class="mw-ui-btn-nav mw-ui-btn-nav-tabs">
-        <a class="mw-ui-btn active" href="javascript:;"><?php _e("Embed Video"); ?></a>
-        <a class="mw-ui-btn" href="javascript:;"><?php _e("Settings"); ?></a>
+        <a class="mw-ui-btn active" href="javascript:;"><?php _lang("Embed Video", "templates/dream"); ?></a>
+        <a class="mw-ui-btn" href="javascript:;"><?php _lang("Settings", "templates/dream"); ?></a>
     </div>
     <div class="mw-ui-box mw-ui-box-content">
         <div class="tab" style="display: block">
             <div class="mw-ui-field-holder">
-                <label class="mw-ui-label"><?php _e("Paste YouTube video Code"); ?></label>
+                <label class="mw-ui-label"><?php _lang("Paste YouTube video Code", "templates/dream"); ?></label>
 
                 <textarea name="embed_url"
                           id="emebed_video_field"
@@ -48,7 +48,7 @@
                 <div class="mw-ui-col">
                     <div class="mw-ui-col-container">
                         <div class="mw-ui-field-holder">
-                            <label class="mw-ui-inline-label"><?php _e("Width"); ?></label>
+                            <label class="mw-ui-inline-label"><?php _lang("Width", "templates/dream"); ?></label>
                             <input
                                     name="width"
                                     style="width:50px;"
@@ -63,7 +63,7 @@
                 <div class="mw-ui-col">
                     <div class="mw-ui-col-container">
                         <div class="mw-ui-field-holder">
-                            <label class="mw-ui-inline-label"><?php _e("Height"); ?></label>
+                            <label class="mw-ui-inline-label"><?php _lang("Height", "templates/dream"); ?></label>
                             <input
                                     name="height"
                                     placeholder="350"
@@ -80,7 +80,7 @@
 
 
             <div class="mw-ui-field-holder">
-                <label class="mw-ui-inline-label"><?php _e("Autoplay"); ?></label>
+                <label class="mw-ui-inline-label"><?php _lang("Autoplay", "templates/dream"); ?></label>
                 <label class="mw-ui-check">
                     <input
                             name="autoplay"

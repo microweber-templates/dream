@@ -35,13 +35,13 @@ description: Checkout
                                     <div class="boxed boxed--border order-charges">
                                         <ul>
                                             <li>
-                                                <span class="h5"><?php _e("Shipping to"); ?>:</span>
+                                                <span class="h5"><?php _lang("Shipping to", 'templates/dream'); ?>:</span>
                                                 <span><module type="shop/shipping" view="select"/></span>
                                             </li>
 
 
                                             <li>
-                                                <span class="h5"><?php _e("Shipping price"); ?>:</span>
+                                                <span class="h5"><?php _lang("Shipping price", 'templates/dream'); ?>:</span>
                                                 <span><module type="shop/shipping" view="cost"/></span>
                                             </li>
 
@@ -70,7 +70,7 @@ description: Checkout
 
                     <div class="row">
                         <div class="col-xs-12 text-right">
-                            <a href="?step=2" class="btn btn-primary"><?php _e("PROCEED TO SHIPMENT"); ?></a>
+                            <a href="?step=2" class="btn btn-primary"><?php _lang("PROCEED TO SHIPMENT", 'templates/dream'); ?></a>
                         </div>
                     </div>
                 </div>
@@ -83,7 +83,7 @@ description: Checkout
                             <div class="row">
                                 <div class="col-sm-12">
                                     <h6 class="edit nodrop" field="checkout_personal_inforomation_title" rel="global"
-                                        rel_id="<?php print $params['id'] ?>"><?php _e("Personal Information"); ?></h6>
+                                        rel_id="<?php print $params['id'] ?>"><?php _lang("Personal Information", 'templates/dream'); ?></h6>
                                 </div>
                             </div>
 
@@ -91,24 +91,24 @@ description: Checkout
                                 <div class="col-xs-12 col-md-6">
                                     <input name="first_name" type="text" value="<?php if (isset($user['first_name'])) {
                                         print $user['first_name'];
-                                    } ?>" placeholder="<?php _e("First Name"); ?>"/>
+                                    } ?>" placeholder="<?php _lang("First Name", 'templates/dream'); ?>"/>
                                 </div>
                                 <div class="col-xs-12 col-md-6">
                                     <input name="last_name" type="text" value="<?php if (isset($user['last_name'])) {
                                         print $user['last_name'];
-                                    } ?>" placeholder="<?php _e("Last Name"); ?>"/>
+                                    } ?>" placeholder="<?php _lang("Last Name", 'templates/dream'); ?>"/>
                                 </div>
 
                                 <div class="col-xs-12 col-md-6">
                                     <input name="email" type="text" value="<?php if (isset($user['email'])) {
                                         print $user['email'];
-                                    } ?>" placeholder="<?php _e("Email"); ?>"/>
+                                    } ?>" placeholder="<?php _lang("Email", 'templates/dream'); ?>"/>
                                 </div>
 
                                 <div class="col-xs-12 col-md-6">
                                     <input name="phone" type="text" value="<?php if (isset($user['phone'])) {
                                         print $user['phone'];
-                                    } ?>" placeholder="<?php _e("Phone"); ?>"/>
+                                    } ?>" placeholder="<?php _lang("Phone", 'templates/dream'); ?>"/>
                                 </div>
                             </div>
 
@@ -131,11 +131,11 @@ description: Checkout
 
 
                         <div class="col-xs-9">
-                            <module type="btn" button_text="<?php _e("Go back to cart"); ?>" url="?step=1" />
+                            <module type="btn" button_text="<?php _lang("Go back to cart", 'templates/dream'); ?>" url="?step=1" />
                         </div>
                         
                         <div class="col-xs-3 text-right">
-                            <module type="btn" button_id="complete_order_button" <?php if ($tems): ?>button_disabled="disabled"<?php endif; ?> button_text="<?php _e("Complete order"); ?>" button_onclick="mw.cart.checkout('#checkout_form_<?php print $params['id']; ?>');" />
+                            <module type="btn" button_id="complete_order_button" <?php if ($tems): ?>button_disabled="disabled"<?php endif; ?> button_text="<?php _lang("Complete order", 'templates/dream'); ?>" button_onclick="mw.cart.checkout('#checkout_form_<?php print $params['id']; ?>');" />
                         </div>
                         
                     </div>
@@ -145,7 +145,7 @@ description: Checkout
 
         <?php else: ?>
             <h2>
-                <?php _e("Your payment was successfull."); ?>
+                <?php _lang("Your payment was successfull.", 'templates/dream'); ?>
             </h2>
         <?php endif; ?>
     <?php endif; ?>

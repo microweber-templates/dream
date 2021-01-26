@@ -29,7 +29,7 @@
 
                 <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 text-center">
                     <div class="item__title">
-                        <h4 class="edit" field="title" rel="content"><?php _e("Product name") ?></h4>
+                        <h4 class="edit" field="title" rel="content"><?php _lang("Product name", 'templates/dream'); ?>) ?></h4>
                     </div>
 
                     <div class="clearfix" style="margin-bottom: 30px;">
@@ -41,14 +41,14 @@
                         ?>
 
                         <?php if (isset($content_data['sku'])): ?>
-                            <strong><?php _e("SKU") ?>:</strong> <?php print $content_data['sku']; ?>
+                            <strong><?php _lang("SKU") ?>:</strong> <?php print $content_data['sku']; ?>
                         <?php endif; ?>
                         <br/>
                         <br/>
                         <?php if ($in_stock == true): ?>
-                            <span class="text-success"><i class="fa fa-check"></i> <?php _e("In Stock") ?></span>
+                            <span class="text-success"><i class="fa fa-check"></i> <?php _lang("In Stock", 'templates/dream'); ?>) ?></span>
                         <?php else: ?>
-                            <span class="text-danger"><i class="glyphicon glyphicon-remove"></i> <?php _e("Out of Stock") ?></span>
+                            <span class="text-danger"><i class="glyphicon glyphicon-remove"></i> <?php _lang("Out of Stock", 'templates/dream'); ?>) ?></span>
                         <?php endif; ?>
                     </div>
 
@@ -60,14 +60,13 @@
                         <ul class="tabs text-center">
                             <li class="active">
                                 <div class="tab__title">
-                                    <h6><?php _e('Description'); ?></h6>
+                                    <h6><?php _lang('Description', 'templates/dream'); ?>); ?></h6>
                                 </div>
                                 <div class="tab__content">
                                     <div class="edit" field="content_body" rel="content">
                                         <p>
                                             <?php _lang("Strategy gamification alpha startup angel investor channels customer direct mailing burn rate churn rate bandwidth innovator seed round. Ramen
-                                            disruptive
-                                            graphical user interface. Infrastructure bootstrapping branding leverage twitter channels MVP iPad launch party non-disclosure agreement. Infrastructure
+                                            disruptive graphical user interface. Infrastructure bootstrapping branding leverage twitter channels MVP iPad launch party non-disclosure agreement. Infrastructure
                                             validation android release success.", "templates/dream"); ?>
                                         </p>
                                     </div>
@@ -76,7 +75,7 @@
 
                             <li>
                                 <div class="tab__title">
-                                    <h6><?php _e('Specifications'); ?></h6>
+                                    <h6><?php _lang('Specifications', 'templates/dream'); ?>); ?></h6>
                                 </div>
                                 <div class="tab__content">
                                     <div class="item__description">
@@ -124,7 +123,7 @@
 
                             <li>
                                 <div class="tab__title">
-                                    <h6><?php _e('Reviews'); ?></h6>
+                                    <h6><?php _lang('Reviews', 'templates/dream'); ?>); ?></h6>
                                 </div>
                                 <div class="tab__content">
                                     <module type="comments" content-id="<?php print CONTENT_ID; ?>"/>
@@ -199,7 +198,7 @@
         <div class="row">
             <div class="related-products">
                 <div class="col-sm-12">
-                    <h4><?php _e('Related Products'); ?></h4>
+                    <h4><?php _lang('Related Products', 'templates/dream'); ?>); ?></h4>
                 </div>
                 <module type="shop/products" template="skin-4" related="true" limit="3"/>
             </div>

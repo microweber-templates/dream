@@ -7,7 +7,7 @@
             <div class="box-title margin-bottom-30">
                 <h2 class="size-20">
                     <?php if (!isset($form_title) or $form_title == false): ?>
-                        <?php _e("Enter your username or email"); ?>
+                        <?php _lang("Enter your username or email", "templates/dream"); ?>
                     <?php else: ?>
                         <?php print $form_title; ?>
                     <?php endif; ?>
@@ -20,11 +20,11 @@
                 <div class="clearfix">
                     <!-- Email -->
                     <div class="form-group">
-                        <label><?php _e("Email or username"); ?></label>
+                        <label><?php _lang("Email or username", "templates/dream"); ?></label>
                         <label class="input margin-bottom-10">
                             <i class="ico-append fa fa-envelope"></i>
                             <input required="" type="text" name="username">
-                            <b class="tooltip tooltip-bottom-right">Needed to verify your account</b>
+                            <b class="tooltip tooltip-bottom-right"><?php _lang("Needed to verify your account", "templates/dream"); ?></b>
                         </label>
                     </div>
 

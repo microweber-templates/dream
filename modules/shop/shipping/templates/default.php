@@ -20,7 +20,7 @@ description: Default
 <div class="row">
     <div class="col-sm-12">
         <h6 style="margin-top:0 " class="edit nodrop" field="checkout_shipping_information_title" rel="global" rel_id="<?php print $params['id'] ?>">
-            <?php _e("Shipping Information"); ?>
+            <?php _lang("Shipping Information", 'templates/dream'); ?>
         </h6>
     </div>
 </div>

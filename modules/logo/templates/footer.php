@@ -18,7 +18,7 @@ $size = $size . 'px';
 
 }; ?>" class="mw-ui-row-nodrop module-logo" style="width: auto;">
     <?php if ($logoimage == '' and $text == '') {
-        if (is_live_edit()) { ?><span class="mw-logo-no-values"><?php _e('Click to add logo'); ?></span><?php }
+        if (is_live_edit()) { ?><span class="mw-logo-no-values"><?php _lang('Click to add logo', 'templates/dream'); ?>); ?></span><?php }
     } else { ?>
         <?php if ($logotype == 'image' or $logotype == false or $logotype == 'both') { ?>
             <?php if ($logoimage != '' and $logoimage != false) { ?>

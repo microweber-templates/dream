@@ -28,9 +28,9 @@ description: Login default
             <div class="row">
                 <div class="col-sm-12">
                     <div class="input-with-icon">
-                        <label><?php _e("Email or username"); ?>:</label>
+                        <label><?php _lang("Email or username", 'templates/dream'); ?>:</label>
                         <i class="icon icon-Male-2"></i>
-                        <input type="text" name="username" placeholder="<?php _e("Email or username"); ?>"/>
+                        <input type="text" name="username" placeholder="<?php _lang("Email or username", 'templates/dream'); ?>"/>
                     </div>
                 </div>
             </div>
@@ -38,7 +38,7 @@ description: Login default
             <div class="row">
                 <div class="col-sm-12">
                     <div class="input-with-icon">
-                        <label><?php _e("Password"); ?>:</label>
+                        <label><?php _lang("Password", 'templates/dream'); ?>:</label>
                         <i class="icon icon-Security-Check"></i>
                         <input type="password" name="password" placeholder="&bullet;&bullet;&bullet;&bullet;&bullet;&bullet;"/>
                     </div>
@@ -51,7 +51,7 @@ description: Login default
 
             <div class="row">
                 <div class="col-sm-12">
-                    <button type="submit" class="btn btn--primary"><?php _e("Login"); ?></button>
+                    <button type="submit" class="btn btn--primary"><?php _lang("Login", 'templates/dream'); ?></button>
                 </div>
             </div>
             <div class="row text-center">
@@ -87,40 +87,40 @@ description: Login default
 
 
             <div class="text-center">
-                <div class="m-b-20">&ndash; <?php _e("OR"); ?> &ndash;</div>
+                <div class="m-b-20">&ndash; <?php _lang("OR", 'templates/dream'); ?> &ndash;</div>
 
                 <?php if ($facebook): ?>
                     <a href="<?php print api_link('user_social_login?provider=facebook') ?>" class="btn btn--primary m-t-10">
                         <span class="btn__text">
-                        <i class="fa fa-facebook"></i> Sign in with Facebook</span>
+                        <i class="fa fa-facebook"></i><?php _lang("Sign in with Facebook", 'templates/dream'); ?> </span>
                     </a>
                     <br/>
                 <?php endif; ?>
 
                 <?php if ($twitter): ?>
                     <a href="<?php print api_link('user_social_login?provider=twitter') ?>" class="btn btn--primary m-t-10">
-                        <span class="btn__text"><i class="fa fa-twitter"></i> Sign in with Twitter</span>
+                        <span class="btn__text"><i class="fa fa-twitter"></i><?php _lang("Sign in with Twitter", 'templates/dream'); ?> </span>
                     </a>
                     <br/>
                 <?php endif; ?>
 
                 <?php if ($google): ?>
                     <a href="<?php print api_link('user_social_login?provider=google') ?>" class="btn btn--primary m-t-10">
-                        <span class="btn__text"><i class="fa fa-google"></i> Sign in with Google+</span>
+                        <span class="btn__text"><i class="fa fa-google"></i><?php _lang("Sign in with Google+", 'templates/dream'); ?> </span>
                     </a>
                     <br/>
                 <?php endif; ?>
 
                 <?php if ($github): ?>
                     <a href="<?php print api_link('user_social_login?provider=github') ?>" class="btn btn--primary m-t-10">
-                        <span class="btn__text"><i class="fa fa-github"></i> Sign in with Github</span>
+                        <span class="btn__text"><i class="fa fa-github"></i><?php _lang("Sign in with Github", 'templates/dream'); ?> </span>
                     </a>
                     <br/>
                 <?php endif; ?>
 
                 <?php if ($mw_login): ?>
                     <a href="<?php print api_link('user_social_login?provider=microweber') ?>" class="btn btn--primary m-t-10">
-                        <span class="btn__text"><i class="mw-icon-mw"></i> Sign in with Microweber</span>
+                        <span class="btn__text"><i class="mw-icon-mw"></i><?php _lang("Sign in with Microweber", 'templates/dream'); ?> </span>
                     </a>
                 <?php endif; ?>
             </div>

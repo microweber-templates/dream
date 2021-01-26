@@ -18,16 +18,16 @@
 
         <div class="input-with-icon">
             <i class="icon icon-Male-2"></i>
-            <input id="fieldName" name="first_name" placeholder="<?php _e('Your Name'); ?>" type="text">
+            <input id="fieldName" name="first_name" placeholder="<?php _lang('Your Name', "templates/dream"); ?>" type="text">
         </div>
         <div class="input-with-icon">
             <i class="icon icon-Mail-2"></i>
-            <input class="validate-required validate-email" id="fieldEmail" name="email" placeholder="<?php _e('Email Address'); ?>" type="email" required="">
+            <input class="validate-required validate-email" id="fieldEmail" name="email" placeholder="<?php _lang('Email Address', "templates/dream"); ?>" type="email" required="">
         </div>
 
         <div class="input-with-icon">
             <i class="icon icon-Phone-2"></i>
-            <input type="text" name="phone" id="fieldPhone" placeholder="<?php _e('Phone'); ?>"/>
+            <input type="text" name="phone" id="fieldPhone" placeholder="<?php _lang('Phone', "templates/dream"); ?>"/>
         </div>
 
         <div class="input-with-icon">
@@ -40,6 +40,6 @@
             <br/>
         <?php endif; ?>
 
-        <input type="submit" clsas="btn" value="<?php _e('Submit Form'); ?>"/>
+        <input type="submit" clsas="btn" value="<?php _lang('Submit Form', "templates/dream"); ?>"/>
     </form>
 </div>

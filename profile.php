@@ -105,40 +105,40 @@ $orders = get_orders($orders_params);
                                             <form id="user-data" onsubmit="return saveuserdata()">
                                                 <div class="row">
                                                     <div class="col-sm-6">
-                                                        <label><?php _e('Username'); ?>:</label>
+                                                        <label><?php _lang('Username', 'templates/dream'); ?>:</label>
                                                         <input type="text" name="username"
                                                                value="<?php print $user['username']; ?>"
-                                                               placeholder="<?php _e('Your Username'); ?>"/>
+                                                               placeholder="<?php _lang('Your Username', 'templates/dream'); ?>"/>
                                                     </div>
 
                                                     <div class="col-sm-6">
-                                                        <label><?php _e('Email Address'); ?>:</label>
+                                                        <label><?php _lang('Email Address', 'templates/dream'); ?>:</label>
                                                         <input type="text" name="email"
                                                                value="<?php print $user['email']; ?>"
-                                                               placeholder="<?php _e('Your Email'); ?>"/>
+                                                               placeholder="<?php _lang('Your Email', 'templates/dream'); ?>"/>
                                                     </div>
 
                                                     <div class="col-sm-6">
-                                                        <label><?php _e('First Name'); ?>:</label>
+                                                        <label><?php _lang('First Name', 'templates/dream'); ?>:</label>
                                                         <input type="text" name="first_name"
                                                                value="<?php print $user['first_name']; ?>"
-                                                               placeholder="<?php _e('Your First name'); ?>"/>
+                                                               placeholder="<?php _lang('Your First name', 'templates/dream'); ?>"/>
                                                     </div>
 
                                                     <div class="col-sm-6">
-                                                        <label><?php _e('Last Name'); ?>:</label>
+                                                        <label><?php _lang('Last Name', 'templates/dream'); ?>:</label>
                                                         <input type="text" name="last_name"
                                                                value="<?php print $user['last_name']; ?>"
-                                                               placeholder="<?php _e('Your Last name'); ?>"/>
+                                                               placeholder="<?php _lang('Your Last name', 'templates/dream'); ?>"/>
                                                     </div>
 
                                                     <div class="col-sm-6">
-                                                        <label><?php _e('New Password'); ?>:</label>
+                                                        <label><?php _lang('New Password', 'templates/dream'); ?>:</label>
                                                         <input type="password" name="password"/>
                                                     </div>
 
                                                     <div class="col-sm-6">
-                                                        <label><?php _e('Confirm Password'); ?>:</label>
+                                                        <label><?php _lang('Confirm Password', 'templates/dream'); ?>:</label>
                                                         <input type="password" name="password2"/>
                                                     </div>
 
@@ -149,7 +149,7 @@ $orders = get_orders($orders_params);
 
                                                     <div class="col-sm-4 col-sm-offset-4 text-center">
                                                         <button class="btn btn--primary"
-                                                                onclick="saveuserdata()"><?php _e('Save'); ?></button>
+                                                                onclick="saveuserdata()"><?php _lang('Save', 'templates/dream'); ?></button>
                                                     </div>
                                                 </div>
                                             </form>
@@ -161,33 +161,32 @@ $orders = get_orders($orders_params);
                                 <li>
                                     <div class="tab__content">
                                         <?php if (isset($orders) and is_array($orders)): ?>
-                                            <h3 class="icon-section-title"><span class="sm-icon-bag2"></span>Orders</h3>
+                                            <h3 class="icon-section-title"><span class="sm-icon-bag2"></span><?php _lang('Orders', 'templates/dream'); ?></h3>
                                             <?php foreach ($orders as $order) { ?>
                                                 <?php $cart = get_cart('order_id=' . $order['id']); ?>
                                                 <?php if (is_array($cart) and !empty($cart)): ?>
                                                     <div class="mw-ui-box mw-ui-box-content my-order">
-                                                        <div class="my-order-status">Status:
+                                                        <div class="my-order-status"><?php _lang('Status:', 'templates/dream'); ?>
                                                             <?php if ($order['order_status'] == 'completed') { ?>
-                                                                <span class="my-order-status-completed">Completed</span>
+                                                                <span class="my-order-status-completed"><?php _lang('Completed', 'templates/dream'); ?></span>
                                                             <?php } else { ?>
-                                                                <span class="my-order-status-pending">Pending</span>
+                                                                <span class="my-order-status-pending"><?php _lang('Pending', 'templates/dream'); ?></span>
                                                             <?php } ?>
                                                         </div>
 
-                                                        <h4>Order #<?php print $order['id']; ?> -
-                                                            <small>created
-                                                                on <?php print $order['created_at']; ?></small>
+                                                        <h4><?php _lang('Order #', 'templates/dream'); ?><?php print $order['id']; ?> -
+                                                            <small><?php _lang('created on', 'templates/dream'); ?> <?php print $order['created_at']; ?></small>
                                                         </h4>
 
                                                         <table width="100%" cellspacing="0" cellpadding="0"
                                                                class="mw-ui-table mw-ui-table-basic">
                                                             <thead>
                                                             <tr>
-                                                                <th>Image</th>
-                                                                <th>Title</th>
-                                                                <th>Quantity</th>
-                                                                <th>Price</th>
-                                                                <th>Total</th>
+                                                                <th><?php _lang('Image', 'templates/dream'); ?></th>
+                                                                <th><?php _lang('Title', 'templates/dream'); ?></th>
+                                                                <th><?php _lang('Quantity', 'templates/dream'); ?></th>
+                                                                <th><?php _lang('Price', 'templates/dream'); ?></th>
+                                                                <th><?php _lang('Total', 'templates/dream'); ?></th>
                                                             </tr>
                                                             </thead>
                                                             <tbody>
@@ -212,7 +211,7 @@ $orders = get_orders($orders_params);
                                         <?php else: ?>
                                             <div class="mw-ui-box mw-ui-box-content my-order">
                                                 <h3 class="icon-section-title text-center"><span
-                                                            class="sm-icon-bag2"></span>You have no orders</h3>
+                                                            class="sm-icon-bag2"></span><?php _lang('You have no orders', 'templates/dream'); ?></h3>
                                             </div>
                                         <?php endif; ?>
                                     </div>

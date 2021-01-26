@@ -23,7 +23,7 @@ position: 38
                         <i class="icon icon-Astronaut safe-element"></i>
                     </div>
                     <div class="feature__right allow-drop">
-                        <h6><?php _e("New Startups") ?></h6>
+                        <h6><?php _lang("New Startups", "templates/dream") ?></h6>
                         <p><?php _lang("Grok integrate thinker-maker-doer piverate entrepreneur sticky note iterate waterfall is so 2000 and late 360 campaign cortado quantitative vs. qualitative.", "templates/dream"); ?></p>
                     </div>
                 </div>

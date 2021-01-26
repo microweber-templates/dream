@@ -33,7 +33,7 @@ if ($overlay === null OR $overlay === false) {
                     <em><?php _lang("Robust", "templates/dream"); ?>.</em>
                 </h2>
                 <p class="lead">
-                    <?php _e("Pillar features a bevvy of content blocks and layouts to create your website") ?>.
+                    <?php _lang("Pillar features a bevvy of content blocks and layouts to create your website", "templates/dream") ?>.
                 </p>
             </div>
         </div>

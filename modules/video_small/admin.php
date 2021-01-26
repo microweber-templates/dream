@@ -26,24 +26,24 @@
 
 
     <div class="mw-ui-btn-nav mw-ui-btn-nav-tabs">
-        <a class="mw-ui-btn active" href="javascript:;"><?php _e("Upload Video"); ?></a>
+        <a class="mw-ui-btn active" href="javascript:;"><?php _lang("Upload Video", "templates/dream"); ?></a>
     </div>
     <div class="mw-ui-box mw-ui-box-content">
         <div class="tab" style="display: block">
             <div class="mw-ui-field-holder">
-                <label class="mw-ui-label"><?php _e("Upload Video from your computer"); ?></label>
+                <label class="mw-ui-label"><?php _lang("Upload Video from your computer", "templates/dream"); ?></label>
                 <input onchange="setprior(2);" name="upload" id="upload_field"
                        class="mw-ui-field mw_option_field semi_hidden"
                        type="text" data-mod-name="<?php print $params['data-type'] ?>"
                        value="<?php print get_option('upload', $params['id']) ?>"/>
                 <span class="mw-ui-btn" id="upload_btn"><span
-                            class="mw-icon-upload"></span><?php _e("Browse"); ?></span>
+                            class="mw-icon-upload"></span><?php _lang("Browse", "templates/dream"); ?></span>
             </div>
 
 
             <div class="mw-ui-progress" id="upload_status" style="display: none">
                 <div style="width: 0%" class="mw-ui-progress-bar"></div>
-                <div class="mw-ui-progress-info"><?php _e("Status"); ?>: <span class="mw-ui-progress-percent">0</span>
+                <div class="mw-ui-progress-info"><?php _lang("Status", "templates/dream"); ?>: <span class="mw-ui-progress-percent">0</span>
                 </div>
             </div>
         </div>
@@ -76,11 +76,11 @@
             });
 
             mw.$(up).bind("error", function () {
-                mw.notification.warning("<?php _e("Unsupported format"); ?>.")
+                mw.notification.warning("<?php _lang("Unsupported format", "templates/dream"); ?>.")
             });
 
             mw.$(up).bind("FileUploaded", function (a, b) {
-                mw.notification.success("<?php _e("File Uploaded"); ?>");
+                mw.notification.success("<?php _lang("File Uploaded", "templates/dream"); ?>");
                 mwd.getElementById('upload_field').value = b.src;
                 mw.$(mwd.getElementById('upload_field')).trigger("change");
                 setprior(2);

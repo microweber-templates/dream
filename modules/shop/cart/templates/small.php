@@ -38,7 +38,7 @@ if ($data) {
 
 
 <div class="cart-overview__title">
-    <h5><?php _e('Your Cart'); ?></h5>
+    <h5><?php _lang('Your Cart', 'templates/dream'); ?></h5>
 </div>
 <?php if ($data): ?>
     <ul class="cart-overview__items">
@@ -53,12 +53,12 @@ if ($data) {
                     <span><?php print $item['title']; ?></span>
                     <span class="h6"><?php print $item['qty']; ?> x <?php print currency_format($item['price']); ?></span>
                 </div>
-                <div onclick="javascript:mw.cart.remove('<?php print $item['id'] ?>');" class="item__remove" title="Remove From Cart"></div>
+                <div onclick="javascript:mw.cart.remove('<?php print $item['id'] ?>');" class="item__remove" title="<?php _lang('Remove From Cart', 'templates/dream'); ?>"></div>
             </li>
         <?php endforeach; ?>
     </ul>
 <?php else: ?>
-    <h6><?php _e('0 ITEMS ON YOUR CART'); ?></h6>
+    <h6><?php _lang('0 ITEMS ON YOUR CART', 'templates/dream'); ?></h6>
 <?php endif; ?>
 
 <div class="cart-overview__subtotal">
@@ -85,7 +85,7 @@ if (!isset($params['checkout-link-enabled'])) {
     ?>
     <div class="cart-overview__action">
         <a href="<?php print $checkout_page_link; ?>" class="btn btn--square btn--primary">
-            <span class="btn__text"><?php _e('Checkout Now'); ?></span>
+            <span class="btn__text"><?php _lang('Checkout Now', 'templates/dream'); ?></span>
         </a>
     </div>
 <?php endif; ?>

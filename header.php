@@ -32,16 +32,16 @@
 
                var title_display = null
                 if(typeof(title) == 'undefined'){
-                    title = '<?php _e("Product"); ?>'
+                    title = '<?php _lang("Product"); ?>'
                 }
 
 
                 var html = ''
                     + '<section style="text-align: center;">'
                     + '<h5>' + title + '</h5>'
-                    + '<p><?php _e("has been added to your cart"); ?></p>'
-                    + '<a href="javascript:;" onclick="mw.tools.modal.remove(\'#AddToCartModal\')" class="btn btn-default"><?php _e("Continue shopping"); ?></a> &nbsp;'
-                    + '<a href="<?php print checkout_url(); ?>" class="btn btn-warning"><?php _e("Checkout"); ?></a></section>';
+                    + '<p><?php _lang("has been added to your cart"); ?></p>'
+                    + '<a href="javascript:;" onclick="mw.tools.modal.remove(\'#AddToCartModal\')" class="btn btn-default"><?php _lang("Continue shopping"); ?></a> &nbsp;'
+                    + '<a href="<?php print checkout_url(); ?>" class="btn btn-warning"><?php _lang("Checkout"); ?></a></section>';
                 return html;
             };
 
@@ -176,7 +176,7 @@
             <div class="nav-module right-x cart-module">
                 <a href="#" class="nav-function" data-notification-link="cart-overview">
                     <i class="interface-bag icon icon--sm"></i>
-                    <span><?php _e("Cart") ?></span>
+                    <span><?php _lang("Cart", "templates/dream") ?></span>
                 </a>
             </div>
         <?php endif; ?>
@@ -186,7 +186,7 @@
                 <div class="nav-module right-x cart-module dream-profile-link" style="display: <?php print $profile_link == 'true' ? 'inline-block' : 'none'; ?>;">
                     <a href="<?php print logout_url(); ?>" class="nav-function">
                         <i class="fa fa-lock"></i>
-                        <span>Logout</span>
+                        <span><?php _lang("Logout", "templates/dream") ?></span>
                     </a>
                 </div>
             <?php endif; ?>
@@ -194,7 +194,7 @@
             <div class="nav-module right-x cart-module dream-profile-link" style="display: <?php print $profile_link == 'true' ? 'inline-block' : 'none'; ?>;">
                 <a href="<?php print profile_url(); ?>" class="nav-function">
                     <i class="fa fa-user"></i>
-                    <span>Profile</span>
+                    <span><?php _lang("Profile", "templates/dream") ?></span>
                 </a>
             </div>
         <?php endif; ?>
@@ -203,7 +203,7 @@
             <div class="nav-module right-x search-module dream-search-link" style="display: <?php print $search_field == 'true' ? 'inline-block' : 'none'; ?>;">
                 <a href="#" class="nav-function modal-trigger" data-modal-id="search-form">
                     <i class="interface-search icon icon--sm"></i>
-                    <span><?php _e("Search") ?></span>
+                    <span><?php _lang("Search", "templates/dream") ?></span>
                 </a>
             </div>
         <?php endif; ?>

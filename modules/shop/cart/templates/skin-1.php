@@ -16,7 +16,7 @@ description: Full width cart template
     <div class="mw-cart mw-cart-big mw-cart-<?php print $params['id'] ?> <?php print  $template_css_prefix; ?>">
         <div class="mw-cart-title mw-cart-<?php print $params['id'] ?>">
             <h4 class="edit" rel="<?php print $params['id'] ?>" field="cart_title">
-                <?php _e('My cart'); ?>
+                <?php _lang('My cart' , 'templates/dream'); ?>
             </h4>
         </div>
 
@@ -53,11 +53,11 @@ description: Full width cart template
                                     <?php endif ?>
                                 </div>
 
-                                <span class="h6">QTY:</span>
+                                <span class="h6"> <?php _lang("QTY:", 'templates/dream'); ?></span>
                                 <input type="text" name="qty" class="text-center" value="<?php print $item['qty'] ?>" onchange="mw.cart.qty('<?php print $item['id'] ?>', this.value)"/>
                                 <div class="clearfix"></div>
-                                <a title="<?php _e("Remove"); ?>" style="display: block; margin-top: 20px;" class="remove tip"
-                                   href="javascript:mw.cart.remove('<?php print $item['id'] ?>');">Remove</a>
+                                <a title="<?php _lang("Remove", 'templates/dream'); ?>" style="display: block; margin-top: 20px;" class="remove tip"
+                                   href="javascript:mw.cart.remove('<?php print $item['id'] ?>');"> <?php _lang("Remove", 'templates/dream'); ?></a>
                             </div>
                         </div>
                     </div>
@@ -73,7 +73,7 @@ description: Full width cart template
             </div>
         <?php else : ?>
             <h4 class="alert alert-warning">
-                <?php _e("Your cart is empty."); ?>
+                <?php _lang("Your cart is empty.", 'templates/dream'); ?>
             </h4>
         <?php endif; ?>
     </div>

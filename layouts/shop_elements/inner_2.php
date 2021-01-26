@@ -42,13 +42,13 @@
                         }
                         ?>
                         <?php if ($in_stock == true): ?>
-                            <span class="text-success"><i class="fa fa-check"></i> <?php _e("In Stock") ?></span>
+                            <span class="text-success"><i class="fa fa-check"></i> <?php _lang("In Stock", 'templates/dream'); ?>) ?></span>
                         <?php else: ?>
-                            <span class="text-danger"><i class="glyphicon glyphicon-remove"></i> <?php _e("Out of Stock") ?></span>
+                            <span class="text-danger"><i class="glyphicon glyphicon-remove"></i> <?php _lang("Out of Stock", 'templates/dream'); ?>) ?></span>
                         <?php endif; ?>
                         <div class="clearfix"></div>
                         <?php if (isset($content_data['sku'])): ?>
-                            <strong><?php _e("SKU") ?>:</strong> <?php print $content_data['sku']; ?>
+                            <strong><?php _lang("SKU") ?>:</strong> <?php print $content_data['sku']; ?>
                         <?php endif; ?>
                     </div>
 
@@ -56,7 +56,7 @@
 
                     <div class="item__description">
                         <div class="edit" field="content_body" rel="content">
-                            <h6><?php _e('Description'); ?>:</h6>
+                            <h6><?php _lang('Description', 'templates/dream'); ?>); ?>:</h6>
 
                             <p>
                                 <?php _lang("A sturdy, handwoven fabric makes this American Apparel indigo-T a dependable addition to your casual wardrobe. This is a no bullshit plain ol’ t-shirt.", "templates/dream"); ?>
@@ -65,7 +65,7 @@
                     </div>
                     <div class="item__description">
                         <div class="edit safe-mode" field="product_sheets" rel="content">
-                            <h6><?php _e('Information'); ?>:</h6>
+                            <h6><?php _lang('Information', 'templates/dream'); ?>); ?>:</h6>
 
                             <div class="item__subinfo cloneable">
                                 <span class="safe-element"><?php _lang("Fabric", "templates/dream"); ?></span>
@@ -101,7 +101,7 @@
         <div class="row">
             <div class="related-products">
                 <div class="col-sm-12">
-                    <h4><?php _e('Related Products'); ?></h4>
+                    <h4><?php _lang('Related Products', 'templates/dream'); ?>); ?></h4>
                 </div>
                 <module type="shop/products" template="skin-4" related="true" limit="3"/>
             </div>

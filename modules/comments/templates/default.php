@@ -65,7 +65,7 @@ description: Default comments template
 
                                     <?php if ($required_moderation != false and $comment['is_moderated'] == 0): ?>
                                         <em class="comment-require-moderation">
-                                            <?php _e("Your comment requires moderation"); ?>
+                                            <?php _lang("Your comment requires moderation", 'templates/dream'); ?>
                                         </em><br/>
                                     <?php endif; ?>
                                     <p><?php print nl2br($comment['comment_body'], 1); ?></p>
@@ -87,7 +87,7 @@ description: Default comments template
     </div>
 <?php else: ?>
     <h4>
-        <?php _e("No comments"); ?>
+        <?php _lang("No comments", 'templates/dream'); ?>
     </h4>
 <?php endif; ?>
 
@@ -105,34 +105,34 @@ description: Default comments template
                     <input type="hidden" name="comment_subject" value="<?php print $form_title ?>">
                 <?php endif; ?>
 
-                <h6><?php _e("Leave a comment"); ?></h6>
+                <h6><?php _lang("Leave a comment", 'templates/dream'); ?></h6>
 
                 <?php if ($cur_user == false) : ?>
                     <div class="row">
                         <div class="col-sm-4">
-                            <input placeholder="<?php _e("Your name"); ?>" required type="text" name="comment_name">
+                            <input placeholder="<?php _lang("Your name", 'templates/dream'); ?>" required type="text" name="comment_name">
                         </div>
                         <div class="col-sm-4">
-                            <input placeholder="<?php _e("Website"); ?>" type="text" name="comment_website">
+                            <input placeholder="<?php _lang("Website", 'templates/dream'); ?>" type="text" name="comment_website">
                         </div>
                         <div class="col-sm-4">
-                            <input placeholder="<?php _e("Your email"); ?>" required type="email" name="comment_email">
+                            <input placeholder="<?php _lang("Your email", 'templates/dream'); ?>" required type="email" name="comment_email">
                         </div>
                     </div>
                 <?php else: ?>
                     <div class="comments-user-profile col-xs-12" style="margin-bottom: 5px;">
-                        <?php _e("You are commenting as"); ?>:
+                        <?php _lang("You are commenting as", 'templates/dream'); ?>:
                         <?php if (isset($cur_user_data['thumbnail']) and trim($cur_user_data['thumbnail']) != ''): ?>
                             <span class="mw-user-thumb mw-user-thumb-small"> <img style="vertical-align:middle" src="<?php print $cur_user_data['thumbnail'] ?>" height="24" width="24"/> </span>
                         <?php endif; ?>
                         <span class="comments-user-profile-username"> <?php print user_name($cur_user_data['id']); ?> </span>
-                        <small><a href="<?php print api_link('logout') ?>">(<?php _e("Logout"); ?>)</a></small>
+                        <small><a href="<?php print api_link('logout', 'templates/dream') ?>">(<?php _lang("Logout", 'templates/dream'); ?>)</a></small>
                     </div>
                 <?php endif; ?>
 
                 <div class="row">
                     <div class="col-xs-12">
-                        <textarea required placeholder="<?php _e("Comment"); ?>" name="comment_body" style="height: 150px"></textarea>
+                        <textarea required placeholder="<?php _lang("Comment", 'templates/dream'); ?>" name="comment_body" style="height: 150px"></textarea>
                     </div>
                 </div>
 
@@ -145,7 +145,7 @@ description: Default comments template
 
                     <?php event_trigger('module.comments.form.end', $data); ?>
                     <div class="col-xs-12 col-md-4">
-                        <button type="submit" class="btn btn--primary"><?php _e("Add comment"); ?></button>
+                        <button type="submit" class="btn btn--primary"><?php _lang("Add comment", 'templates/dream'); ?></button>
                     </div>
                 </div>
             </form>
@@ -153,15 +153,15 @@ description: Default comments template
         </div>
     <?php else : ?>
         <div class="alert">
-            <?php _e("You have to"); ?>
+            <?php _lang("You have to", 'templates/dream'); ?>
             <a href='<?php print login_url(); ?>' class="comments-login-link">
-                <?php _e("log in"); ?>
+                <?php _lang("log in", 'templates/dream'); ?>
             </a>
-            <?php _e("or"); ?>
+            <?php _lang("or"); ?>
             <a class="comments-register-link" href='<?php print register_url(); ?>'>
-                <?php _e("register"); ?>
+                <?php _lang("register", 'templates/dream'); ?>
             </a>
-            <?php _e("to post a comment"); ?>
+            <?php _lang("to post a comment", 'templates/dream'); ?>
             .
         </div>
     <?php endif; ?>

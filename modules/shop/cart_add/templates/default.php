@@ -36,7 +36,7 @@ if (isset($params['content-id'])) {
         <div class="item__price" style="margin-bottom: 20px;">
                     <span>
                         <?php if (is_string($key) and trim(strtolower($key)) == 'price'): ?>
-                            <?php _e($key); ?>
+                            <?php _lang($key, 'templates/dream'); ?>
                         <?php else: ?>
                             <?php print $key; ?>
                         <?php endif; ?>: <?php print currency_format($v) . $ex_tax; ?>
@@ -47,12 +47,12 @@ if (isset($params['content-id'])) {
         <?php if (!isset($in_stock) or $in_stock == false) : ?>
             <button class="btn btn--primary" type="button" disabled="disabled"
                     onclick="alert('<?php print addslashes(_e("This item is out of stock and cannot be ordered", true)); ?>');">
-                <?php _e("Out of stock"); ?>
+                <?php _lang("Out of stock", 'templates/dream'); ?>
             </button>
         <?php else: ?>
             <button class="btn btn--primary" type="button"
                     onclick="mw.cart.add('.mw-add-to-cart-<?php print $params['id'] ?>','<?php print $v ?>', '<?php print $title; ?>');">
-                <?php _e($button_text !== false ? $button_text : "Add to cart"); ?>
+                <?php _lang($button_text !== false ? $button_text : "Add to cart", 'templates/dream'); ?>
             </button>
         <?php endif; ?>
     </div>

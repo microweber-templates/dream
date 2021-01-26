@@ -14,7 +14,7 @@ description: Select country
 
 <div class="<?php print $config['module_class'] ?>" id="<?php print $rand; ?>">
   <select name="country" class="form-control shipping-country-select">
-   <option value=""><?php _e("Choose country"); ?></option>
+   <option value=""><?php _lang("Choose country", 'templates/dream'); ?></option>
     <?php foreach($data  as $item): ?>
     <option value="<?php print $item['shipping_country'] ?>"  <?php if(isset($selected_country) and $selected_country == $item['shipping_country']): ?> selected="selected" <?php endif; ?>><?php print $item['shipping_country'] ?></option>
     <?php endforeach ; ?>

@@ -18,7 +18,7 @@ description: Default
         <div class="row">
             <div class="col-xs-12 col-md-6">
                 <select name="country">
-                    <option value=""><?php _e("Country"); ?></option>
+                    <option value=""><?php _lang("Country", 'templates/dream'); ?></option>
                     <?php foreach ($data as $item): ?>
                         <option value="<?php print $item['shipping_country'] ?>" <?php if (isset($selected_country) and $selected_country == $item['shipping_country']): ?> selected="selected" <?php endif; ?>><?php print $item['shipping_country'] ?></option>
                     <?php endforeach; ?>
@@ -26,23 +26,23 @@ description: Default
             </div>
 
             <div class="col-xs-12 col-md-6">
-                <input name="Address[city]" type="text" value="" placeholder="<?php _e("Town / City"); ?>"/>
+                <input name="Address[city]" type="text" value="" placeholder="<?php _lang("Town / City", 'templates/dream'); ?>"/>
             </div>
 
             <div class="col-xs-12 col-md-6">
-                <input name="Address[zip]" type="text" value="" placeholder="<?php _e("ZIP / Postal Code"); ?>"/>
+                <input name="Address[zip]" type="text" value="" placeholder="<?php _lang("ZIP / Postal Code", 'templates/dream'); ?>"/>
             </div>
 
             <div class="col-xs-12 col-md-6">
-                <input name="Address[state]"  type="text" value="" placeholder="<?php _e("State / Province"); ?>"/>
+                <input name="Address[state]"  type="text" value="" placeholder="<?php _lang("State / Province", 'templates/dream'); ?>"/>
             </div>
 
             <div class="col-xs-12 col-md-12">
-                <input name="Address[address]"  type="text" value="" placeholder="<?php _e("Address"); ?>"/>
+                <input name="Address[address]"  type="text" value="" placeholder="<?php _lang("Address", 'templates/dream'); ?>"/>
             </div>
 
             <div class="col-xs-12 col-md-12">
-                <input name="other_info" type="text" value="" placeholder="<?php _e("Additional Information ( Special notes for delivery - Optional )"); ?>"/>
+                <input name="other_info" type="text" value="" placeholder="<?php _lang("Additional Information ( Special notes for delivery - Optional )", 'templates/dream'); ?>"/>
             </div>
         </div>
 

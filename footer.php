@@ -12,7 +12,7 @@ $is_live = mw()->user_manager->session_get('editmode') == true;
             <div class="row">
                 <div class="col-md-3 col-sm-4 allow-drop">
                     <module type="logo" id="footer-logo" template="footer"/>
-                    <p><em><?php _e("Free CMS & Website Builder") ?></em></p>
+                    <p><em><?php _lang("Free CMS & Website Builder", 'templates/dream') ?></em></p>
                     <module type="menu" template="footer" name="footer_menu" id="footer_menu"/>
                 </div>
 
@@ -22,7 +22,7 @@ $is_live = mw()->user_manager->session_get('editmode') == true;
                 </div>
 
                 <div class="col-md-4 col-md-offset-1 col-sm-12 allow-drop">
-                    <h6><?php _e("Subscribe") ?></h6>
+                    <h6><?php _lang("Subscribe", 'templates/dream'); ?></h6>
                     <p><?php _lang("Get monthly updates and free resources.", "templates/dream"); ?></p>
 
                     <module type="newsletter" id="footer-newsletter"/>

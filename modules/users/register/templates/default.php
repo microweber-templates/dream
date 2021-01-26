@@ -40,9 +40,9 @@ description: Default register template
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="input-with-icon">
-                            <label><?php _e('First Name'); ?>:</label>
+                            <label><?php _lang('First Name', "templates/dream"); ?>:</label>
                             <i class="icon icon-Male-2"></i>
-                            <input type="text" name="first_name" placeholder="<?php _e('First Name'); ?>"/>
+                            <input type="text" name="first_name" placeholder="<?php _lang('First Name', "templates/dream"); ?>"/>
                         </div>
                     </div>
                 </div>
@@ -52,9 +52,9 @@ description: Default register template
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="input-with-icon">
-                            <label><?php _e("Last Name"); ?>:</label>
+                            <label><?php _lang("Last Name", "templates/dream"); ?>:</label>
                             <i class="icon icon-Male-2"></i>
-                            <input type="text" name="last_name" placeholder="<?php _e("Last Name"); ?>"/>
+                            <input type="text" name="last_name" placeholder="<?php _lang("Last Name", "templates/dream"); ?>"/>
                         </div>
                     </div>
                 </div>
@@ -63,7 +63,7 @@ description: Default register template
             <div class="row">
                 <div class="col-sm-12">
                     <div class="input-with-icon">
-                        <label><?php _e("Email address"); ?>:</label>
+                        <label><?php _lang("Email address", "templates/dream"); ?>:</label>
                         <i class="icon icon-Mail-2"></i>
                         <input type="email" name="email" placeholder="you@yourwebsite.com"/>
                     </div>
@@ -73,7 +73,7 @@ description: Default register template
             <div class="row">
                 <div class="col-sm-12">
                     <div class="input-with-icon">
-                        <label><?php _e("Password"); ?>:</label>
+                        <label><?php _lang("Password", "templates/dream"); ?>:</label>
                         <i class="icon icon-Security-Check"></i>
                         <input type="password" name="password" placeholder="&bullet;&bullet;&bullet;&bullet;&bullet;&bullet;"/>
                     </div>
@@ -84,7 +84,7 @@ description: Default register template
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="input-with-icon">
-                            <label><?php _e("Confirm Password"); ?>:</label>
+                            <label><?php _lang("Confirm Password", "templates/dream"); ?>:</label>
                             <i class="icon icon-Security-Check"></i>
                             <input type="password" name="password2" placeholder="&bullet;&bullet;&bullet;&bullet;&bullet;&bullet;"/>
                         </div>
@@ -110,5 +110,5 @@ description: Default register template
         </div>
     </div>
 <?php else: ?>
-    You Are Logged In
+    <?php _lang("You Are Logged In", "templates/dream"); ?>
 <?php endif; ?>
