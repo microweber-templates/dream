@@ -12,7 +12,7 @@ $size = $size . 'px';
 } ?>">
     <?php if ($logoimage == '' and $text == ''): ?>
         <?php if (is_live_edit()) : ?>
-            <span class="mw-logo-no-values"><?php _lang('Logo', 'templates/dream'); ?>); ?></span>
+            <span class="mw-logo-no-values"><?php _lang('Logo', 'templates/dream'); ?></span>
         <?php endif; ?>
     <?php else: ?>
         <?php if ($logotype == 'image' or $logotype == false): ?>
