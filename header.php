@@ -18,8 +18,14 @@
     <script>
         mw.require("fonts.js");
         mw.lib.require('bootstrap3');
-        mw.lib.require('material_icons');
-        mw.lib.require('mw_icons_mind');
+        mw.require('icon_selector.js');
+    </script>
+    <script>
+        mw.iconLoader()
+            .addIconSet('iconsMindLine')
+            .addIconSet('iconsMindSolid')
+            .addIconSet('mwIcons')
+            .addIconSet('materialIcons');
     </script>
     <script>
         mw.templateFont = mw.templateFont || new mw.font();
@@ -137,13 +143,7 @@
             });
         </script>
     <?php endif; ?>
-    <script>
-        $(window).on('load', function () {
-            if (mw.iconSelector) {
-                mw.iconSelector.addCSS('link[href*="/iconsmind.css"]', '.icon-')
-            }
-        });
-    </script>
+
 </head>
 <body class="<?php print helper_body_classes(); ?>">
 <a id="top"></a>
