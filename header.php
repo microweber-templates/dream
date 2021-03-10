@@ -25,6 +25,7 @@
             .addIconSet('iconsMindLine')
             .addIconSet('iconsMindSolid')
             .addIconSet('mwIcons')
+            .addIconSet('materialDesignIcons')
             .addIconSet('materialIcons');
     </script>
     <script>
