@@ -23,7 +23,7 @@ description: Checkout
     <div class="container">
         <div class="cart-form form--square">
             <div field="checkout_page" rel="content">
-                <module type="shop/checkout" id="cart_checkout"/>
+                <module type="shop/checkout" id="cart_checkout" class="no-settings"/>
             </div>
         </div>
     </div>
