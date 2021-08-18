@@ -31,9 +31,6 @@
     <script>
         mw.templateFont = mw.templateFont || new mw.font();
         mw.templateTopFixed = '.nav-bar.nav--fixed';
-
-
-
         AddToCartModalContent = window.AddToCartModalContent || function (title) {
 
 
