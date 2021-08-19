@@ -15,7 +15,7 @@ description: Portfolio layout
 ?>
 <?php include template_dir() . "header.php"; ?>
 
-<div class="edit" rel="content" field="dream_content">
+<div class="edit" rel="content" field="dream_content" data-layout-container>
     <module type="layouts" template="skin-57" />
     <module type="layouts" template="skin-56"/>
 </div>

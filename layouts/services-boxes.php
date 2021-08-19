@@ -15,7 +15,7 @@ description: Services Boxes layout
 ?>
 <?php include template_dir() . "header.php"; ?>
 
-<div class="edit" rel="content" field="dream_content">
+<div class="edit" rel="content" field="dream_content" data-layout-container>
     <module type="layouts" template="skin-41"/>
     <module type="layouts" template="skin-53"/>
     <module type="layouts" template="skin-54"/>

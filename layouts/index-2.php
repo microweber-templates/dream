@@ -13,7 +13,7 @@
 ?>
 <?php include template_dir() . "header.php"; ?>
 
-<div class="edit" rel="content" field="dream_content">
+<div class="edit" rel="content" field="dream_content" data-layout-container>
     <module type="layouts" template="skin-10"/>
     <module type="layouts" template="skin-11"/>
     <module type="layouts" template="skin-12"/>

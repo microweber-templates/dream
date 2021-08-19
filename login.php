@@ -19,7 +19,7 @@ if (is_logged() == true) {
 }
 ?>
 
-<div class="edit" rel="content" field="dream_content">
+<div class="edit" rel="content" field="dream_content" data-layout-container>
     <section class="height-100 cover cover-8">
         <div class="col-md-7 col-sm-5">
             <div class="background-image-holder" style="background-image: url('<?php print template_url('assets/img/'); ?>hero24.jpg');"></div>
