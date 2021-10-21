@@ -75,6 +75,9 @@
                 mw.$('.edit [class*=" icon-"]').each(function () { this.className = this.className.replace(/icon-/g, 'mw-micon-'); });
             }
             icons();
+            mw.on('moduleLoaded', function () {
+                icons();
+            })
             mw.on('editChanged', function () {
                 icons();
             });

@@ -1,10 +1,10 @@
 <script type="text/javascript">
-    
+
     zoommap = function(val){
         mw.$("#zoom_level").val(val).trigger("change");
     }
 </script>
-<style type="text/css">
+<style >
 #val_slider {
 	width: 200px;
 }
