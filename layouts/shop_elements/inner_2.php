@@ -1,23 +1,20 @@
-<?php if ($shop2_header_style == '' OR $shop2_header_style == 'background'): ?>
-    <section class="imagebg image--light height-60" data-overlay="1">
-        <div class="edit mw-heading-image" rel="content" field="heading-image">
-            <div class="background-image-holder" style="background-image: url('<?php print template_url('assets/img/'); ?>header4.jpg');"></div>
-        </div>
-        <div class="container pos-vertical-center">
-            <div class="row">
-                <div class="col-sm-4 shop-item-detail">
-                    <h3><?php print content_title(); ?></h3>
-                    <div class="edit" field="content_body_short" rel="content">
-                        <p>
-                            <?php _lang("This timeless staple represents a casual, elegant addition to any summer wardrobe ", "templates/dream"); ?>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-<?php endif; ?>
-
+<?php //if ($shop2_header_style == '' OR $shop2_header_style == 'background'): ?>
+<!--    <section style="background-color: #f5f5f5";>-->
+<!--        <div class="container">-->
+<!--            <div class="row">-->
+<!--                <div class="col-sm-8 shop-item-detail">-->
+<!--                    <h3>--><?php //print content_title(); ?><!--</h3>-->
+<!--                    <div class="edit" field="content_body_short" rel="content">-->
+<!--                        <p>-->
+<!--                            --><?php //_lang("This timeless staple represents a casual, elegant addition to any summer wardrobe ", "templates/dream"); ?>
+<!--                        </p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
+<?php //endif; ?>
+<br><br>
 <section>
     <div class="container">
         <div class="row">
@@ -30,27 +27,30 @@
                         <h4 class="edit" field="title" rel="content"><?php _lang("Product name", "templates/dream"); ?></h4>
                     </div>
 
-                    <div class="item__price" style="margin-bottom: 10px;">
-                        <span><?php print currency_format(get_product_price()); ?></span>
-                    </div>
+                    <div style="display: flex;">
+                        <div class="item__price" style="margin-bottom: 10px;">
+                            <span><?php print currency_format(get_product_price()); ?></span>
+                        </div>
 
-                    <div class="clearfix" style="margin-bottom: 30px;">
-                        <?php $content_data = content_data(CONTENT_ID);
-                        $in_stock = true;
-                        if (isset($content_data['qty']) and $content_data['qty'] != 'nolimit' and intval($content_data['qty']) == 0) {
-                            $in_stock = false;
-                        }
-                        ?>
-                        <?php if ($in_stock == true): ?>
-                            <span class="text-success"><i class="fa fa-check"></i> <?php _lang("In Stock", 'templates/dream'); ?></span>
-                        <?php else: ?>
-                            <span class="text-danger"><i class="glyphicon glyphicon-remove"></i> <?php _lang("Out of Stock", 'templates/dream'); ?></span>
-                        <?php endif; ?>
-                        <div class="clearfix"></div>
-                        <?php if (isset($content_data['sku'])): ?>
-                            <strong><?php _lang("SKU") ?>:</strong> <?php print $content_data['sku']; ?>
-                        <?php endif; ?>
+                        <div class="clearfix" style=" margin: 0 0 0 30px;">
+                            <?php $content_data = content_data(CONTENT_ID);
+
+                            $in_stock = true;
+                            if (isset($content_data['qty']) and $content_data['qty'] != 'nolimit' and intval($content_data['qty']) == 0) {
+                                $in_stock = false;
+                            }
+                            ?>
+                            <?php if ($in_stock == true): ?>
+                                <span class="text-success"><i class="fa fa-check"></i> <?php _lang("In Stock", 'templates/dream'); ?></span>
+                            <?php else: ?>
+                                <span class="text-danger"><i class="glyphicon glyphicon-remove"></i> <?php _lang("Out of Stock", 'templates/dream'); ?></span>
+                            <?php endif; ?>
+                        </div>
                     </div>
+                    <div class="clearfix"></div>
+                    <?php if (isset($content_data['sku'])): ?>
+                        <strong><?php _lang("SKU") ?>:</strong> <?php print $content_data['sku']; ?>
+                    <?php endif; ?>
 
                     <module type="shop/cart_add"/>
 
