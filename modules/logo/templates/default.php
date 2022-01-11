@@ -28,7 +28,7 @@ $size = $size . 'px';
                     } ?>/>
                 </span>
             <?php else: ?>
-                <span class="mw-logo-no-values"><?php _lang('Logo', 'templates/dream'); ?>); ?></span>
+                <span class="mw-logo-no-values"><?php _lang('Logo', 'templates/dream'); ?></span>
             <?php endif; ?>
         <?php endif; ?>
         <?php if ($logotype == 'text' or $logotype == 'both'): ?>

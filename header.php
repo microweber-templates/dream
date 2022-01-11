@@ -231,7 +231,7 @@
         <?php if ($shopping_cart == 'true'): ?>
             <div class="nav-module right-x cart-module">
                 <a href="#" class="nav-function" data-notification-link="cart-overview">
-                    <i class="interface-bag icon icon--sm"></i>
+                    <i class="mw-micon-solid-Shopping-Bag"></i>
                     <span><?php _lang("Cart", "templates/dream") ?></span>
                 </a>
             </div>
@@ -241,7 +241,7 @@
             <?php if (is_logged()): ?>
                 <div class="nav-module right-x cart-module dream-profile-link" style="display: <?php print $profile_link == 'true' ? 'inline-block' : 'none'; ?>;">
                     <a href="<?php print logout_url(); ?>" class="nav-function">
-                        <i class="fa fa-lock"></i>
+                        <i class="fa fa-sign-out"></i>
                         <span><?php _lang("Logout", "templates/dream") ?></span>
                     </a>
                 </div>
@@ -258,7 +258,7 @@
         <?php if ($search_field == 'true' or $is_live_edit): ?>
             <div class="nav-module right-x search-module dream-search-link" style="display: <?php print $search_field == 'true' ? 'inline-block' : 'none'; ?>;">
                 <a href="#" class="nav-function modal-trigger" data-modal-id="search-form">
-                    <i class="interface-search icon icon--sm"></i>
+                    <i class="fa fa-search"></i>
                     <span><?php _lang("Search", "templates/dream") ?></span>
                 </a>
             </div>

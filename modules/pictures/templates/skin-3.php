@@ -23,7 +23,7 @@ description: Skin 3
                     foreach ($data as $item): ?>
                         <?php $count++; ?>
                         <li>
-                            <a href="javascript:;" onclick="mw.gallery(gallery<?php print $rand; ?>, <?php print $count; ?>);return false;" class="pictures picture-<?php print $item['id']; ?>">
+                            <a href="javascript:;" onclick="mw.gallery(gallery<?php print $rand; ?>, <?php print $count; ?>;return false;" class="pictures picture-<?php print $item['id']; ?>">
                                 <img alt="" src="<?php print thumbnail($item['filename'], 800, 1200); ?>"/>
                             </a>
                         </li>

@@ -22,7 +22,7 @@ description: Skin 2
                     <?php $count = -1;
                     foreach ($data as $item): ?>
                         <?php $count++; ?>
-                        <li><a href="javascript:;" onclick="mw.gallery(gallery<?php print $rand; ?>, <?php print $count; ?>);return false;" class="pictures picture-<?php print $item['id']; ?>"><img
+                        <li><a href="javascript:;" onclick="mw.gallery(gallery<?php print $rand; ?>, <?php print $count; ?>;return false;" class="pictures picture-<?php print $item['id']; ?>"><img
                                         alt=""
                                         src="<?php print thumbnail($item['filename'], 1600, 695, true); ?>"/></a>
                         </li>

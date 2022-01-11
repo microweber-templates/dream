@@ -20,7 +20,7 @@
                 <?php $count++; ?>
                 <div class="col-sm-6 masonry__item">
                     <a href="javascript:;"
-                       onclick="mw.gallery(gallery<?php print $rand; ?>, <?php print $count; ?>);return false;">
+                       onclick="mw.gallery(gallery<?php print $rand; ?>, <?php print $count; ?>;return false;">
                         <div class="hover-element hover-element-1" data-title-position="top,right">
                             <div class="hover-element__initial">
                                 <img src="<?php print thumbnail($item['filename'], 1200, 1200, true); ?>" alt=""/>
