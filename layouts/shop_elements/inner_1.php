@@ -1,23 +1,19 @@
-<?php if ($shop1_header_style == '' OR $shop1_header_style == 'clean'): ?>
-    <section class="imagebg image--light height-60" data-overlay="1">
-        <div class="edit mw-heading-image" rel="content" field="heading-image">
-            <div class="background-image-holder" style="background-image: url('<?php print template_url('assets/img/'); ?>header4.jpg');"></div>
-        </div>
-
-        <div class="container pos-vertical-center">
-            <div class="row">
-                <div class="col-sm-4 shop-item-detail">
-                    <h3><?php print content_title(); ?></h3>
-                    <div class="edit" field="content_body_short" rel="content">
-                        <p>
-                            <?php _lang("This timeless staple represents a casual, elegant addition to any summer wardrobe", "templates/dream"); ?>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-<?php endif; ?>
+<?php //if ($shop1_header_style == '' OR $shop1_header_style == 'clean'): ?>
+<!--    <section style="background-color: #f5f5f5";>-->
+<!--        <div class="container">-->
+<!--            <div class="row">-->
+<!--                <div class="col-sm-8 shop-item-detail">-->
+<!--                    <h3>--><?php //print content_title(); ?><!--</h3>-->
+<!--                    <div class="edit" field="content_body_short" rel="content">-->
+<!--                        <p>-->
+<!--                            --><?php //_lang("This timeless staple represents a casual, elegant addition to any summer wardrobe ", "templates/dream"); ?>
+<!--                        </p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
+<?php //endif; ?>
 
 <section>
     <div class="container">
