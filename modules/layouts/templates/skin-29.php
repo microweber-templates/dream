@@ -23,10 +23,11 @@ if ($overlay === null OR $overlay === false) {
 }
 ?>
 
-<section class="height-100 safe-mode imagebg <?php if($is_parallax == 'yes'): ?>parallax<?php endif; ?> nodrop edit <?php print $padding ?>" field="layout-skin-29-<?php print $params['id'] ?>" rel="module" data-overlay="<?php print $overlay; ?>">
+<section class="height-100 safe-mode imagebg mw-layout-overlay-wrapper <?php if($is_parallax == 'yes'): ?>parallax<?php endif; ?> nodrop edit <?php print $padding ?>" field="layout-skin-29-<?php print $params['id'] ?>" rel="module" data-overlay="<?php print $overlay; ?>">
     <div class="background-image-holder" style="background-image: url('<?php print template_url('assets/img/'); ?>wedding-1.jpg');"></div>
+    <div class="mw-layout-overlay"></div>
 
-    <div class="container pos-vertical-center">
+    <div class="container pos-vertical-center mw-layout-overlay-container">
         <div class="row">
             <div class="col-sm-12 text-center allow-drop">
                 <h1 class=""><?php _lang("Sam Gibbs &amp; Aisha Roberts", "templates/dream"); ?></h1>

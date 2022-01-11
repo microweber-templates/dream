@@ -23,11 +23,12 @@ if ($overlay === null OR $overlay === false) {
 }
 ?>
 
-<section class="imagebg safe-mode section--even stats-1 <?php if($is_parallax == 'yes'): ?>parallax<?php endif; ?> nodrop edit <?php print $padding ?>" data-overlay="<?php print $overlay; ?>" field="layout-skin-4-<?php print $params['id'] ?>"
+<section class="imagebg safe-mode section--even stats-1 mw-layout-overlay-wrapper <?php if($is_parallax == 'yes'): ?>parallax<?php endif; ?> nodrop edit <?php print $padding ?>" data-overlay="<?php print $overlay; ?>" field="layout-skin-4-<?php print $params['id'] ?>"
          rel="module">
     <div class="background-image-holder" style="background-image: url('<?php print template_url('assets/img/'); ?>hero2.jpg');"></div>
+    <div class="mw-layout-overlay"></div>
 
-    <div class="row wide-grid">
+    <div class="row wide-grid mw-layout-overlay-container">
         <div class="col-sm-3 col-xs-6 cloneable">
             <div class="feature feature-1 text-center">
                 <i class="icon icon--lg icon-Bodybuilding safe-element"></i>

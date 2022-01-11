@@ -63,12 +63,13 @@ if ($overlay === null OR $overlay === false) {
         transform: none;
     }</style> */ ?>
 
-<section class="height-100 imagebg cover cover-1 <?php if ($is_parallax == 'yes'): ?>parallax<?php endif; ?> nodrop edit safe-mode <?php print $padding ?>" data-overlay="<?php print $overlay; ?>"
+<section class="height-100 imagebg cover cover-1 mw-layout-overlay-wrapper <?php if ($is_parallax == 'yes'): ?>parallax<?php endif; ?> nodrop edit safe-mode <?php print $padding ?>" data-overlay="<?php print $overlay; ?>"
          field="layout-skin-1-<?php print $params['id'] ?>"
          rel="module">
     <div class="background-image-holder" style="background-image: url('<?php print template_url('assets/img/'); ?>hero1.jpg');"></div>
+    <div class="mw-layout-overlay"></div>
 
-    <div class="container pos-vertical-center">
+    <div class="container pos-vertical-center mw-layout-overlay-container">
         <div class="row">
             <div class="col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-3 text-center">
                 <div class="allow-drop">
