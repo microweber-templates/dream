@@ -48,7 +48,7 @@ $is_live = mw()->user_manager->session_get('editmode') == true;
                     </div>
                     <div class="col-sm-6 text-right text-center-xs">
                         <a href="#top" class="inner-link top-link ">
-                            <i class="interface-up-open-big"></i>
+                            <i class="mw-micon-solid-Arrow-Up"></i>
                         </a>
                     </div>
                 </div>
