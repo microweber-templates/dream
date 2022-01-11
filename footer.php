@@ -7,12 +7,7 @@ if ($footer == '') {
 $is_live = mw()->user_manager->session_get('editmode') == true;
 ?>
 
-<!--<!-- Shopping Cart Modal -->-->
-<!--<div class="modal fade " id="shoppingCartModal" tabindex="-1" role="dialog" aria-labelledby="shoppingCartModalLabel">-->
-<!--    <div class="modal-dialog modal-lg" role="document">-->
-<!--        <div type="shop/checkout" template="modal" id="js-ajax-cart-checkout-process" class="no-settings"></div>-->
-<!--    </div>-->
-<!--</div>-->
+
 <?php if ($footer != 'true' || $is_live): ?>
     <footer class="bg--dark footer-4 nodrop mwjs-dream-footer" style="display:<?php print ($footer == 'true' and $is_live) ? 'none' : 'block'; ?>;">
         <div class="container edit" field="dream_footer" rel="global">
