@@ -1,6 +1,24 @@
-/* 
+/*
  *  Owl Carousel - Animate Plugin
  */
+
+
+@font-face {
+    font-family: 'pillar-interface';
+    src: url('../fonts/pillar-interface.eot?95514741');
+    src: url('../fonts/pillar-interface.eot?95514741#iefix') format('embedded-opentype'),
+    url('../fonts/pillar-interface.woff2?95514741') format('woff2'),
+    url('../fonts/pillar-interface.woff?95514741') format('woff'),
+    url('../fonts/pillar-interface.ttf?95514741') format('truetype'),
+    url('../fonts/pillar-interface.svg?95514741#pillar-interface') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+
 .owl-carousel .animated {
   -webkit-animation-duration: 1000ms;
   animation-duration: 1000ms;
@@ -37,7 +55,7 @@
   }
 }
 
-/* 
+/*
  *  Owl Carousel - Auto Height Plugin
  */
 .owl-height {
@@ -48,7 +66,7 @@
   transition: height 500ms ease-in-out;
 }
 
-/* 
+/*
  *  Core Owl Carousel CSS File
  */
 .owl-carousel {
@@ -139,7 +157,7 @@
   display: block;
 }
 
-/* 
+/*
  *  Owl Carousel - Lazy Load Plugin
  */
 .owl-carousel .owl-item .owl-lazy {
@@ -154,7 +172,7 @@
   transform-style: preserve-3d;
 }
 
-/* 
+/*
  *  Owl Carousel - Video Plugin
  */
 .owl-carousel .owl-video-wrapper {

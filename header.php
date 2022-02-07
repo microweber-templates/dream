@@ -57,10 +57,10 @@
                     notification.removeClass('notification--dismissed');
                     mr.notifications.showNotification(notification, 0);
               } else {
-                  // mw.modal({
-                  //     id: 'AddToCartModal',
-                  //     content:AddToCartModalContent()
-                  // })
+                  mw.modal({
+                      id: 'AddToCartModal',
+                      content:AddToCartModalContent()
+                  })
               }
             return false;
         });
