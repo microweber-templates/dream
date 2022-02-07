@@ -31,24 +31,24 @@ position: 35
             </div>
             <div class="col-md-3 col-md-pull-4 col-sm-6 col-xs-6 text-right text-left-xs voh">
                 <div class="feature feature-1 cloneable">
-                    <i class="icon icon-Fingerprint-2 safe-element"></i>
+                    <i class="mw-micon-Fingerprint-2 safe-element"></i>
                     <h5><?php _lang("Over 2,000 Icons", "templates/dream"); ?></h5>
                     <p><?php _lang("Dream includes the Icons Mind kit with each purchase.", "templates/dream"); ?></p>
                 </div>
                 <div class="feature feature-1 cloneable">
-                    <i class="icon icon-Approved-Window safe-element"></i>
+                    <i class="mw-micon-Approved-Window safe-element"></i>
                     <h5><?php _lang("Intuitive Markup", "templates/dream"); ?></h5>
                     <p><?php _lang("Focussed on readability and performance: Tinker on", "templates/dream"); ?>!</p>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6 col-xs-6 col-md-push-2 voh">
                 <div class="feature feature-1 cloneable">
-                    <i class="icon icon-Support safe-element"></i>
+                    <i class="mw-micon-Support safe-element"></i>
                     <h5><?php _lang("Top Notch Support", "templates/dream"); ?></h5>
                     <p><?php _lang("Each purchase of Dream includes 6 months of support.", "templates/dream"); ?></p>
                 </div>
                 <div class="feature feature-1 cloneable">
-                    <i class="icon icon-Box-Open safe-element"></i>
+                    <i class="mw-micon-Box-Open safe-element"></i>
                     <h5><?php _lang("Builder Included", "templates/dream"); ?></h5>
                     <p><?php _lang("Assemble pages with the included Microweber CMS & Website Builder.", "templates/dream"); ?></p>
                 </div>

@@ -25,7 +25,7 @@ position: 19
         <div class="row">
             <div class="col-sm-4 cloneable">
                 <div class="feature feature-1 text-center boxed boxed--lg">
-                    <i class="icon icon--lg icon-Tree-2 color--primary safe-element"></i>
+                    <i class="mw-micon--lg icon-Tree-2 color--primary safe-element"></i>
                     <h3>2010</h3>
                     <span class="safe-element"><em><?php _lang("Year of foundation", "templates/dream"); ?></em></span>
                 </div>
@@ -33,7 +33,7 @@ position: 19
 
             <div class="col-sm-4 cloneable">
                 <div class="feature feature-1 text-center boxed boxed--lg">
-                    <i class="icon icon--lg icon-Bodybuilding color--primary safe-element"></i>
+                    <i class="mw-micon--lg icon-Bodybuilding color--primary safe-element"></i>
                     <h3>16</h3>
                     <span class="safe-element"><em><?php _lang("Passionate team members", "templates/dream"); ?></em></span>
                 </div>
@@ -41,7 +41,7 @@ position: 19
 
             <div class="col-sm-4 cloneable">
                 <div class="feature feature-1 text-center boxed boxed--lg">
-                    <i class="icon icon--lg icon-Thumbs-UpSmiley color--primary safe-element"></i>
+                    <i class="mw-micon--lg icon-Thumbs-UpSmiley color--primary safe-element"></i>
                     <h3>Over 500</h3>
                     <span class="safe-element"><em><?php _lang("Satisfied clients", "templates/dream"); ?></em></span>
                 </div>
@@ -49,7 +49,7 @@ position: 19
 
             <div class="col-sm-4 cloneable">
                 <div class="feature feature-1 text-center boxed boxed--lg">
-                    <i class="icon icon--lg icon-Alarm-Clock color--primary safe-element"></i>
+                    <i class="mw-micon--lg icon-Alarm-Clock color--primary safe-element"></i>
                     <h3>0</h3>
                     <span class="safe-element"><em><?php _lang("Missed meetings", "templates/dream"); ?></em></span>
                 </div>
@@ -57,7 +57,7 @@ position: 19
 
             <div class="col-sm-4 cloneable">
                 <div class="feature feature-1 text-center boxed boxed--lg">
-                    <i class="icon icon--lg icon-Marker color--primary safe-element"></i>
+                    <i class="mw-micon--lg icon-Marker color--primary safe-element"></i>
                     <h3>Countless</h3>
                     <span class="safe-element"><em><?php _lang("Sharpies exhausted", "templates/dream"); ?></em></span>
                 </div>
@@ -65,7 +65,7 @@ position: 19
 
             <div class="col-sm-4 cloneable">
                 <div class="feature feature-1 text-center boxed boxed--lg">
-                    <i class="icon icon--lg icon-Rock-andRoll color--primary safe-element"></i>
+                    <i class="mw-micon--lg icon-Rock-andRoll color--primary safe-element"></i>
                     <h3>1</h3>
                     <span class="safe-element"><em><?php _lang("Resident DJ", "templates/dream"); ?></em></span>
                 </div>

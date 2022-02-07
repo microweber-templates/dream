@@ -20,7 +20,7 @@ position: 5
             <div class="col-sm-6 min-h cloneable">
                 <div class="feature feature-3">
                     <div class="feature__left">
-                        <i class="icon icon-Sidebar-Window color--primary safe-element"></i>
+                        <i class="mw-micon-Sidebar-Window color--primary safe-element"></i>
                     </div>
                     <div class="feature__right allow-drop">
                         <h6><?php _lang("Interface Design", "templates/dream"); ?></h6>
@@ -32,7 +32,7 @@ position: 5
             <div class="col-sm-6 min-h cloneable">
                 <div class="feature feature-3">
                     <div class="feature__left">
-                        <i class="icon icon-RGB color--primary safe-element"></i>
+                        <i class="mw-micon-RGB color--primary safe-element"></i>
                     </div>
                     <div class="feature__right allow-drop">
                         <h6><?php _lang("User Interaction", "templates/dream"); ?></h6>
@@ -44,7 +44,7 @@ position: 5
             <div class="col-sm-6 min-h cloneable">
                 <div class="feature feature-3">
                     <div class="feature__left">
-                        <i class="icon icon-Brain color--primary safe-element"></i>
+                        <i class="mw-micon-Brain color--primary safe-element"></i>
                     </div>
                     <div class="feature__right allow-drop">
                         <h6><?php _lang("Internet Of Things", "templates/dream"); ?></h6>
@@ -56,7 +56,7 @@ position: 5
             <div class="col-sm-6 min-h cloneable">
                 <div class="feature feature-3">
                     <div class="feature__left">
-                        <i class="icon icon-Astronaut color--primary safe-element"></i>
+                        <i class="mw-micon-Astronaut color--primary safe-element"></i>
                     </div>
                     <div class="feature__right allow-drop">
                         <h6><?php _lang("Product Design", "templates/dream"); ?></h6>

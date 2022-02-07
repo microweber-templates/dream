@@ -20,7 +20,7 @@ position: 55
             <div class="col-md-4 col-sm-6 cloneable">
                 <div class="card card-1">
                     <div class="card__icon">
-                        <i class="icon icon--lg icon-Sidebar-Window safe-element"></i>
+                        <i class="mw-micon--lg icon-Sidebar-Window safe-element"></i>
                     </div>
                     <div class="card__body boxed bg--white allow-drop">
                         <div class="card__title">
@@ -35,7 +35,7 @@ position: 55
             <div class="col-md-4 col-sm-6 cloneable">
                 <div class="card card-1">
                     <div class="card__icon">
-                        <i class="icon icon--lg icon-RGB safe-element"></i>
+                        <i class="mw-micon--lg icon-RGB safe-element"></i>
                     </div>
                   abre   <div class="card__body boxed bg--white allow-drop">
                         <div class="card__title">
@@ -50,7 +50,7 @@ position: 55
             <div class="col-md-4 col-sm-6 cloneable">
                 <div class="card card-1">
                     <div class="card__icon">
-                        <i class="icon icon--lg icon-Compass-4 safe-element"></i>
+                        <i class="mw-micon--lg icon-Compass-4 safe-element"></i>
                     </div>
                     <div class="card__body boxed bg--white allow-drop">
                         <div class="card__title">
@@ -65,7 +65,7 @@ position: 55
             <div class="col-md-4 col-sm-6 cloneable">
                 <div class="card card-1">
                     <div class="card__icon">
-                        <i class="icon icon--lg icon-Brain safe-element"></i>
+                        <i class="mw-micon--lg icon-Brain safe-element"></i>
                     </div>
                     <div class="card__body boxed bg--white allow-drop">
                         <div class="card__title">
@@ -80,7 +80,7 @@ position: 55
             <div class="col-md-4 col-sm-6 cloneable">
                 <div class="card card-1">
                     <div class="card__icon">
-                        <i class="icon icon--lg icon-Code-Window safe-element"></i>
+                        <i class="mw-micon--lg icon-Code-Window safe-element"></i>
                     </div>
                     <div class="card__body boxed bg--white allow-drop">
                         <div class="card__title">
@@ -95,7 +95,7 @@ position: 55
             <div class="col-md-4 col-sm-6 cloneable">
                 <div class="card card-1">
                     <div class="card__icon">
-                        <i class="icon icon--lg icon-Laptop-Phone safe-element"></i>
+                        <i class="mw-micon--lg icon-Laptop-Phone safe-element"></i>
                     </div>
                     <div class="card__body boxed bg--white allow-drop">
                         <div class="card__title">

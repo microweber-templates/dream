@@ -20,7 +20,7 @@ position: 38
             <div class="col-sm-4 voh cloneable">
                 <div class="feature feature-3">
                     <div class="feature__left">
-                        <i class="icon icon-Astronaut safe-element"></i>
+                        <i class="mw-micon-Astronaut safe-element"></i>
                     </div>
                     <div class="feature__right allow-drop">
                         <h6><?php _lang("New Startups", "templates/dream") ?></h6>
@@ -31,7 +31,7 @@ position: 38
             <div class="col-sm-4 voh cloneable">
                 <div class="feature feature-3">
                     <div class="feature__left">
-                        <i class="icon icon-Fingerprint-2 safe-element"></i>
+                        <i class="mw-micon-Fingerprint-2 safe-element"></i>
                     </div>
                     <div class="feature__right allow-drop">
                         <h6><?php _lang("Personal Portfolios", "templates/dream"); ?></h6>
@@ -42,7 +42,7 @@ position: 38
             <div class="col-sm-4 voh cloneable">
                 <div class="feature feature-3">
                     <div class="feature__left">
-                        <i class="icon icon-Bag-Coins safe-element"></i>
+                        <i class="mw-micon-Bag-Coins safe-element"></i>
                     </div>
                     <div class="feature__right allow-drop">
                         <h6><?php _lang("Digital Storefronts", "templates/dream"); ?></h6>

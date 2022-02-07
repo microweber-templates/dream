@@ -32,28 +32,28 @@ position: 37
                 <hr>
                 <div class="col-xs-6 voh cloneable">
                     <div class="feature feature-1">
-                        <i class="icon icon-Fingerprint safe-element"></i>
+                        <i class="mw-micon-Fingerprint safe-element"></i>
                         <h5><?php _lang("Over 2,000 Icons", "templates/dream"); ?></h5>
                         <p><?php _lang("Dream includes the Icons Mind kit with each purchase.", "templates/dream"); ?></p>
                     </div>
                 </div>
                 <div class="col-xs-6 voh cloneable">
                     <div class="feature feature-1">
-                        <i class="icon icon-Support safe-element"></i>
+                        <i class="mw-micon-Support safe-element"></i>
                         <h5><?php _lang("Support Included", "templates/dream"); ?></h5>
                         <p><?php _lang("Each Dream purchase comes with 6 months support included.", "templates/dream"); ?></p>
                     </div>
                 </div>
                 <div class="col-xs-6 voh cloneable">
                     <div class="feature feature-1">
-                        <i class="icon icon-Astronaut safe-element"></i>
+                        <i class="mw-micon-Astronaut safe-element"></i>
                         <h5><?php _lang("Perfect for startups", "templates/dream"); ?></h5>
                         <p><?php _lang("Including tons of vibrant, carefully styled componenents.", "templates/dream"); ?></p>
                     </div>
                 </div>
                 <div class="col-xs-6 voh cloneable">
                     <div class="feature feature-1">
-                        <i class="icon icon-Bag-Coins safe-element"></i>
+                        <i class="mw-micon-Bag-Coins safe-element"></i>
                         <h5><?php _lang("E-commerce styling", "templates/dream"); ?></h5>
                         <p><?php _lang("Beautiful product pages and unique sidebar cart included.", "templates/dream"); ?></p>
                     </div>

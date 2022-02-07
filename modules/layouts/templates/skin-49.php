@@ -21,7 +21,7 @@ position: 49
         <div class="row">
             <div class="col-sm-4 text-center">
                 <div class="feature boxed feature-1">
-                    <i class="icon icon--lg icon-Map-Marker2 safe-element"></i>
+                    <i class="mw-micon--lg icon-Map-Marker2 safe-element"></i>
                     <h4><?php _lang("Drop on in", "templates/dream"); ?></h4>
                     <p>
                         <?php _lang("Suite 203, Level 4", "templates/dream"); ?>
@@ -32,7 +32,7 @@ position: 49
             </div>
             <div class="col-sm-4 text-center">
                 <div class="feature boxed feature-1">
-                    <i class="icon icon--lg icon-Phone-2 safe-element"></i>
+                    <i class="mw-micon--lg icon-Phone-2 safe-element"></i>
                     <h4><?php _lang("Give us a call", "templates/dream"); ?></h4>
                     <p>
                         <?php _lang("Office", "templates/dream"); ?>: (03) 9283 2617
@@ -42,7 +42,7 @@ position: 49
             </div>
             <div class="col-sm-4 text-center">
                 <div class="feature boxed feature-1">
-                    <i class="icon icon--lg icon-Computer safe-element"></i>
+                    <i class="mw-micon--lg icon-Computer safe-element"></i>
                     <h4><?php _lang("Connect online", "templates/dream"); ?></h4>
                     <p>
                         <?php _lang("Email", "templates/dream"); ?>:

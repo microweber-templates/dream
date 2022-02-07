@@ -41,7 +41,7 @@ description: Default register template
                     <div class="col-sm-12">
                         <div class="input-with-icon">
                             <label><?php _lang('First Name', "templates/dream"); ?>:</label>
-                            <i class="icon icon-Male-2"></i>
+                            <i class="mw-micon-Male-2"></i>
                             <input type="text" name="first_name" placeholder="<?php _lang('First Name', "templates/dream"); ?>"/>
                         </div>
                     </div>
@@ -53,7 +53,7 @@ description: Default register template
                     <div class="col-sm-12">
                         <div class="input-with-icon">
                             <label><?php _lang("Last Name", "templates/dream"); ?>:</label>
-                            <i class="icon icon-Male-2"></i>
+                            <i class="mw-micon-Male-2"></i>
                             <input type="text" name="last_name" placeholder="<?php _lang("Last Name", "templates/dream"); ?>"/>
                         </div>
                     </div>
@@ -64,7 +64,7 @@ description: Default register template
                 <div class="col-sm-12">
                     <div class="input-with-icon">
                         <label><?php _lang("Email address", "templates/dream"); ?>:</label>
-                        <i class="icon icon-Mail-2"></i>
+                        <i class="mw-micon-Mail-2"></i>
                         <input type="email" name="email" placeholder="you@yourwebsite.com"/>
                     </div>
                 </div>
@@ -74,7 +74,7 @@ description: Default register template
                 <div class="col-sm-12">
                     <div class="input-with-icon">
                         <label><?php _lang("Password", "templates/dream"); ?>:</label>
-                        <i class="icon icon-Security-Check"></i>
+                        <i class="mw-micon-Security-Check"></i>
                         <input type="password" name="password" placeholder="&bullet;&bullet;&bullet;&bullet;&bullet;&bullet;"/>
                     </div>
                 </div>
@@ -85,7 +85,7 @@ description: Default register template
                     <div class="col-sm-12">
                         <div class="input-with-icon">
                             <label><?php _lang("Confirm Password", "templates/dream"); ?>:</label>
-                            <i class="icon icon-Security-Check"></i>
+                            <i class="mw-micon-Security-Check"></i>
                             <input type="password" name="password2" placeholder="&bullet;&bullet;&bullet;&bullet;&bullet;&bullet;"/>
                         </div>
                     </div>

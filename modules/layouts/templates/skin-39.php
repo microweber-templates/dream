@@ -29,7 +29,7 @@ position: 39
                 </p>
                 <div class="feature feature-2 col-xs-6 col-sm-12 cloneable">
                     <div class="feature__title nodrop">
-                        <i class="icon icon-Fingerprint-2 safe-element"></i>
+                        <i class="mw-micon-Fingerprint-2 safe-element"></i>
                         <h6><?php _lang("Over 2,000 Icons", "templates/dream"); ?></h6>
                     </div>
                     <p>
@@ -38,7 +38,7 @@ position: 39
                 </div>
                 <div class="feature feature-2 col-xs-6 col-sm-12 cloneable">
                     <div class="feature__title nodrop">
-                        <i class="icon icon-Photo-2 safe-element"></i>
+                        <i class="mw-micon-Photo-2 safe-element"></i>
                         <h6><?php _lang("Beautiful Typography", "templates/dream"); ?></h6>
                     </div>
                     <p>

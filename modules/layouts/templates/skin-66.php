@@ -44,14 +44,14 @@ if ($overlay === null OR $overlay === false) {
             <div class="col-md-10 col-md-offset-1">
                 <div class="boxed boxed--lg voh">
                     <div class="feature col-sm-6">
-                        <i class="icon icon--lg icon-Windows-2 safe-element"></i>
+                        <i class="mw-micon--lg icon-Windows-2 safe-element"></i>
                         <h5><?php _lang("Lovingly Crafted Components", "templates/dream"); ?></h5>
                         <p class="lead allow-drop">
                             <?php _lang("Tailored for modern startups, portfolios shops and more", "templates/dream"); ?>.
                         </p>
                     </div>
                     <div class="feature col-sm-6">
-                        <i class="icon icon--lg icon-Medal safe-element"></i>
+                        <i class="mw-micon--lg icon-Medal safe-element"></i>
                         <h5><?php _lang("Highly Regarded Author", "templates/dream"); ?></h5>
                         <p class="lead allow-drop">
                             <?php _lang("Awarded by Envato for providing high quality products", "templates/dream"); ?>.
