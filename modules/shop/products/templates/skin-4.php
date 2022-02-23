@@ -54,7 +54,7 @@ if (!isset($tn[1])) {
 
                     <?php if ($show_fields == false or in_array('thumbnail', $show_fields)): ?>
                         <div class="shop-item__image">
-                            <img src="<?php print thumbnail($item['image'], 350, 350, true); ?>" alt="<?php print $item['title'] ?>" itemprop="image"/>
+                            <img src="<?php print thumbnail($item['image'], 850, 850, true); ?>" alt="<?php print $item['title'] ?>" itemprop="image"/>
                         </div>
                     <?php endif; ?>
 
