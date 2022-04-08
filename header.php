@@ -86,7 +86,60 @@
                 icons();
             });
         });
+
+        $(document).ready(function () {
+            mw.on('mw.cart.add', function (event, data) {
+                $("#shoppingCartModal").modal();
+                $("#js-ajax-cart-checkout-process").reload_module()
+
+            });
+        });
     </script>
+
+    <script>
+        $(document).ready(function () {
+
+            $('#loginModal').on('show.bs.modal', function (e) {
+                $('#loginModalModuleLogin').reload_module();
+                $('#loginModalModuleRegister').reload_module();
+            });
+
+
+            $('#shoppingCartModal').on('show.bs.modal', function (e) {
+                $('#js-ajax-cart-checkout-process').reload_module();
+            });
+
+
+            mw.on('mw.cart.add', function (event, data) {
+                $('#shoppingCartModal').modal('show');
+
+
+            });
+
+            <?php if (isset($_GET['mw_payment_success'])) { ?>
+            $('#js-ajax-cart-checkout-process').attr('mw_payment_success', true);
+            $('#shoppingCartModal').modal('show')
+
+            <?php } ?>
+
+            $('body').on('click', '.js-show-register-window', function (e) {
+                $('#loginModal').modal('show');
+                $('.js-login-window').hide();
+                $('.js-register-window').show();
+                e.preventDefault();
+                e.stopPropagation();
+            });
+
+            $('.js-show-login-window').on('click', function (e) {
+
+                $('.js-register-window').hide();
+                $('.js-login-window').show();
+                e.preventDefault();
+                e.stopPropagation();
+            });
+        });
+    </script>
+
 
     <?php $color_scheme = get_option('color-scheme', 'mw-template-dream'); ?>
     <?php
@@ -149,6 +202,8 @@
         </script>
     <?php endif; ?>
 
+
+
 </head>
 <body class="<?php print helper_body_classes(); ?>">
 <a id="top"></a>
@@ -180,7 +235,7 @@
         <?php if ($shopping_cart == 'true'): ?>
             <div class="nav-module right-x cart-module">
                 <a href="#" class="nav-function" data-notification-link="cart-overview">
-                    <i class="interface-bag icon icon--sm"></i>
+                    <i class="mw-micon-solid-Shopping-Bag"></i>
                     <span><?php _lang("Cart", "templates/dream") ?></span>
                 </a>
             </div>
@@ -190,7 +245,7 @@
             <?php if (is_logged()): ?>
                 <div class="nav-module right-x cart-module dream-profile-link" style="display: <?php print $profile_link == 'true' ? 'inline-block' : 'none'; ?>;">
                     <a href="<?php print logout_url(); ?>" class="nav-function">
-                        <i class="fa fa-lock"></i>
+                        <i class="fa fa-sign-out"></i>
                         <span><?php _lang("Logout", "templates/dream") ?></span>
                     </a>
                 </div>
@@ -207,7 +262,7 @@
         <?php if ($search_field == 'true' or $is_live_edit): ?>
             <div class="nav-module right-x search-module dream-search-link" style="display: <?php print $search_field == 'true' ? 'inline-block' : 'none'; ?>;">
                 <a href="#" class="nav-function modal-trigger" data-modal-id="search-form">
-                    <i class="interface-search icon icon--sm"></i>
+                    <i class="fa fa-search"></i>
                     <span><?php _lang("Search", "templates/dream") ?></span>
                 </a>
             </div>

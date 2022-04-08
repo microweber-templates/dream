@@ -13,7 +13,17 @@ description: Skin 3
 ?>
 <?php if (is_array($data)): ?>
 
-    <?php $rand = uniqid(); ?>
+    <?php $rand = md5(uniqid()); ?>
+
+    <script>
+        gallery<?php print $rand; ?> = [
+                <?php foreach($data  as $item): ?>{image: "<?php print ($item['filename']); ?>", description: "<?php print $item['title']; ?>"},
+            <?php endforeach;  ?>
+        ];
+        mw.$(document).ready(function () {
+            mr.sliders.documentReady($)
+        })
+    </script>
 
     <div class="text-center">
         <div class="slider" data-animation="fade" data-arrows="true" data-paging="true" data-adaptive-height="true">
@@ -32,13 +42,5 @@ description: Skin 3
             </div>
         </div>
     </div>
-    <script>
-        gallery<?php print $rand; ?> = [
-                <?php foreach($data  as $item): ?>{image: "<?php print ($item['filename']); ?>", description: "<?php print $item['title']; ?>"},
-            <?php endforeach;  ?>
-        ];
-        mw.$(document).ready(function () {
-            mr.sliders.documentReady($)
-        })
-    </script>
+
 <?php endif; ?>

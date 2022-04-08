@@ -30,7 +30,7 @@ description: Skin 1
             <?php $count = -1;
             foreach ($data as $item): ?>
                 <?php $count++; ?>
-                <li class="pictures picture-<?php print $item['id']; ?>" onclick="mw.gallery(gallery<?php print $rand; ?>, <?php print $count; ?>);return false;">
+                <li class="pictures picture-<?php print $item['id']; ?>" onclick="mw.gallery(gallery<?php print $rand; ?>, <?php print $count; ?>;return false;">
                     <img src="<?php print thumbnail($item['filename'], 993, 300); ?>" alt="">
                 </li>
             <?php endforeach; ?>

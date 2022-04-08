@@ -23,10 +23,11 @@ if ($overlay === null OR $overlay === false) {
 }
 ?>
 
-<section class="imagebg safe-mode section--even <?php if($is_parallax == 'yes'): ?>parallax<?php endif; ?> nodrop edit <?php print $padding ?>" data-overlay="<?php print $overlay; ?>" field="layout-skin-20-<?php print $params['id'] ?>" rel="module">
+<section class="imagebg safe-mode section--even mw-layout-overlay-wrapper <?php if($is_parallax == 'yes'): ?>parallax<?php endif; ?> nodrop edit <?php print $padding ?>" data-overlay="<?php print $overlay; ?>" field="layout-skin-20-<?php print $params['id'] ?>" rel="module">
     <div class="background-image-holder" style="background-image: url('<?php print template_url('assets/img/'); ?>hero8.jpg');"></div>
+    <div class="mw-layout-overlay"></div>
 
-    <div class="container">
+    <div class="container mw-layout-overlay-container">
         <div class="row">
             <div class="col-sm-10 col-sm-offset-1 text-center allow-drop">
                 <h4><?php _lang("What can Dream do for your business?", "templates/dream"); ?></h4>

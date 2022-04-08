@@ -23,9 +23,11 @@ if ($overlay === null OR $overlay === false) {
 }
 ?>
 
-<section class="height-80 safe-mode nodrop imagebg <?php if($is_parallax == 'yes'): ?>parallax<?php endif; ?> bg--primary edit <?php print $padding ?>" field="layout-skin-22-<?php print $params['id'] ?>" rel="module" data-overlay="<?php print $overlay; ?>">
+<section class="height-80 safe-mode nodrop  mw-layout-overlay-wrapper <?php if($is_parallax == 'yes'): ?>parallax<?php endif; ?> bg--primary edit <?php print $padding ?>" field="layout-skin-22-<?php print $params['id'] ?>" rel="module" data-overlay="<?php print $overlay; ?>">
     <div class="background-image-holder" style="background-image: url('<?php print template_url('assets/img/'); ?>hero26.jpg');"></div>
-    <div class="container pos-vertical-center">
+    <div class="mw-layout-overlay"></div>
+
+    <div class="container pos-vertical-center mw-layout-overlay-container">
         <div class="row">
             <div class="col-sm-12 text-center allow-drop">
                 <h1><?php _lang("Combine, Edit, Deploy.", "templates/dream"); ?></h1>

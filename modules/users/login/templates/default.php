@@ -29,7 +29,7 @@ description: Login default
                 <div class="col-sm-12">
                     <div class="input-with-icon">
                         <label><?php _lang("Email or username", 'templates/dream'); ?>:</label>
-                        <i class="icon icon-Male-2"></i>
+                        <i class="mw-micon-Male-2"></i>
                         <input type="text" name="username" placeholder="<?php _lang("Email or username", 'templates/dream'); ?>"/>
                     </div>
                 </div>
@@ -39,7 +39,7 @@ description: Login default
                 <div class="col-sm-12">
                     <div class="input-with-icon">
                         <label><?php _lang("Password", 'templates/dream'); ?>:</label>
-                        <i class="icon icon-Security-Check"></i>
+                        <i class="mw-micon-Security-Check"></i>
                         <input type="password" name="password" placeholder="&bullet;&bullet;&bullet;&bullet;&bullet;&bullet;"/>
                     </div>
                 </div>

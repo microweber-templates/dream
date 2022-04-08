@@ -6,6 +6,8 @@ if ($footer == '') {
 
 $is_live = mw()->user_manager->session_get('editmode') == true;
 ?>
+
+
 <?php if ($footer != 'true' || $is_live): ?>
     <footer class="bg--dark footer-4 nodrop mwjs-dream-footer" style="display:<?php print ($footer == 'true' and $is_live) ? 'none' : 'block'; ?>;">
         <div class="container edit" field="dream_footer" rel="global">
@@ -40,8 +42,8 @@ $is_live = mw()->user_manager->session_get('editmode') == true;
                         <span class="type--fine-print"><?php print powered_by_link(); ?></span>
                     </div>
                     <div class="col-sm-6 text-right text-center-xs">
-                        <a href="#top" class="inner-link top-link">
-                            <i class="interface-up-open-big"></i>
+                        <a href="#top" class="inner-link top-link ">
+                            <i class="mw-micon-solid-Arrow-Up"></i>
                         </a>
                     </div>
                 </div>
@@ -49,6 +51,8 @@ $is_live = mw()->user_manager->session_get('editmode') == true;
             </div>
             <!--end of container-->
         </div>
+
+
     </footer>
 <?php endif; ?>
 

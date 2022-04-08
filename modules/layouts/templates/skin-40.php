@@ -35,10 +35,11 @@ if ($height === null OR $height === false OR $height == '') {
 }
 ?>
 
-<section class="height-<?php print $height; ?> safe-mode bg--dark imagebg page-title page-title--animate <?php if ($is_parallax == 'yes'): ?>parallax<?php endif; ?> nodrop edit <?php print $padding ?>" field="layout-skin-40-<?php print $params['id'] ?>" rel="module" data-overlay="<?php print $overlay; ?>">
+<section class="height-<?php print $height; ?> safe-mode bg--dark imagebg page-title page-title--animate mw-layout-overlay-wrapper <?php if ($is_parallax == 'yes'): ?>parallax<?php endif; ?> nodrop edit <?php print $padding ?>" field="layout-skin-40-<?php print $params['id'] ?>" rel="module" data-overlay="<?php print $overlay; ?>">
     <div class="background-image-holder" style="background-image: url('<?php print template_url('assets/img/'); ?>hero21.jpg');"></div>
+    <div class="mw-layout-overlay"></div>
 
-    <div class="container pos-vertical-center">
+    <div class="container pos-vertical-center mw-layout-overlay-container">
         <div class="row">
             <div class="col-sm-10 col-sm-offset-1 text-center allow-drop">
                 <h1><?php _lang("Digital Delivered.", "templates/dream"); ?></h1>

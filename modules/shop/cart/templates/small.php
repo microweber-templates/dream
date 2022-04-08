@@ -84,10 +84,12 @@ if (!isset($params['checkout-link-enabled'])) {
     }
     ?>
     <div class="cart-overview__action">
-        <a href="<?php print $checkout_page_link; ?>" class="btn btn--square btn--primary">
+        <a href="<?php echo route('checkout.contact_information'); ?>" class="btn btn--square btn--primary">
             <span class="btn__text"><?php _lang('Checkout Now', 'templates/dream'); ?></span>
         </a>
     </div>
+
+
 <?php endif; ?>
 
 

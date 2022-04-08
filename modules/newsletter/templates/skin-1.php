@@ -22,13 +22,13 @@ description: Skin 1
         <?php print csrf_form(); ?>
         <div class="input-with-icon">
             <label for="fieldName"><?php _lang('Your Name', "templates/dream"); ?></label>
-            <i class="icon icon-Male-2"></i>
+            <i class="mw-micon-Male-2"></i>
             <input id="fieldName" name="name" type="text" required>
         </div>
 
         <div class="input-with-icon">
             <label for="fieldEmail"><?php _lang('Email Address', "templates/dream"); ?></label>
-            <i class="icon icon-Mail-2"></i>
+            <i class="mw-micon-Mail-2"></i>
             <input class="validate-required validate-email" id="fieldEmail" name="email" type="email" required>
         </div>
 

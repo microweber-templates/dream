@@ -3,7 +3,7 @@
 $config = array();
 $config['name'] = "Dream";
 $config['author'] = "Microweber";
-$config['version'] = 3.8;
+$config['version'] = 4.3;
 $config['url'] = "http://microweber.com";
 $config['standalone_module_skins'] = true;
 $config['is_default'] = 0; //if you set this parameter the template will be selected on the install screen
@@ -52,10 +52,10 @@ $config['stylesheet_compiler']['css_file'] = 'assets/css/theme.css';
 $config['stylesheet_compiler']['settings']['bg-white'] = array('type' => 'color', 'default' => '#fff', 'label' => 'Background White');
 $config['stylesheet_compiler']['settings']['color-bg-site'] = array('type' => 'color', 'default' => '#F8F8F8', 'label' => 'Background Color Site');
 $config['stylesheet_compiler']['settings']['color-primary'] = array('type' => 'color', 'default' => '#425cbb', 'label' => 'Primary Color');
-$config['stylesheet_compiler']['settings']['color-primary-1'] = array('type' => 'color', 'default' => '#7cc36a', 'label' => 'Primary Color 1');
-$config['stylesheet_compiler']['settings']['color-primary-2'] = array('type' => 'color', 'default' => '#d14b4b', 'label' => 'Primary Color 2');
-$config['stylesheet_compiler']['settings']['color-primary-3'] = array('type' => 'color', 'default' => '#6c9a81', 'label' => 'Primary Color 3');
-$config['stylesheet_compiler']['settings']['color-bg-secondary'] = array('type' => 'color', 'default' => '#F4F4F4', 'label' => 'Background Color Secondary');
+//$config['stylesheet_compiler']['settings']['color-primary-1'] = array('type' => 'color', 'default' => '#7cc36a', 'label' => 'Primary Color 1');
+//$config['stylesheet_compiler']['settings']['color-primary-2'] = array('type' => 'color', 'default' => '#d14b4b', 'label' => 'Primary Color 2');
+//$config['stylesheet_compiler']['settings']['color-primary-3'] = array('type' => 'color', 'default' => '#6c9a81', 'label' => 'Primary Color 3');
+//$config['stylesheet_compiler']['settings']['color-bg-secondary'] = array('type' => 'color', 'default' => '#F4F4F4', 'label' => 'Background Color Secondary');
 $config['stylesheet_compiler']['settings']['color-on-dark'] = array('type' => 'color', 'default' => '#F4F4F4', 'label' => 'Color on Dark');
 $config['stylesheet_compiler']['settings']['color-body'] = array('type' => 'color', 'default' => '#767676', 'label' => 'Body Color');
 $config['stylesheet_compiler']['settings']['color-heading'] = array('type' => 'color', 'default' => '#343434', 'label' => 'Heading Color');

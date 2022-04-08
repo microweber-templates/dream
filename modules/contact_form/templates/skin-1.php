@@ -17,21 +17,21 @@
         <input type="hidden" name="for_id" value="<?php print $params['id']; ?>"/>
 
         <div class="input-with-icon">
-            <i class="icon icon-Male-2"></i>
+            <i class="mw-micon-Male-2"></i>
             <input id="fieldName" name="first_name" placeholder="<?php _lang('Your Name', "templates/dream"); ?>" type="text">
         </div>
         <div class="input-with-icon">
-            <i class="icon icon-Mail-2"></i>
+            <i class="mw-micon-Mail-2"></i>
             <input class="validate-required validate-email" id="fieldEmail" name="email" placeholder="<?php _lang('Email Address', "templates/dream"); ?>" type="email" required="">
         </div>
 
         <div class="input-with-icon">
-            <i class="icon icon-Phone-2"></i>
+            <i class="mw-micon-Phone-2"></i>
             <input type="text" name="phone" id="fieldPhone" placeholder="<?php _lang('Phone', "templates/dream"); ?>"/>
         </div>
 
         <div class="input-with-icon">
-            <i class="icon icon-message"></i>
+            <i class="mw-micon-message"></i>
             <textarea name="message" id="fieldMessage" placeholder="Your Message" rows="2" style="background: #f8f8f8; border-radius: 15px;"></textarea>
         </div>
 

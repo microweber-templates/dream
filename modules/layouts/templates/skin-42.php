@@ -35,11 +35,12 @@ if ($height === null OR $height === false OR $height == '') {
 }
 ?>
 
-<section class="imagebg safe-mode height-<?php print $height; ?> <?php if ($is_parallax == 'yes'): ?>parallax<?php endif; ?> nodrop edit <?php print $padding ?>" field="layout-skin-42-<?php print $params['id'] ?>"
+<section class="imagebg safe-mode height-<?php print $height; ?> <?php if ($is_parallax == 'yes'): ?>parallax<?php endif; ?> nodrop edit mw-layout-overlay-wrapper <?php print $padding ?>" field="layout-skin-42-<?php print $params['id'] ?>"
          rel="module" data-overlay="<?php print $overlay; ?>">
     <div class="background-image-holder" style="background-image: url('<?php print template_url('assets/img/'); ?>hero4.jpg');"></div>
+    <div class="mw-layout-overlay"></div>
 
-    <div class="container pos-vertical-center">
+    <div class="container pos-vertical-center mw-layout-overlay-container">
         <div class="row">
             <div class="col-sm-12 text-center allow-drop">
                 <h1><?php _lang("Image Showcase", "templates/dream"); ?></h1>

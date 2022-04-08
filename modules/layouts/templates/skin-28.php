@@ -27,10 +27,11 @@ if ($is_parallax === null OR $is_parallax === false OR $is_parallax == '') {
 }
 ?>
 
-<section class="cover height-70 safe-mode <?php if ($is_parallax == 'yes'): ?>parallax<?php endif; ?> imagebg nodrop edit <?php print $padding ?>" field="layout-skin-28-<?php print $params['id'] ?>" rel="module" data-overlay="<?php print $overlay; ?>">
+<section class="cover height-70 safe-mode mw-layout-overlay-wrapper <?php if ($is_parallax == 'yes'): ?>parallax<?php endif; ?> imagebg nodrop edit <?php print $padding ?>" field="layout-skin-28-<?php print $params['id'] ?>" rel="module" data-overlay="<?php print $overlay; ?>">
     <div class="background-image-holder" style="background-image: url('<?php print template_url('assets/img/'); ?>political-1.jpg');"></div>
+    <div class="mw-layout-overlay"></div>
 
-    <div class="container pos-vertical-center">
+    <div class="container pos-vertical-center mw-layout-overlay-container">
         <div class="row">
             <div class="col-sm-6 allow-drop">
                 <h1><?php _lang("I'm fighting for a fair go for all Australians", "templates/dream"); ?></h1>

@@ -27,7 +27,7 @@ position: 36
             <div class="col-md-5 col-md-offset-1 col-sm-6 voh">
                 <div class="feature feature-2">
                     <div class="feature__title">
-                        <i class="icon icon-Orientation-2 safe-element"></i>
+                        <i class="mw-micon-Orientation-2 safe-element"></i>
                         <h6><?php _lang("Beautifully Responsive", "templates/dream"); ?></h6>
                     </div>
                     <p><?php _lang("Every one of Dream’s stylish blocks are fully responsive,meaning that your site shines - regardless of the device your users are viewing from", "templates/dream"); ?>.</p>
@@ -37,7 +37,7 @@ position: 36
             <div class="col-md-5 col-sm-6 voh">
                 <div class="feature feature-2">
                     <div class="feature__title">
-                        <i class="icon icon-People-onCloud safe-element"></i>
+                        <i class="mw-micon-People-onCloud safe-element"></i>
                         <h6><?php _lang("Six Months Free Support", "templates/dream"); ?></h6>
                     </div>
                     <p>

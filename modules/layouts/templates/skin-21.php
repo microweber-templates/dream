@@ -14,8 +14,10 @@ position: 21
 
 <?php include 'settings_padding_front.php'; ?>
 
-<section class="cover safe-mode cover-9 nodrop edit <?php print $padding ?>" field="layout-skin-21-<?php print $params['id'] ?>" rel="module">
-    <div class="container">
+<section class="cover safe-mode cover-9 nodrop edit mw-layout-overlay-wrapper <?php print $padding ?>" field="layout-skin-21-<?php print $params['id'] ?>" rel="module">
+    <div class="mw-layout-overlay"></div>
+
+    <div class="container mw-layout-overlay-container">
         <div class="row">
             <div class="col-sm-12 text-center allow-drop">
                 <img alt="<?php _lang("Logo", "templates/dream"); ?>" class="logo" src="<?php print template_url('assets/img/'); ?>logo-large-dark.png">

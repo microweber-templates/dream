@@ -45,10 +45,10 @@ description: Default template
                 <div id="cartContent">
                     <div class="item head clearfix">
                         <span class="cart_img"></span>
-                        <span class="product_name size-13 bold"><?php _lang("PRODUCT NAME", 'templates/dream'); ?>); ?></span>
+                        <span class="product_name size-13 bold"><?php _lang("PRODUCT NAME", 'templates/dream'); ?></span>
                         <span class="remove_item size-13 bold"></span>
-                        <span class="total_price size-13 bold"><?php _lang("TOTAL", 'templates/dream'); ?>); ?></span>
-                        <span class="qty size-13 bold"><?php _lang("QUANTITY", 'templates/dream'); ?>); ?></span>
+                        <span class="total_price size-13 bold"><?php _lang("TOTAL", 'templates/dream'); ?></span>
+                        <span class="qty size-13 bold"><?php _lang("QUANTITY", 'templates/dream'); ?></span>
                     </div>
 
                     <?php
@@ -74,7 +74,7 @@ description: Default template
                                     <?php endif ?>
                                 </small>
                             </a>
-                            <a href="javascript:mw.cart.remove('<?php print $item['id'] ?>');" class="remove_item remove tip" title="<?php _lang("Remove", 'templates/dream'); ?>); ?>" data-tip="<?php _lang("Remove", 'templates/dream'); ?>); ?>"
+                            <a href="javascript:mw.cart.remove('<?php print $item['id'] ?>');" class="remove_item remove tip" title="<?php _lang("Remove", 'templates/dream'); ?>" data-tip="<?php _lang("Remove", 'templates/dream'); ?>"
                                data-tipposition="top-center"><i class="fa fa-times"></i></a>
                             <div class="total_price">
                                 <span><?php print currency_format($item['price'] * $item['qty']); ?></span>
@@ -92,8 +92,8 @@ description: Default template
         <?php else : ?>
             <div class="panel panel-default">
                 <div class="panel-body">
-                    <strong><?php _lang("Shopping cart is empty!", 'templates/dream'); ?>); ?></strong><br/>
-                    <?php _lang("You have no items in your shopping cart.", 'templates/dream'); ?>); ?><br/>
+                    <strong><?php _lang("Shopping cart is empty!", 'templates/dream'); ?></strong><br/>
+                    <?php _lang("You have no items in your shopping cart.", 'templates/dream'); ?><br/>
                 </div>
             </div>
         <?php endif; ?>

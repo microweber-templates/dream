@@ -60,14 +60,16 @@ if ($overlay === null OR $overlay === false) {
 </script>
 
 
-<section class="height-100 imagebg videobg cover cover-1 <?php if ($is_parallax == 'yes'): ?>parallax<?php endif; ?> nodrop edit safe-mode <?php print $padding ?>" data-overlay="<?php print $overlay; ?>"
+<section class="height-100 imagebg videobg cover cover-1 mw-layout-overlay-wrapper <?php if ($is_parallax == 'yes'): ?>parallax<?php endif; ?> nodrop edit safe-mode <?php print $padding ?>" data-overlay="<?php print $overlay; ?>"
          field="layout-skin-73-<?php print $params['id'] ?>"
          rel="module">
 
-        <module type="video_small" class="video-background-holder" id="video-small-<?php print $params['id'] ?>"/>
+    <div class="mw-layout-overlay"></div>
+
+    <module type="video_small" class="video-background-holder" id="video-small-<?php print $params['id'] ?>"/>
 
 
-    <div class="container pos-vertical-center">
+    <div class="container pos-vertical-center mw-layout-overlay-container">
         <div class="row">
             <div class="col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-3 text-center">
                 <div class="allow-drop">

@@ -28,10 +28,12 @@ if ($youtube == false) {
 }
 ?>
 
-<section class="imagebg safe-mode videobg height-100 nodrop edit <?php print $padding ?>" field="layout-skin-29-<?php print $params['id'] ?>" rel="module" data-overlay="<?php print $overlay; ?>">
+<section class="imagebg safe-mode videobg height-100 nodrop edit mw-layout-overlay-wrapper <?php print $padding ?>" field="layout-skin-29-<?php print $params['id'] ?>" rel="module" data-overlay="<?php print $overlay; ?>">
     <div class="youtube-background" data-video-url="<?php print $youtube ?>" data-start-at="0"></div>
     <div class="background-image-holder" style="background-image: url('<?php print template_url('assets/img/'); ?>hero27.jpg');"></div>
-    <div class="container pos-vertical-center">
+    <div class="mw-layout-overlay"></div>
+
+    <div class="container pos-vertical-center mw-layout-overlay-container">
         <div class="row">
             <div class="col-sm-10 col-sm-offset-1 text-center allow-drop">
                 <p class="lead">
