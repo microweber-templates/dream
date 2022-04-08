@@ -18,10 +18,11 @@
     <script>
         mw.require("fonts.js");
         mw.lib.require('bootstrap3');
-        mw.require('icon_selector.js');
+
     </script>
     <script>
         mw.iconLoader()
+            .addIconSet('SVGIcons')
             .addIconSet('iconsMindLine')
             .addIconSet('iconsMindSolid')
             .addIconSet('mwIcons')
@@ -76,6 +77,9 @@
             }
             icons();
             mw.on('moduleLoaded', function () {
+                icons();
+            })
+            mw.on('iconInserted', function () {
                 icons();
             })
             mw.on('editChanged', function () {
