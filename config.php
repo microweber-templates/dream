@@ -3,7 +3,7 @@
 $config = array();
 $config['name'] = "Dream";
 $config['author'] = "Microweber";
-$config['version'] = 4.3;
+$config['version'] = '4.4';
 $config['url'] = "http://microweber.com";
 $config['standalone_module_skins'] = true;
 $config['is_default'] = 0; //if you set this parameter the template will be selected on the install screen
