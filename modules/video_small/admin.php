@@ -24,7 +24,6 @@
 
     </script>
 
-
     <div class="mw-ui-btn-nav mw-ui-btn-nav-tabs">
         <a class="mw-ui-btn active" href="javascript:;"><?php _lang("Upload Video", "templates/dream"); ?></a>
     </div>
@@ -37,7 +36,7 @@
                        type="text" data-mod-name="<?php print $params['data-type'] ?>"
                        value="<?php print get_option('upload', $params['id']) ?>"/>
                 <span class="mw-ui-btn" id="upload_btn"><span
-                            class="mw-icon-upload"></span><?php _lang("Browse", "templates/dream"); ?></span>
+                            class="mw-icon-upload" style="margin-inline-end: 8px;"></span><?php _lang("Browse", "templates/dream"); ?></span>
             </div>
 
 
@@ -58,7 +57,7 @@
 
 
         setprior = function (v, t) {
-            var t = t || false;
+            t = t || false;
             mwd.getElementById('prior').value = v;
             mw.$(mwd.getElementById('prior')).trigger('change');
             if (!!t) {
@@ -72,7 +71,8 @@
 
             var up = mw.files.uploader({
                 multiple: false,
-                filetypes: 'videos'
+                filetypes: 'videos',
+                element: '#upload_btn'
             });
 
             mw.$(up).bind("error", function () {
@@ -96,9 +96,7 @@
             });
 
 
-            var btn = mwd.getElementById('upload_btn');
 
-            mw.$(btn).append(up);
 
             mw.$("#emebed_video_field").focus();
         })

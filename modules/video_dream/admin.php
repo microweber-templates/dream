@@ -104,7 +104,7 @@
 
 
         setprior = function (v, t) {
-            var t = t || false;
+            t = t || false;
             mwd.getElementById('prior').value = v;
             mw.$(mwd.getElementById('prior')).trigger('change');
             if (!!t) {
@@ -118,7 +118,8 @@
 
             var up = mw.files.uploader({
                 multiple: false,
-                filetypes: 'videos'
+                filetypes: 'videos',
+                element: '#upload_btn'
             });
 
             mw.$(up).bind("error", function () {
@@ -142,9 +143,7 @@
             });
 
 
-            var btn = mwd.getElementById('upload_btn');
 
-            mw.$(btn).append(up);
 
             mw.$("#emebed_video_field").focus();
         })
